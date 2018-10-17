@@ -32,10 +32,10 @@ Vendor | Base Pricing | SSO Pricing | % Increase | Source | Date Added
 [PagerDuty](https://www.pagerduty.com) | $9 per u/m | $39 per u/m | 333% | [🔗](https://www.pagerduty.com/pricing/) | 2018-10-17
 [RingCentral](https://www.ringcentral.com) | $25 per u/m | $35 per u/m | 40% | [🔗](https://www.ringcentral.com/office/plansandpricing.html) | 2018-10-17
 [VictorOps](https://victorops.com) | $9 per u/m | $49 per u/m | 544% | [🔗](https://victorops.com/pricing) | 2018-10-17
-[Slack](https://slack.com) | $6.67 per u/m | $12.50 per u/m | 87% | [🔗](https://slack.com/pricing) | 10/17/18
-[Box](https://www.box.com) | $5 per u/m | $15 per u/m | 200% | [🔗](https://www.box.com/pricing) | 10/17/18
-[Dropbox](https://www.dropbox.com) | $15 per u/m | $25 per u/m | 67% |  [🔗](https://www.dropbox.com/business/pricing) | 10/17/18
-[Airtable](https://airtable.com) | $10 per u/m | Call Us! | 100%+ | [🔗](https://airtable.com/pricing) | 10/17/18
+[Slack](https://slack.com) | $6.67 per u/m | $12.50 per u/m | 87% | [🔗](https://slack.com/pricing) | 2018-10-17
+[Box](https://www.box.com) | $5 per u/m | $15 per u/m | 200% | [🔗](https://www.box.com/pricing) | 2018-10-17
+[Dropbox](https://www.dropbox.com) | $15 per u/m | $25 per u/m | 67% |  [🔗](https://www.dropbox.com/business/pricing) | 2018-10-17
+[Airtable](https://airtable.com) | $10 per u/m | Call Us! | 100%+ | [🔗](https://airtable.com/pricing) | 2018-10-17
 
 ## FAQs
 
