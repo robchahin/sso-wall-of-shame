@@ -34,6 +34,29 @@ RingCentral | $25 per u/m | $35 per u/m | 40% | [🔗](https://www.ringcentral.c
 VictorOps | $9 per u/m | $49 per u/m | 544% | [🔗](https://victorops.com/pricing) | 2018-10-17
 
 ## FAQs
+
+<details>
+  <summary><strong>This doesn't scale linearly for number of seats!</strong></summary>
+  <p>Correct. Since we don't know who's reading the page, it's easiest to just assume a team in the lowest pricing tier.</p>
+</details>
+
+<details>
+  <summary><strong>How is base pricing determined?</strong></summary>
+  <p>Disregard free tier pricing, as we can assume these aren't intended for long term business customer use. Probably also disregard "single person" pricing, and assume that we're looking on behalf of a team of 5, 10 or more people.</p>
+</details>
+
+
+<details>
+  <summary><strong>What does "Call Us!" mean?</strong></summary>
+<p>Many vendors do not list pricing for Enterprise-tier pricing, so to avoid calling all of them to get this data, "Call Us" may be listed as a placeholder. If you have numbers, please share them.</p>
+  </details>
+
+<details>
+  <summary><strong>What does "Quote" mean in the Source column?</strong></summary>
+<p>If a vendor doesn't list pricing but a user has submitted pricing based on a quote, it can be included here. If a vendor feels that their actual pricing is inaccurately reflected by this quote, feel free to let me know and I'll update the page.</p>
+</details>
+  
+  
 <details>
   <summary><strong>I'm a vendor and this data is wrong!</strong></summary>
 <p>Please feel free to PR this page, or reach out at sso @ myGitHubUsername dotcom. I only want this data to be accurate.</p>
