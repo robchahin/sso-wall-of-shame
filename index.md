@@ -26,9 +26,13 @@
 
 Vendor | Base Pricing | SSO Pricing | % Increase | Source | Date Added
 ------ | ------------ | ----------- | ---------- |------ | ----------
-Fictional Vendor 1 | $5 per u/m | $15 per u/m | 200% | vendor.org/pricing | 10/17/18
-Fictional Vendor 2 | $10 per u/m | $20 per u/m | 100% | vendor.org/pricing | 10/17/18
-Fictional Vendor 3 | $10 per u/m | $40 per u/m | 300% | vendor.org/pricing | 10/17/18
+DocuSign | $10 per u/m | $CALL | ??? | [🔗](https://www.docusign.com/products-and-pricing) | 2018-10-17
+Expensify | $5 per u/m | $9 per u/m | 80% | [🔗](https://www.expensify.com/pricing#features) | 2018-10-17
+Lever | $CALL (Starter) | $CALL (Enterprise) | ??? | [🔗](https://www.lever.co/pricing) | 2018-10-17
+Lucidchart | $7 per u/m | $CALL | ??? | [🔗](https://www.lucidchart.com/users/registerLevel) | 2017-10-17
+PagerDuty | $9 per u/m | $39 per u/m | 333% | [🔗](https://www.pagerduty.com/pricing/) | 2018-10-17
+RingCentral | $25 per u/m | $35 per u/m | 40% | [🔗](https://www.ringcentral.com/office/plansandpricing.html) | 2018-10-17
+VictorOps | $9 per u/m | $49 per u/m | 544% | [🔗](https://victorops.com/pricing) | 2018-10-17
 
 ## FAQs
 <details>
