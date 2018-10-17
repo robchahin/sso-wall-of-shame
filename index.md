@@ -26,7 +26,7 @@
 
 Vendor | Base Pricing | SSO Pricing | % Increase | Source | Date Added
 ------ | ------------ | ----------- | ---------- |------ | ----------
-DocuSign | $10 per u/m | $CALL | ??? | [🔗](https://www.docusign.com/products-and-pricing) | 2018-10-17
+DocuSign | $25 per u/m | $50 per u/m | 100% | [🔗](https://www.docusign.com/products-and-pricing) Quote | 2018-10-17
 Expensify | $5 per u/m | $9 per u/m | 80% | [🔗](https://www.expensify.com/pricing#features) | 2018-10-17
 Lever | $CALL (Starter) | $CALL (Enterprise) | ??? | [🔗](https://www.lever.co/pricing) | 2018-10-17
 Lucidchart | $7 per u/m | $CALL | ??? | [🔗](https://www.lucidchart.com/users/registerLevel) | 2017-10-17
