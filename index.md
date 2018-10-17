@@ -28,7 +28,7 @@ Vendor | Base Pricing | SSO Pricing | % Increase | Source | Date Added
 ------ | ------------ | ----------- | ---------- |------ | ----------
 [DocuSign](https://www.docusign.com) | $25 per u/m | $50 per u/m | 100% | [🔗](https://www.docusign.com/products-and-pricing) Quote | 2018-10-17
 [Expensify](https://www.expensify.com) | $5 per u/m | $9 per u/m | 80% | [🔗](https://www.expensify.com/pricing#features) | 2018-10-17
-[Lucidchart](https://www.lucidchart.com) | $7 per u/m | Call Us! | ??? | [🔗](https://www.lucidchart.com/users/registerLevel) | 2017-10-17
+[Lucidchart](https://www.lucidchart.com) | $7 per u/m | Call Us! | ??? | [🔗](https://www.lucidchart.com/users/registerLevel) | 2018-10-17
 [PagerDuty](https://www.pagerduty.com) | $9 per u/m | $39 per u/m | 333% | [🔗](https://www.pagerduty.com/pricing/) | 2018-10-17
 [RingCentral](https://www.ringcentral.com) | $25 per u/m | $35 per u/m | 40% | [🔗](https://www.ringcentral.com/office/plansandpricing.html) | 2018-10-17
 [VictorOps](https://victorops.com) | $9 per u/m | $49 per u/m | 544% | [🔗](https://victorops.com/pricing) | 2018-10-17
