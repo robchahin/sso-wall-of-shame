@@ -24,11 +24,11 @@
 
 ## The List
 
-Vendor | Base Pricing | SSO Pricing | Source | Date Added
------- | ------------ | ----------- | ------ | ----------
-Fictional Vendor 1 | $5 per u/m | $15 per u/m | vendor.org/pricing | 10/17/18
-Fictional Vendor 2 | $10 per u/m | $20 per u/m | vendor.org/pricing | 10/17/18
-Fictional Vendor 3 | $10 per u/m | $40 per u/m | vendor.org/pricing | 10/17/18
+Vendor | Base Pricing | SSO Pricing | % Increase | Source | Date Added
+------ | ------------ | ----------- | ---------- |------ | ----------
+Fictional Vendor 1 | $5 per u/m | $15 per u/m | 200% | vendor.org/pricing | 10/17/18
+Fictional Vendor 2 | $10 per u/m | $20 per u/m | 100% | vendor.org/pricing | 10/17/18
+Fictional Vendor 3 | $10 per u/m | $40 per u/m | 300% | vendor.org/pricing | 10/17/18
 
 ## FAQs
 <details>
