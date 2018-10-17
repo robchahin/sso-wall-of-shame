@@ -36,6 +36,7 @@ Vendor | Base Pricing | SSO Pricing | % Increase | Source | Date Added
 [Box](https://www.box.com) | $5 per u/m | $15 per u/m | 200% | [🔗](https://www.box.com/pricing) | 2018-10-17
 [Dropbox](https://www.dropbox.com) | $15 per u/m | $25 per u/m | 67% |  [🔗](https://www.dropbox.com/business/pricing) | 2018-10-17
 [Airtable](https://airtable.com) | $10 per u/m | Call Us! | 100%+ | [🔗](https://airtable.com/pricing) | 2018-10-17
+[Trello](https://trello.com) | $10 per u/m | $21 per u\m | 110% | [🔗](https://trello.com/pricing) | 2018-10-17
 
 ## FAQs
 
