@@ -1,3 +1,10 @@
+title: The SSO Wall of Shame
+description: >-
+  A list of vendors that treat single sign-on as a luxury feature, not a core
+  security requirement.
+
+url: https://robchahin.github.io/sso-wall-of-shame
+
 theme: jekyll-theme-cayman
 kramdown:
   parse_block_html: true
