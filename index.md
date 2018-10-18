@@ -3,8 +3,9 @@
 # The SSO Wall of Shame
 
 <details>
-<summary><strong>Why does this exist?</strong></summary>
-
+<summary>
+## Why does this exist?
+</summary>
 Single sign-on (SSO) is a mechanism for outsourcing the authentication for your website (or other product) to a third party identity provider, such as Google, Facebook, Okta, PingFederate, etc.
 
 In this context, SSO refers to a SaaS or similar vendor allowing a business client to manage user accounts via the client's own identity provider, without having to rely on the vendor to provide strong authentication with audit logs, and with the ability to create and delete user accounts centrally, for all users, across all software in use by that client.
@@ -22,7 +23,6 @@ If companies claim to "take your security seriously", then SSO should be availab
 1. attached to a price tier, but with a reasonably small gap between the non-SSO tier and SSO tiers.
 
 Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, which disincentivizes its use and encourages poor security practices.
-
 </details>
 
 ## The List
@@ -45,43 +45,43 @@ Vendor | Base Pricing | SSO Pricing | % Increase | Source | Date Added
 ## FAQs
 
 <details>
-<summary><strong>This doesn't scale linearly for number of seats!</strong></summary>
-
+<summary>
+### This doesn't scale linearly for number of seats!
+</summary>
 Correct. Since we don't know who's reading the page, it's easiest to just assume a team with no volume discount.
-
 </details>
 
 <details>
-<summary><strong>How is base pricing determined?</strong></summary>
-
+<summary>
+### How is base pricing determined?
+</summary>
 We disregard free tier pricing, as we can assume these aren't intended for long term business customer use. We also disregard "single person" pricing, under the assumption that we're looking on behalf of a team of 5, 10, or more people.
-
 </details>
 
 <details>
-<summary><strong>What does "Call Us!" mean?</strong></summary>
-
+<summary>
+### What does "Call Us!" mean?
+</summary>
 Many vendors do not list pricing for Enterprise-tier pricing. To avoid needing to call all of them to get this data, "Call Us!" may be listed as a placeholder. If you have numbers, please share them.
-
 </details>
 
 <details>
-<summary><strong>What does "Quote" mean in the Source column?</strong></summary>
-
+<summary>
+### What does "Quote" mean in the Source column?
+</summary>
 If a vendor doesn't list pricing but a user has submitted pricing based on a quote, it can be included here. If a vendor feels that their actual pricing is inaccurately reflected by this quote, feel free to let me know and I'll update the page.
-
 </details>
 
 <details>
-<summary><strong>I'm a vendor and this data is wrong!</strong></summary>
-
+<summary>
+### I'm a vendor and this data is wrong!
+</summary>
 Please feel free to submit a PR to this page, or reach out at sso @ myGitHubUsername dotcom. I only want this data to be accurate.
-
 </details>
 
 <details>
-<summary><strong>I'm a vendor and this doesn't reflect the value-add of our Enterprise tier!</strong></summary>
-
+<summary>
+### I'm a vendor and this doesn't reflect the value-add of our Enterprise tier!
+</summary>
 That's the point. Decouple your security features from your value-added services. They should be priced separately.
-
 </details>
