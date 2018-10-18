@@ -2,4 +2,13 @@
 ---
 
 @import "{{ site.theme }}";
-td { font-size: 1.0rem }
+td {
+  font-size: 1.0rem;
+}
+h2, h3 {
+  display: inline-block;
+}
+.page-header {
+  padding-bottom: 0em !important;
+  a.btn { display: none; }
+}
