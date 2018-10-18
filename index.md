@@ -28,7 +28,7 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
 ## The List
 
 Vendor | Base Pricing | SSO Pricing | % Increase | Source | Date Added
------- | ------------ | ----------- | ---------- |------ | ----------
+------ | ------------ | ----------- | ---------- | ------ | ----------
 [Airtable](https://airtable.com) | $10 per u/m | Call Us! | 100%+ | [🔗](https://airtable.com/pricing) | 2018-10-17
 [Box](https://www.box.com) | $5 per u/m | $15 per u/m | 200% | [🔗](https://www.box.com/pricing) | 2018-10-17
 [DocuSign](https://www.docusign.com) | $25 per u/m | $50 per u/m | 100% | [🔗](https://www.docusign.com/products-and-pricing) Quote | 2018-10-17
