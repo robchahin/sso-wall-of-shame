@@ -33,6 +33,7 @@ Vendor | Base Pricing | SSO Pricing | % Increase | Source | Date Added
 [Dropbox](https://www.dropbox.com) | $15 per u/m | $25 per u/m | 67% |  [🔗](https://www.dropbox.com/business/pricing) | 2018-10-17
 [Expensify](https://www.expensify.com) | $5 per u/m | $9 per u/m | 80% | [🔗](https://www.expensify.com/pricing#features) | 2018-10-17
 [Lucidchart](https://www.lucidchart.com) | $7 per u/m | Call Us! | ??? | [🔗](https://www.lucidchart.com/users/registerLevel) | 2018-10-17
+[NewRelic](https://www.newrelic.com) | <span title="Based on lowest pricing">$4 per instance-month</span> | $8 per instance-month | 100% | [🔗](https://newrelic.com/application-monitoring/pricing) | 2018-10-18
 [PagerDuty](https://www.pagerduty.com) | $9 per u/m | $39 per u/m | 333% | [🔗](https://www.pagerduty.com/pricing/) | 2018-10-17
 [RingCentral](https://www.ringcentral.com) | $25 per u/m | $35 per u/m | 40% | [🔗](https://www.ringcentral.com/office/plansandpricing.html) | 2018-10-17
 [Slack](https://slack.com) | $6.67 per u/m | $12.50 per u/m | 87% | [🔗](https://slack.com/pricing) | 2018-10-17
