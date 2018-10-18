@@ -2,13 +2,23 @@
 ---
 
 @import "{{ site.theme }}";
+
 td {
   font-size: 1.0rem;
 }
+
 h2, h3 {
   display: inline-block;
 }
+
 .page-header {
   padding-bottom: 0em !important;
   a.btn { display: none; }
+}
+
+// Don't wrap the Source or Date Added columns
+tr {
+  td:nth-child(5), td:nth-child(6) {
+    white-space: nowrap;
+  }
 }
