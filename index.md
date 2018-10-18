@@ -3,23 +3,23 @@
 <details>
 <summary><strong>Why does this exist?</strong></summary>
 
-Single sign-on (SSO) is a mechanism for outsourcing your website (or other product's) authentication to a third party identity provider, such as Google, Facebook, Okta, PingFederate, etc.
+Single sign-on (SSO) is a mechanism for outsourcing the authentication for your website (or other product) to a third party identity provider, such as Google, Facebook, Okta, PingFederate, etc.
 
-In this context, SSO refers to a SaaS or similar vendor allowing a business client to manage user accounts via their own identity provider, without having to rely on the vendor to provide strong authentication with audit logs, and with the ability to create and delete user accounts centrally, for all users, across all software in use by that org.
+In this context, SSO refers to a SaaS or similar vendor allowing a business client to manage user accounts via the client's own identity provider, without having to rely on the vendor to provide strong authentication with audit logs, and with the ability to create and delete user accounts centrally, for all users, across all software in use by that client.
 
-Beyond a handful of employees, this feature is critical for IT and Security teams to be able to effectively manage user accounts across dozens or hundreds of vendors, many of which don't support features like TOTP 2FA or U2F. In the event that an employee leaves the company, the IT team can immediately disable their access to all applications, rather than logging into 100 different user management portals.
+For organizations with more than a handful of employees, this feature is critical for IT and Security teams to be able to effectively manage user accounts across dozens or hundreds of vendors, many of which don't support features like TOTP 2FA or U2F. In the event that an employee leaves the company, it allows the IT team to immediately disable their access to all applications, rather than logging into 100 different user management portals.
 
-Basically: SSO is a core security requirement for any company with more than five employees.
+In short: SSO is a core security requirement for any company with more than five employees.
 
-SaaS vendors appear not to have received this message, however. SSO is often only available as part of "Enterprise" pricing which assumes either a huge number of users (minimum seat count), or it's force-bundled with other "Enterprise" features which may have no value to the company using the software.
+SaaS vendors appear not to have received this message, however. SSO is often only available as part of "Enterprise" pricing, which assumes either a huge number of users (minimum seat count) or is force-bundled with other "Enterprise" features which may have no value to the company using the software.
 
-If companies claim to "take your security seriously", then SSO should be available either:
+If companies claim to "take your security seriously", then SSO should be available as a feature that is either:
 
-1. as a core product feature, or
-1. as an optional paid extra, for a reasonable delta, or
-1. the gap between the non-SSO tier and the SSO tier should be naturally small.
+1. part of the core product, or
+1. an optional paid extra for a reasonable delta, or
+1. attached to a price tier, but with a reasonably small gap between the non-SSO tier and SSO tiers.
 
-Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, which disincentivizes its use, and encourages poor security practices.
+Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, which disincentivizes its use and encourages poor security practices.
 
 </details>
 
@@ -44,21 +44,21 @@ Vendor | Base Pricing | SSO Pricing | % Increase | Source | Date Added
 <details>
 <summary><strong>This doesn't scale linearly for number of seats!</strong></summary>
 
-Correct. Since we don't know who's reading the page, it's easiest to just assume a team in the lowest pricing tier.
+Correct. Since we don't know who's reading the page, it's easiest to just assume a team with no volume discount.
 
 </details>
 
 <details>
 <summary><strong>How is base pricing determined?</strong></summary>
 
-Disregard free tier pricing, as we can assume these aren't intended for long term business customer use. Probably also disregard "single person" pricing, and assume that we're looking on behalf of a team of 5, 10 or more people.
+We disregard free tier pricing, as we can assume these aren't intended for long term business customer use. We also disregard "single person" pricing, under the assumption that we're looking on behalf of a team of 5, 10, or more people.
 
 </details>
 
 <details>
 <summary><strong>What does "Call Us!" mean?</strong></summary>
 
-Many vendors do not list pricing for Enterprise-tier pricing, so to avoid calling all of them to get this data, "Call Us" may be listed as a placeholder. If you have numbers, please share them.
+Many vendors do not list pricing for Enterprise-tier pricing. To avoid needing to call all of them to get this data, "Call Us!" may be listed as a placeholder. If you have numbers, please share them.
 
 </details>
 
@@ -72,13 +72,13 @@ If a vendor doesn't list pricing but a user has submitted pricing based on a quo
 <details>
 <summary><strong>I'm a vendor and this data is wrong!</strong></summary>
 
-Please feel free to PR this page, or reach out at sso @ myGitHubUsername dotcom. I only want this data to be accurate.
+Please feel free to submit a PR to this page, or reach out at sso @ myGitHubUsername dotcom. I only want this data to be accurate.
 
 </details>
 
 <details>
 <summary><strong>I'm a vendor and this doesn't reflect the value-add of our Enterprise tier!</strong></summary>
 
-That's the point. Decouple your security features from your value-added services, price them separately.
+That's the point. Decouple your security features from your value-added services. They should be priced separately.
 
 </details>
