@@ -32,6 +32,7 @@ Vendor | Base Pricing | SSO Pricing | % Increase | Source | Date Added
 [DocuSign](https://www.docusign.com) | $25 per u/m | $50 per u/m | 100% | [🔗](https://www.docusign.com/products-and-pricing) Quote | 2018-10-17
 [Dropbox](https://www.dropbox.com) | $15 per u/m | $25 per u/m | 67% |  [🔗](https://www.dropbox.com/business/pricing) | 2018-10-17
 [Expensify](https://www.expensify.com) | $5 per u/m | $9 per u/m | 80% | [🔗](https://www.expensify.com/pricing#features) | 2018-10-17
+[Github](https://www.github.com) | $9 per u/m | $21 per u/m | 133% | [🔗](https://github.com/pricing) | 2018-10-19
 [Lucidchart](https://www.lucidchart.com) | $7 per u/m | Call Us! | ??? | [🔗](https://www.lucidchart.com/users/registerLevel) | 2018-10-17
 [New Relic Infrastructure](https://newrelic.com/products/infrastructure) | $0.60 - $7.20 per host-month[^newrelic-price] | $1.20 - $14.40 per host-month | 100% | [🔗](https://newrelic.com/products/infrastructure/pricing) | 2018-10-18
 [PagerDuty](https://www.pagerduty.com) | $9 per u/m | $39 per u/m | 333% | [🔗](https://www.pagerduty.com/pricing/) | 2018-10-17
