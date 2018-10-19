@@ -1,7 +1,5 @@
 ---
 ---
-# The SSO Wall of Shame
-
 <details>
 <summary>
 ## Why does this exist?
