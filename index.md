@@ -38,7 +38,7 @@ Vendor | Base Pricing | SSO Pricing | % Increase | Source | Date Added
 [PagerDuty](https://www.pagerduty.com) | $9 per u/m | $39 per u/m | 333% | [🔗](https://www.pagerduty.com/pricing/) | 2018-10-17
 [RingCentral](https://www.ringcentral.com) | $25 per u/m | $35 per u/m | 40% | [🔗](https://www.ringcentral.com/office/plansandpricing.html) | 2018-10-17
 [Slack](https://slack.com) | $6.67 per u/m | $12.50 per u/m | 87% | [🔗](https://slack.com/pricing) | 2018-10-17
-[SumoLogic](https://https://www.sumologic.com) | $90 per GB/m | $150 per GB/m | 67% | [🔗](https://www.sumologic.com/pricing/) | 2018-10-19
+[SumoLogic](https://www.sumologic.com) | $90 per GB/m | $150 per GB/m | 67% | [🔗](https://www.sumologic.com/pricing/) | 2018-10-19
 [Trello](https://trello.com) | $10 per u/m | $21 per u/m | 110% | [🔗](https://trello.com/pricing) | 2018-10-17
 [VictorOps](https://victorops.com) | $9 per u/m | $49 per u/m | 544% | [🔗](https://victorops.com/pricing) | 2018-10-17
 [Zendesk Support](https://www.zendesk.com/support/) | $19 per u/m | $49 per u/m | 157% | [🔗](https://www.zendesk.com/support/compare/) | 2018-10-19
