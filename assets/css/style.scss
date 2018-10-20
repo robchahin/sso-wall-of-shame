@@ -3,12 +3,26 @@
 
 @import "{{ site.theme }}";
 
+h2 {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
 td {
   font-size: 1.0rem;
 }
 
-h2, h3 {
-  display: inline-block;
+summary { // "Temporary" hack for h2-inside-summary formatting
+  margin-bottom: 1rem;
+  font-weight: normal;
+  color: #159957;
+  display: list-item;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+summary > p {
+  display: inline;
 }
 
 .page-header {

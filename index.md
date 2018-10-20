@@ -1,8 +1,8 @@
 ---
 ---
-<details>
+<details open>
 <summary>
-## Why does this exist?
+Why does this exist?
 </summary>
 Single sign-on (SSO) is a mechanism for outsourcing the authentication for your website (or other product) to a third party identity provider, such as Google, Facebook, Okta, PingFederate, etc.
 
@@ -48,42 +48,42 @@ Vendor | Base Pricing | SSO Pricing | % Increase | Source | Date Added
 
 <details>
 <summary>
-### This doesn't scale linearly for number of seats!
+This doesn't scale linearly for number of seats!
 </summary>
 Correct. Since we don't know who's reading the page, it's easiest to just assume a team with no volume discount.
 </details>
 
 <details>
 <summary>
-### How is base pricing determined?
+How is base pricing determined?
 </summary>
 We disregard free tier pricing, as we can assume these aren't intended for long term business customer use. We also disregard "single person" pricing, under the assumption that we're looking on behalf of a team of 5, 10, or more people.
 </details>
 
 <details>
 <summary>
-### What does "Call Us!" mean?
+What does "Call Us!" mean?
 </summary>
 Many vendors do not list pricing for Enterprise-tier pricing. To avoid needing to call all of them to get this data, "Call Us!" may be listed as a placeholder. If you have numbers, please share them.
 </details>
 
 <details>
 <summary>
-### What does "Quote" mean in the Source column?
+What does "Quote" mean in the Source column?
 </summary>
 If a vendor doesn't list pricing but a user has submitted pricing based on a quote, it can be included here. If a vendor feels that their actual pricing is inaccurately reflected by this quote, feel free to let me know and I'll update the page.
 </details>
 
 <details>
 <summary>
-### I'm a vendor and this data is wrong!
+I'm a vendor and this data is wrong!
 </summary>
 Please feel free to submit a PR to this page, or reach out at sso @ myGitHubUsername dotcom. I only want this data to be accurate.
 </details>
 
 <details>
 <summary>
-### I'm a vendor and this doesn't reflect the value-add of our Enterprise tier!
+I'm a vendor and this doesn't reflect the value-add of our Enterprise tier!
 </summary>
 That's the point. Decouple your security features from your value-added services. They should be priced separately.
 </details>
