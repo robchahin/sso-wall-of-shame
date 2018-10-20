@@ -34,6 +34,7 @@ Vendor | Base Pricing | SSO Pricing | % Increase | Source | Date Added
 [Expensify](https://www.expensify.com) | $5 per u/m | $9 per u/m | 80% | [🔗](https://www.expensify.com/pricing#features) | 2018-10-17
 [Github](https://www.github.com) | $9 per u/m | $21 per u/m | 133% | [🔗](https://github.com/pricing) | 2018-10-19
 [Lucidchart](https://www.lucidchart.com) | $7 per u/m | Call Us! | ??? | [🔗](https://www.lucidchart.com/users/registerLevel) | 2018-10-17
+[Netlify](https://www.netlify.com/) | $9 per u/m | Call Us! | ??? | [🔗](https://www.netlify.com/pricing/) | 2018-10-20
 [New Relic Infrastructure](https://newrelic.com/products/infrastructure) | $0.60 - $7.20 per host-month[^newrelic-price] | $1.20 - $14.40 per host-month | 100% | [🔗](https://newrelic.com/products/infrastructure/pricing) | 2018-10-18
 [PagerDuty](https://www.pagerduty.com) | $9 per u/m | $39 per u/m | 333% | [🔗](https://www.pagerduty.com/pricing/) | 2018-10-17
 [RingCentral](https://www.ringcentral.com) | $25 per u/m | $35 per u/m | 40% | [🔗](https://www.ringcentral.com/office/plansandpricing.html) | 2018-10-17
