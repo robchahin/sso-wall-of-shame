@@ -34,6 +34,7 @@ Vendor | Base Pricing | SSO Pricing | % Increase | Source | Date Updated
 [Dropbox](https://www.dropbox.com) | $15 per u/m | $25 per u/m | 67% |  [🔗](https://www.dropbox.com/business/pricing) | 2018-10-17
 [Expensify](https://www.expensify.com) | $5 per u/m | $9 per u/m | 80% | [🔗](https://www.expensify.com/pricing#features) | 2018-10-17
 [Github](https://www.github.com) | $9 per u/m | $21 per u/m | 133% | [🔗](https://github.com/pricing) | 2018-10-19
+[Intercom](https://www.intercom.com) | $136 | $202 | 49% | [🔗](https://twitter.com/brianebeyer/status/1053797786301489153) & [🔗](https://www.intercom.com/pricing) | 2018-10-20
 [Lucidchart](https://www.lucidchart.com) | $7 per u/m | Call Us! | ??? | [🔗](https://www.lucidchart.com/users/registerLevel) | 2018-10-17
 [Netlify](https://www.netlify.com/) | $9 per u/m | Call Us! | ??? | [🔗](https://www.netlify.com/pricing/) | 2018-10-20
 [New Relic Infrastructure](https://newrelic.com/products/infrastructure) | $0.60 - $7.20 per host-month[^newrelic-price] | $1.20 - $14.40 per host-month | 100% | [🔗](https://newrelic.com/products/infrastructure/pricing) | 2018-10-18
