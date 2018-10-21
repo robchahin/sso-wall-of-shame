@@ -25,27 +25,30 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
 
 ## The List
 
-Vendor | Base Pricing | SSO Pricing | % Increase | Source | Date Updated
------- | ------------ | ----------- | ---------- | ------ | ----------
-[Airtable](https://airtable.com) | $10 per u/m | Call Us! | 100%+ | [🔗](https://airtable.com/pricing) | 2018-10-17
-[Box](https://www.box.com) | $5 per u/m | $15 per u/m | 200% | [🔗](https://www.box.com/pricing) | 2018-10-17
-[CloudSploit](https://cloudsploit.com) | $36 pcm | $99 pcm | 175% | [🔗](https://cloudsploit.com) | 2018-10-20
-[DocuSign](https://www.docusign.com) | $25 per u/m | $50 per u/m | 100% | [🔗](https://www.docusign.com/products-and-pricing) Quote | 2018-10-17
-[Dropbox](https://www.dropbox.com) | $15 per u/m | $25 per u/m | 67% |  [🔗](https://www.dropbox.com/business/pricing) | 2018-10-17
-[Expensify](https://www.expensify.com) | $5 per u/m | $9 per u/m | 80% | [🔗](https://www.expensify.com/pricing#features) | 2018-10-17
-[Github](https://www.github.com) | $9 per u/m | $21 per u/m | 133% | [🔗](https://github.com/pricing) | 2018-10-19
-[Intercom](https://www.intercom.com) | $136 | $202 | 49% | [🔗](https://twitter.com/brianebeyer/status/1053797786301489153) & [🔗](https://www.intercom.com/pricing) | 2018-10-20
-[Lucidchart](https://www.lucidchart.com) | $7 per u/m | Call Us! | ??? | [🔗](https://www.lucidchart.com/users/registerLevel) | 2018-10-17
-[Netlify](https://www.netlify.com/) | $9 per u/m | Call Us! | ??? | [🔗](https://www.netlify.com/pricing/) | 2018-10-20
-[New Relic Infrastructure](https://newrelic.com/products/infrastructure) | $0.60 - $7.20 per host-month[^newrelic-price] | $1.20 - $14.40 per host-month | 100% | [🔗](https://newrelic.com/products/infrastructure/pricing) | 2018-10-18
-[PagerDuty](https://www.pagerduty.com) | $9 per u/m | $39 per u/m | 333% | [🔗](https://www.pagerduty.com/pricing/) | 2018-10-17
-[RingCentral](https://www.ringcentral.com) | $25 per u/m | $35 per u/m | 40% | [🔗](https://www.ringcentral.com/office/plansandpricing.html) | 2018-10-17
-[Sentry](https://sentry.io) | $26 for 100K events | $80 for 100K events | 208% | [🔗](https://sentry.io/pricing/) | 2018-10-20
-[Slack](https://slack.com) | $6.67 per u/m | $12.50 per u/m | 87% | [🔗](https://slack.com/pricing) | 2018-10-17
-[SumoLogic](https://www.sumologic.com) | $90 per GB/m | $150 per GB/m | 67% | [🔗](https://www.sumologic.com/pricing/) | 2018-10-19
-[Trello](https://trello.com) | $10 per u/m | $21 per u/m | 110% | [🔗](https://trello.com/pricing) | 2018-10-17
-[VictorOps](https://victorops.com) | $29 per u/m | $49 per u/m | 69% | [🔗](https://victorops.com/pricing) | 2018-10-17
-[Zendesk Support](https://www.zendesk.com/support/) | $19 per u/m | $49 per u/m | 157% | [🔗](https://www.zendesk.com/support/compare/) | 2018-10-19
+<table>
+<thead>
+<tr><th>Vendor</th><th>Base Pricing</th><th>SSO Pricing</th><th>% Increase</th><th>Source</th><th>Date Updated</th></tr>
+</thead>
+<tbody>
+{% for vendor in site.data.vendors %}
+<tr>
+<td><a href="{{ vendor.url }}">{{ vendor.name }}</a></td>
+<td markdown="span">{{ vendor.base_pricing }}</td>
+<td>{{ vendor.sso_pricing }}</td>
+<td>{{ vendor.percent_increase }}</td>
+<td>
+{% for source in vendor.pricing_source %}
+{% if forloop.first == false %}
+&amp;
+{% endif %}
+<a href="{{ source }}">&#128279;</a>
+{% endfor %}
+{{ vendor.pricing_note }}</td>
+<td>{{ vendor.updated_at }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
 
 ## FAQs
 
