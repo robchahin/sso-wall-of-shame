@@ -91,4 +91,11 @@ I'm a vendor and this doesn't reflect the value-add of our Enterprise tier!
 That's the point. Decouple your security features from your value-added services. They should be priced separately.
 </details>
 
+<details>
+<summary>
+But it costs money to provide SAML support, so we can't offer it for free!
+</summary>
+  While I'd like people to really consider it a <em>bare minimum</em> feature for business SaaS, I'm OK with it costing a little extra to cover maintenance costs. If you SSO support is a 10% price hike, you're not on this list. But these percentage increases are not maintenance costs, they're revenue generation because you know your customers have no good options.
+</details>
+
 [^newrelic-price]: Pricing varies by host size. The SSO cost increase does not.
