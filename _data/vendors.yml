@@ -54,6 +54,14 @@
   percent_increase:  133%
   pricing_source: https://github.com/pricing
   updated_at: 2018-10-19
+  
+- name: GitLab
+  url: https://about.gitlab.com
+  base_pricing: $4 per u/m
+  sso_pricing: $99 per u/m
+  percent_increase:  2375% (!!)
+  pricing_source: https://about.gitlab.com/pricing
+  updated_at: 2018-10-21
 
 - name: Intercom
   url: https://www.intercom.com
