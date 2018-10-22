@@ -55,13 +55,21 @@
   pricing_source: https://github.com/pricing
   updated_at: 2018-10-19
   
-- name: GitLab
+- name: GitLab Hosted
   url: https://about.gitlab.com
   base_pricing: $4 per u/m
   sso_pricing: $19 per u/m
   percent_increase:  375% 
   pricing_source: https://about.gitlab.com/pricing
   updated_at: 2018-10-21
+  
+- name: GitLab On-Prem
+  url: https://about.gitlab.com
+  base_pricing: $4 per u/m
+  sso_pricing: $4 per u/m[^gitlab-price]
+  percent_increase:  0% 🎉 
+  pricing_source: https://about.gitlab.com/pricing
+  updated_at: 2018-10-22
 
 - name: Intercom
   url: https://www.intercom.com
