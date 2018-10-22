@@ -102,5 +102,8 @@ But it costs money to provide SAML support, so we can't offer it for free!
 </details>
 
 ## Footnotes
+
+(Footnotes are currently broken pending a bugfix.)
+
 [^newrelic-price]: Pricing varies by host size. The SSO cost increase does not.
 [^gitlab-price]: On-prem includes "site-wide SSO" in its basic tier which provides many of the core benefits of SSO, with additional SSO options in the next tier up.

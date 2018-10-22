@@ -66,7 +66,7 @@
 - name: GitLab On-Prem
   url: https://about.gitlab.com
   base_pricing: $4 per u/m
-  sso_pricing: $4 per u/m[^gitlab-price]
+  sso_pricing: $4 per u/m *
   percent_increase:  0% 🎉 
   pricing_source: https://about.gitlab.com/pricing
   updated_at: 2018-10-22
@@ -99,7 +99,7 @@
 
 - name: New Relic Infrastructure
   url: https://newrelic.com/products/infrastructure
-  base_pricing: $0.60 - $7.20 per host-month[^newrelic-price]
+  base_pricing: $0.60 - $7.20 per host-month *
   sso_pricing: $1.20 - $14.40 per host-month
   percent_increase:  100%
   pricing_source: https://newrelic.com/products/infrastructure/pricing
