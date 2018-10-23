@@ -179,7 +179,7 @@
   
 - name: Twilio
   url: https://twilio.com
-  base_pricing: pay-as-you-go
+  base_pricing: $0
   sso_pricing: $15,000/month or 30% of monthly spend, whichever is greater
   percent_increase: 30%
   pricing_source: https://www.twilio.com/enterprise
