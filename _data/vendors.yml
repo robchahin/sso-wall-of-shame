@@ -6,6 +6,14 @@
   pricing_source: https://airtable.com/pricing
   updated_at: 2018-10-17
 
+- name: Atlassian (Jira Cloud)
+  url: https://www.atlassian.com
+  base_pricing: $7 per u/m
+  sso_pricing: $10 per u/m[^jira-price]
+  percent_increase: 42%
+  pricing_source: https://www.atlassian.com/software/jira/pricing
+  updated_at: 2018-10-22
+
 - name: Box
   url: https://www.box.com
   base_pricing: $5 per u/m
