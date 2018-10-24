@@ -105,4 +105,5 @@ But it costs money to provide SAML support, so we can't offer it for free!
 
 [^jira-price]: Hard to compare since Access seems to cover all Atlassian products, so should get cheaper per seat as more products are used - but that doesn't help people only using Jira. (Jira was chosen as probably the most common Atlassian product.)
 [^newrelic-price]: Pricing varies by host size. The SSO cost increase does not.
+[^twilio]: Base pricing is extremely variable. SSO is the greater of $15,000 or a 30% surcharge, so could be anywhere from 30% to '000s%
 [^gitlab-price]: On-prem includes "site-wide SSO" in its basic tier which provides many of the core benefits of SSO, with additional SSO options in the next tier up.
