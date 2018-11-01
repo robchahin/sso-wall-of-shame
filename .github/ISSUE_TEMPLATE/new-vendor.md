@@ -13,6 +13,9 @@ e.g. https://slack.com/pricing
 **What is the base pricing? Use the lowest tier that looks sane for a small business customer, not free or personal tiers.**
 e.g. $5 per user/month, $3.33 per instance/month
 
+**What is the minimum pricing for SSO support?**
+e.g. $10 per user/month, $6 per instance/month
+
 **Does this pricing info come from a quote or other non-public source?**
 Add any additional pricing context here.
 

@@ -6,6 +6,15 @@
   pricing_source: https://airtable.com/pricing
   updated_at: 2018-10-17
 
+- name: Atlassian (Jira Cloud)
+  url: https://www.atlassian.com
+  base_pricing: $7 per u/m
+  sso_pricing: $10 per u/m[^jira-price]
+  footnotes: "[^jira-price]: Hard to compare since Access seems to cover all Atlassian products, so should get cheaper per seat as more products are used - but that doesn't help people only using Jira. (Jira was chosen as probably the most common Atlassian product.)"
+  percent_increase: 42%
+  pricing_source: https://www.atlassian.com/software/jira/pricing
+  updated_at: 2018-10-22
+
 - name: Box
   url: https://www.box.com
   base_pricing: $5 per u/m
@@ -22,6 +31,14 @@
   pricing_source: https://cloudsploit.com
   updated_at: 2018-10-20
 
+- name: Databricks
+  url: https://databricks.com
+  base_pricing: $0.20 per DBU
+  sso_pricing: $0.35 per DBU
+  percent_increase: 75%
+  pricing_source: https://databricks.com/product/aws-pricing
+  updated_at: 2018-10-22  
+  
 - name: DocuSign
   url: https://www.docusign.com
   base_pricing: $25 per u/m
@@ -55,13 +72,22 @@
   pricing_source: https://github.com/pricing
   updated_at: 2018-10-19
   
-- name: GitLab
+- name: GitLab Hosted
   url: https://about.gitlab.com
   base_pricing: $4 per u/m
-  sso_pricing: $99 per u/m
-  percent_increase:  2375% (!!)
+  sso_pricing: $19 per u/m
+  percent_increase:  375% 
   pricing_source: https://about.gitlab.com/pricing
   updated_at: 2018-10-21
+  
+- name: GitLab On-Prem
+  url: https://about.gitlab.com
+  base_pricing: $4 per u/m
+  sso_pricing: $4 per u/m[^gitlab-price]
+  footnotes: '[^gitlab-price]: On-prem includes "site-wide SSO" in its basic tier which provides many of the core benefits of SSO, with additional SSO options in the next tier up.'
+  percent_increase:  0% 🎉 
+  pricing_source: https://about.gitlab.com/pricing
+  updated_at: 2018-10-22
 
 - name: Intercom
   url: https://www.intercom.com
@@ -92,6 +118,7 @@
 - name: New Relic Infrastructure
   url: https://newrelic.com/products/infrastructure
   base_pricing: $0.60 - $7.20 per host-month[^newrelic-price]
+  footnotes: '[^newrelic-price]: Pricing varies by host size. The SSO cost increase does not.'
   sso_pricing: $1.20 - $14.40 per host-month
   percent_increase:  100%
   pricing_source: https://newrelic.com/products/infrastructure/pricing
@@ -128,6 +155,14 @@
   percent_increase:  87%
   pricing_source: https://slack.com/pricing
   updated_at: 2018-10-17
+  
+- name: Snyk
+  url: https://snyk.io
+  base_pricing: $23.96 per u/m 
+  sso_pricing: $39.98 per u/m
+  percent_increase: 67%
+  pricing_source: https://snyk.io/plans
+  updated_at: 2018-10-22
 
 - name: SumoLogic
   url: https://www.sumologic.com
@@ -144,6 +179,15 @@
   percent_increase:  110%
   pricing_source: https://trello.com/pricing
   updated_at: 2018-10-17
+  
+- name: Twilio
+  url: https://twilio.com
+  base_pricing: $0
+  sso_pricing: See Notes[^twilio]
+  footnotes: "[^twilio]: Base pricing is extremely variable. SSO is the greater of $15,000 or a 30% surcharge, so could be anywhere from 30% to '000s%"
+  percent_increase: 30%
+  pricing_source: https://www.twilio.com/enterprise
+  updated_at: 2018-10-22
 
 - name: VictorOps
   url: https://victorops.com

@@ -36,9 +36,9 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
 <tbody>
 {% for vendor in site.data.vendors %}
 <tr>
-<td><a href="{{ vendor.url }}">{{ vendor.name }}</a></td>
+<td markdown="span"><a href="{{ vendor.url }}">{{ vendor.name }}</a></td>
 <td markdown="span">{{ vendor.base_pricing }}</td>
-<td>{{ vendor.sso_pricing }}</td>
+<td markdown="span">{{ vendor.sso_pricing }}</td>
 <td>{{ vendor.percent_increase }}</td>
 <td>
 {% for source in vendor.pricing_source %}
@@ -106,4 +106,6 @@ But it costs money to provide SAML support, so we can't offer it for free!
 </details>
 
 ## Footnotes
-[^newrelic-price]: Pricing varies by host size. The SSO cost increase does not.
+{% for vendor in site.data.vendors %}
+{{ vendor.footnotes }}
+{% endfor %}
