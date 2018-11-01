@@ -12,7 +12,7 @@ For organizations with more than a handful of employees, this feature is critica
 
 For organizations with low staffed IT or no IT services at all, this feature helps to reduce the operational expenditure cost by automatically creating and deactivating user account on demand.
 
-Finally, this feature improve the user experience. The Identity Manager used for the service federation will create a launcher portal with all federated apps easily available in once place. Plus, advanced Identity Manager will offer the capability to automatically authenticate the user on managed devices (with certificates or kerberos).
+Finally, this feature improves the user experience. The Identity Manager used for the service federation will create a launcher portal with all federated apps easily available in one place. Plus, advanced Identity Manager will offer the capability to automatically authenticate the user on managed devices (with certificates or kerberos).
 
 In short: SSO is a core security requirement, scalability tool, and user experience improvement, for any company with more than five employees.
 
