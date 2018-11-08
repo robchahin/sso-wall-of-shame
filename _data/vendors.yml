@@ -124,6 +124,14 @@
   pricing_source: https://newrelic.com/products/infrastructure/pricing
   updated_at: 2018-10-18
 
+- name: OpsGenie
+  url: https://www.opsgenie.com/
+  base_pricing: $9 per u/m
+  sso_pricing: $19 per u/m
+  percent_increase: 111%
+  pricing_source: https://www.opsgenie.com/pricing
+  updated_at: 2018-11-08
+
 - name: PagerDuty
   url: https://www.pagerduty.com
   base_pricing: $9 per u/m
@@ -131,7 +139,15 @@
   percent_increase:  333%
   pricing_source: https://www.pagerduty.com/pricing/
   updated_at: 2018-10-17
-
+  
+- name: PagerTree
+  url: https://pagertree.com
+  base_pricing: $10 per u/m
+  sso_pricing: $15 per u/m
+  percent_increase:  50%
+  pricing_source: https://pagertree.com/pricing/
+  updated_at: 2018-11-08
+  
 - name: RingCentral
   url: https://www.ringcentral.com
   base_pricing: $25 per u/m
