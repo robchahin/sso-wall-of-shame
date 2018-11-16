@@ -107,6 +107,14 @@
   pricing_source: https://www.lucidchart.com/users/registerLevel
   updated_at: 2018-10-17
 
+- name: Mixpanel
+  url: https://mixpanel.com
+  base_pricing: $999 per yr
+  sso_pricing: Call Us!
+  percent_increase:  ???
+  pricing_source: https://mixpanel.com/pricing/
+  updated_at: 2018-11-16
+
 - name: Netlify
   url: https://www.netlify.com/
   base_pricing: $9 per u/m
