@@ -180,6 +180,15 @@
   pricing_source: https://slack.com/pricing
   updated_at: 2018-10-17
 
+
+- name: SmartSheet
+  url: https://smartsheet.com
+  base_pricing: $25 per u/m
+  sso_pricing: Call us!
+  percent_increase: ???
+  pricing_source: https://www.smartsheet.com/pricing
+  updated_at: 2018-10-22
+
 - name: Snyk
   url: https://snyk.io
   base_pricing: $23.96 per u/m
