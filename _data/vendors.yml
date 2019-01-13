@@ -145,14 +145,6 @@
   pricing_source: https://rocket.chat/pricing#cloud
   updated_at: 2018-10-22
 
-- name: Rocket.Chat Self-Hosted
-  url: https://rocket.chat/
-  base_pricing: Free
-  sso_pricing: $3 per u/m
-  percent_increase: ???
-  pricing_source: https://rocket.chat/pricing#self
-  updated_at: 2018-10-22
-
 - name: Sentry
   url: https://sentry.io
   base_pricing: $26 for 100K events
