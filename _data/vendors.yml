@@ -37,8 +37,8 @@
   sso_pricing: $0.35 per DBU
   percent_increase: 75%
   pricing_source: https://databricks.com/product/aws-pricing
-  updated_at: 2018-10-22  
-  
+  updated_at: 2018-10-22
+
 - name: DocuSign
   url: https://www.docusign.com
   base_pricing: $25 per u/m
@@ -71,21 +71,21 @@
   percent_increase:  133%
   pricing_source: https://github.com/pricing
   updated_at: 2018-10-19
-  
+
 - name: GitLab Hosted
   url: https://about.gitlab.com
   base_pricing: $4 per u/m
   sso_pricing: $19 per u/m
-  percent_increase:  375% 
+  percent_increase:  375%
   pricing_source: https://about.gitlab.com/pricing
   updated_at: 2018-10-21
-  
+
 - name: GitLab On-Prem
   url: https://about.gitlab.com
   base_pricing: $4 per u/m
   sso_pricing: $4 per u/m[^gitlab-price]
   footnotes: '[^gitlab-price]: On-prem includes "site-wide SSO" in its basic tier which provides many of the core benefits of SSO, with additional SSO options in the next tier up.'
-  percent_increase:  0% 🎉 
+  percent_increase:  0% 🎉
   pricing_source: https://about.gitlab.com/pricing
   updated_at: 2018-10-22
 
@@ -94,7 +94,7 @@
   base_pricing: $136
   sso_pricing: $202
   percent_increase:  49%
-  pricing_source: 
+  pricing_source:
     - https://twitter.com/brianebeyer/status/1053797786301489153
     - https://www.intercom.com/pricing
   updated_at: 2018-10-20
@@ -139,7 +139,7 @@
   percent_increase:  333%
   pricing_source: https://www.pagerduty.com/pricing/
   updated_at: 2018-10-17
-  
+
 - name: PagerTree
   url: https://pagertree.com
   base_pricing: $10 per u/m
@@ -147,7 +147,7 @@
   percent_increase:  50%
   pricing_source: https://pagertree.com/pricing/
   updated_at: 2018-11-08
-  
+
 - name: RingCentral
   url: https://www.ringcentral.com
   base_pricing: $25 per u/m
@@ -171,14 +171,22 @@
   percent_increase:  87%
   pricing_source: https://slack.com/pricing
   updated_at: 2018-10-17
-  
+
 - name: Snyk
   url: https://snyk.io
-  base_pricing: $23.96 per u/m 
+  base_pricing: $23.96 per u/m
   sso_pricing: $39.98 per u/m
   percent_increase: 67%
   pricing_source: https://snyk.io/plans
   updated_at: 2018-10-22
+
+- name: Stack Overflow
+  url: https://stackoverflow.com
+  base_pricing: $10 per u/m
+  sso_pricing: Call Us!
+  percent_increase: ???
+  pricing_source: https://stackoverflow.com/pricing
+  updated_at: 2018-11-26
 
 - name: SumoLogic
   url: https://www.sumologic.com
@@ -195,7 +203,7 @@
   percent_increase:  110%
   pricing_source: https://trello.com/pricing
   updated_at: 2018-10-17
-  
+
 - name: Twilio
   url: https://twilio.com
   base_pricing: $0
