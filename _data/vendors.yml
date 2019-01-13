@@ -208,7 +208,8 @@
 - name: SumoLogic
   url: https://www.sumologic.com
   base_pricing: $90 per GB/m
-  sso_pricing: $150 per GB/m
+  sso_pricing: $150 per GB/m[^sumologic]
+  footnotes: "[^sumologic]: SumoLogic will add SSO as a line item without requiring a full upgrade to the next plan, which should be cheaper for almost everyone -- but we can't list that here because we don't know how the price is calculated."
   percent_increase:  67%
   pricing_source: https://www.sumologic.com/pricing/
   updated_at: 2018-10-19
