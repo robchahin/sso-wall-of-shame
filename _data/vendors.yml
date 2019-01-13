@@ -164,6 +164,14 @@
   pricing_source: https://www.ringcentral.com/office/plansandpricing.html
   updated_at: 2018-10-17
 
+- name: Rocket.Chat Cloud
+  url: https://rocket.chat/
+  base_pricing: $2 per u/m
+  sso_pricing: $4 per u/m
+  percent_increase:  100%
+  pricing_source: https://rocket.chat/pricing#cloud
+  updated_at: 2018-10-22
+
 - name: Sentry
   url: https://sentry.io
   base_pricing: $26 for 100K events
