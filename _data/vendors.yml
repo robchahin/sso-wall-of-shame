@@ -39,6 +39,15 @@
   pricing_source: https://databricks.com/product/aws-pricing
   updated_at: 2018-10-22
 
+  
+- name: Dialpad
+  url: https://www.dialpad.com
+  base_pricing: $15 per u/m
+  sso_pricing: $35 per u/m
+  percent_increase:  133%
+  pricing_source: https://www.dialpad.com/pricing
+  updated_at: 2018-10-22
+
 - name: DocuSign
   url: https://www.docusign.com
   base_pricing: $25 per u/m
