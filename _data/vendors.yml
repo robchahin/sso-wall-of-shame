@@ -111,7 +111,7 @@
   url:  https://www.mattermost.com
   base_pricing: $39 per u/m
   sso_pricing: $80 per u/m
-  percent_increase:  105
+  percent_increase:  105%
   pricing_source: https://mattermost.com/pricing/
   updated_at: 2018-12-10
 
