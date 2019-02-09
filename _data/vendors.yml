@@ -138,7 +138,8 @@
   percent_increase: 7x+ 
   pricing_source: https://nationbuilder.com/pricing
   updated_at: 2019-02-09
-  
+  footnotes: "[^nationbuilder]: To upgrade one plan level is represented by this price increase, but to get single sign-on, you actually have to go up another plan, which is 'Call Us' pricing."
+
 - name: Netlify
   url: https://www.netlify.com/
   base_pricing: $9 per u/m
