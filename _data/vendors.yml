@@ -133,7 +133,7 @@
 
 - name: NationBuilder
   url: https://nationbuilder.com
-  base_pricing: $29 per mmonth
+  base_pricing: $29 per month
   sso_pricing: Call Us! (over $199/month)
   percent_increase: 7x+ 
   pricing_source: https://nationbuilder.com/pricing
