@@ -39,7 +39,6 @@
   pricing_source: https://databricks.com/product/aws-pricing
   updated_at: 2018-10-22
 
-  
 - name: Dialpad
   url: https://www.dialpad.com
   base_pricing: $15 per u/m
@@ -132,11 +131,19 @@
   pricing_source: https://mattermost.com/pricing/
   updated_at: 2018-12-10
 
+- name: NationBuilder
+  url: https://nationbuilder.com
+  base_pricing: $29 per mmonth
+  sso_pricing: Call Us! (over $199/month)
+  percent_increase: 7x+ 
+  pricing_source: https://nationbuilder.com/pricing
+  updated_at: 2019-02-09
+  
 - name: Netlify
   url: https://www.netlify.com/
   base_pricing: $9 per u/m
   sso_pricing: Call Us!
-  percent_increase:  ???
+  percent_increase: ???
   pricing_source: https://www.netlify.com/pricing/
   updated_at: 2018-10-20
 
