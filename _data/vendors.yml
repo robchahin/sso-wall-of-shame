@@ -180,6 +180,14 @@
   percent_increase:  50%
   pricing_source: https://pagertree.com/pricing/
   updated_at: 2018-11-08
+  
+- name: Quip
+  url: https://quip.com/
+  base_pricing: $10 per u/m
+  sso_pricing: $25 per u/m
+  percent_increase: 150%
+  pricing_source: https://quip.com/about/pricing
+  updated_at: 2019-02-15
 
 - name: RingCentral
   url: https://www.ringcentral.com
