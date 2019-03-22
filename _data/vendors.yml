@@ -122,7 +122,7 @@
   percent_increase:  ???
   pricing_source: https://www.lucidchart.com/users/registerLevel
   updated_at: 2018-10-17
-  
+
 - name: Mattermost
   url:  https://www.mattermost.com
   base_pricing: $39 per u/m
@@ -135,7 +135,7 @@
   url: https://nationbuilder.com
   base_pricing: $29 per month
   sso_pricing: Call Us! (over $199/month)
-  percent_increase: 586%++[^nationbuilder] 
+  percent_increase: 586%++[^nationbuilder]
   pricing_source: https://nationbuilder.com/pricing
   updated_at: 2019-02-09
   footnotes: "[^nationbuilder]: To upgrade one plan level is represented by this price increase, but to get single sign-on, you actually have to go up another plan, which is 'Call Us' pricing."
@@ -180,7 +180,7 @@
   percent_increase:  50%
   pricing_source: https://pagertree.com/pricing/
   updated_at: 2018-11-08
-  
+
 - name: Quip
   url: https://quip.com/
   base_pricing: $10 per u/m
@@ -221,7 +221,6 @@
   pricing_source: https://slack.com/pricing
   updated_at: 2018-10-17
 
-
 - name: SmartSheet
   url: https://smartsheet.com
   base_pricing: $25 per u/m
@@ -245,6 +244,14 @@
   percent_increase: ???
   pricing_source: https://stackoverflow.com/pricing
   updated_at: 2018-11-26
+
+- name: Statuspage
+  url: https://www.statuspage.io
+  base_pricing: $29/month
+  sso_pricing: $99/month
+  percent_increase: 340%
+  pricing_source: https://www.statuspage.io/pricing
+  updated_at: 2019-03-22
 
 - name: SumoLogic
   url: https://www.sumologic.com
