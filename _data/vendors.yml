@@ -72,7 +72,7 @@
   pricing_source: https://www.expensify.com/pricing#features
   updated_at: 2018-10-17
 
-- name: Github
+- name: GitHub
   url: https://www.github.com
   base_pricing: $9 per u/m
   sso_pricing: $21 per u/m
