@@ -97,6 +97,14 @@
   pricing_source: https://about.gitlab.com/pricing
   updated_at: 2018-10-22
 
+- name: Hashicorp (Terraform)
+  url: https://www.terraform.io/
+  base_pricing: Call Us!
+  sso_pricing: Call Us!
+  percent_increase: ???
+  pricing_source: https://www.hashicorp.com/products/terraform/enterprise
+  updated_at: 2019-04-19
+
 - name: Hubspot Marketing
   url: https://www.hubspot.com
   base_pricing: $46 per month
