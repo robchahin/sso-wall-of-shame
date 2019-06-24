@@ -244,7 +244,7 @@
   sso_pricing: $11 per u/m
   percent_increase: 120%
   pricing_source: https://stackoverflow.com/pricing
-  updated_at: 2016-06-24
+  updated_at: 2019-06-24
 
 - name: SumoLogic
   url: https://www.sumologic.com
