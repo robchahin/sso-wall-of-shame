@@ -122,14 +122,14 @@
   percent_increase:  ???
   pricing_source: https://www.lucidchart.com/users/registerLevel
   updated_at: 2018-10-17
-  
+
 - name: Mattermost
   url:  https://www.mattermost.com
-  base_pricing: $39 per u/m
-  sso_pricing: $80 per u/m
-  percent_increase:  105%
+  base_pricing: $3.25 per u/m
+  sso_pricing: $8.50 per u/m
+  percent_increase:  162%
   pricing_source: https://mattermost.com/pricing/
-  updated_at: 2018-12-10
+  updated_at: 2019-06-25
 
 - name: NationBuilder
   url: https://nationbuilder.com
