@@ -15,6 +15,14 @@
   pricing_source: https://www.atlassian.com/software/jira/pricing
   updated_at: 2018-10-22
 
+- name: Blue Jeans
+  url: https://www.bluejeans.com/
+  base_pricing: $16.65 per u/m
+  sso_pricing: Call Us!
+  percent_increase: ???
+  pricing_source: https://store.bluejeans.com/
+  updated_at: 2019-06-28
+
 - name: Box
   url: https://www.box.com
   base_pricing: $5 per u/m
