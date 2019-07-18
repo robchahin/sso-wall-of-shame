@@ -15,6 +15,14 @@
   pricing_source: https://www.atlassian.com/software/jira/pricing
   updated_at: 2018-10-22
 
+- name: Bitrise
+  url: https://www.bitrise.io
+  base_pricing: $90
+  sso_pricing: $270
+  percent_increase:  200%
+  pricing_source: https://www.bitrise.io/pricing/teams
+  updated_at: 2019-06-25
+
 - name: Box
   url: https://www.box.com
   base_pricing: $5 per u/m
