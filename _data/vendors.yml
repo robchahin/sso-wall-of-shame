@@ -49,11 +49,11 @@
   
 - name: Copper CRM
   url: https://copper.com
-  base_pricing: $19 p u/m
-  sso_pricing: $119 p u/m
-  percent_increase:  626%
+  base_pricing: $49 per u/m
+  sso_pricing: $119 per u/m
+  percent_increase: 143%
   pricing_source: https://copper.com/pricing
-  updated_at: 2019-03-27
+  updated_at: 2019-07-31
   
 
 - name: Databricks
