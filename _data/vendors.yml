@@ -46,6 +46,15 @@
   percent_increase:  175%
   pricing_source: https://cloudsploit.com
   updated_at: 2018-10-20
+  
+- name: Copper CRM
+  url: https://copper.com
+  base_pricing: $49 per u/m
+  sso_pricing: $119 per u/m
+  percent_increase: 143%
+  pricing_source: https://copper.com/pricing
+  updated_at: 2019-07-31
+  
 
 - name: Databricks
   url: https://databricks.com
