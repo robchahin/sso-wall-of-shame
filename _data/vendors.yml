@@ -15,6 +15,14 @@
   pricing_source: https://www.atlassian.com/software/jira/pricing
   updated_at: 2018-10-22
 
+- name: Bitrise
+  url: https://www.bitrise.io
+  base_pricing: $90
+  sso_pricing: $270
+  percent_increase:  200%
+  pricing_source: https://www.bitrise.io/pricing/teams
+  updated_at: 2019-06-25
+
 - name: Blue Jeans
   url: https://www.bluejeans.com/
   base_pricing: $16.65 per u/m
@@ -31,6 +39,14 @@
   pricing_source: https://www.box.com/pricing
   updated_at: 2018-10-17
 
+- name: Checkly
+  url: https://checklyhq.com/
+  base_pricing: $29 per month
+  sso_pricing: $199 per month
+  percent_increase: 586%
+  pricing_source: https://checklyhq.com/pricing/
+  updated_at: 2019-07-30
+
 - name: CloudSploit
   url: https://cloudsploit.com
   base_pricing: $36 pcm
@@ -38,6 +54,23 @@
   percent_increase:  175%
   pricing_source: https://cloudsploit.com
   updated_at: 2018-10-20
+  
+- name: Copper CRM
+  url: https://copper.com
+  base_pricing: $49 per u/m
+  sso_pricing: $119 per u/m
+  percent_increase: 143%
+  pricing_source: https://copper.com/pricing
+  updated_at: 2019-07-31
+  
+
+- name: CoderPad
+  url: https://coderpad.io/
+  base_pricing: $250 per month
+  sso_pricing: $1500 per month
+  percent_increase: 500%
+  pricing_source: https://coderpad.io/pricing
+  updated_at: 2019-06-28
 
 - name: Databricks
   url: https://databricks.com
@@ -45,14 +78,6 @@
   sso_pricing: $0.35 per DBU
   percent_increase: 75%
   pricing_source: https://databricks.com/product/aws-pricing
-  updated_at: 2018-10-22
-
-- name: Dialpad
-  url: https://www.dialpad.com
-  base_pricing: $15 per u/m
-  sso_pricing: $35 per u/m
-  percent_increase:  133%
-  pricing_source: https://www.dialpad.com/pricing
   updated_at: 2018-10-22
 
 - name: DocuSign
@@ -80,7 +105,7 @@
   pricing_source: https://www.expensify.com/pricing#features
   updated_at: 2018-10-17
 
-- name: Github
+- name: GitHub
   url: https://www.github.com
   base_pricing: $9 per u/m
   sso_pricing: $21 per u/m
@@ -130,14 +155,14 @@
   percent_increase:  ???
   pricing_source: https://www.lucidchart.com/users/registerLevel
   updated_at: 2018-10-17
-  
+
 - name: Mattermost
   url:  https://www.mattermost.com
-  base_pricing: $39 per u/m
-  sso_pricing: $80 per u/m
-  percent_increase:  105%
+  base_pricing: $3.25 per u/m
+  sso_pricing: $8.50 per u/m
+  percent_increase:  162%
   pricing_source: https://mattermost.com/pricing/
-  updated_at: 2018-12-10
+  updated_at: 2019-06-25
 
 - name: NationBuilder
   url: https://nationbuilder.com
@@ -248,11 +273,11 @@
 
 - name: Stack Overflow
   url: https://stackoverflow.com
-  base_pricing: $10 per u/m
-  sso_pricing: Call Us!
-  percent_increase: ???
+  base_pricing: $5 per u/m
+  sso_pricing: $11 per u/m
+  percent_increase: 120%
   pricing_source: https://stackoverflow.com/pricing
-  updated_at: 2018-11-26
+  updated_at: 2019-06-24
 
 - name: SumoLogic
   url: https://www.sumologic.com
