@@ -61,7 +61,7 @@
   base_pricing: $250 per month
   sso_pricing: $1500 per month
   percent_increase: 500%
-  pricing_source: https://coderpad.io/
+  pricing_source: https://coderpad.io/pricing
   updated_at: 2019-06-28
 
 - name: Databricks
