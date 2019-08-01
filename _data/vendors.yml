@@ -56,6 +56,14 @@
   updated_at: 2019-07-31
   
 
+- name: CoderPad
+  url: https://coderpad.io/
+  base_pricing: $250 per month
+  sso_pricing: $1500 per month
+  percent_increase: 500%
+  pricing_source: https://coderpad.io/
+  updated_at: 2019-06-28
+
 - name: Databricks
   url: https://databricks.com
   base_pricing: $0.20 per DBU
