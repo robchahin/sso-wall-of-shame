@@ -156,6 +156,14 @@
   pricing_source: https://mattermost.com/pricing/
   updated_at: 2019-06-25
 
+- name: Mavenlink
+  url:  https://www.mavenlink.com
+  base_pricing: $19.95 per 5u/m
+  sso_pricing: Contact for Pricing
+  percent_increase:  ??
+  pricing_source: https://www.mavenlink.com/pricing/project-management-plan-comparison
+  updated_at: 2019-08-13
+
 - name: NationBuilder
   url: https://nationbuilder.com
   base_pricing: $29 per month
