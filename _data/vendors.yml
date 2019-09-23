@@ -46,7 +46,7 @@
   percent_increase:  175%
   pricing_source: https://cloudsploit.com
   updated_at: 2018-10-20
-  
+
 - name: Copper CRM
   url: https://copper.com
   base_pricing: $49 per u/m
@@ -54,7 +54,7 @@
   percent_increase: 143%
   pricing_source: https://copper.com/pricing
   updated_at: 2019-07-31
-  
+
 
 - name: CoderPad
   url: https://coderpad.io/
@@ -160,7 +160,7 @@
   url: https://nationbuilder.com
   base_pricing: $29 per month
   sso_pricing: Call Us! (over $199/month)
-  percent_increase: 586%++[^nationbuilder] 
+  percent_increase: 586%++[^nationbuilder]
   pricing_source: https://nationbuilder.com/pricing
   updated_at: 2019-02-09
   footnotes: "[^nationbuilder]: To upgrade one plan level is represented by this price increase, but to get single sign-on, you actually have to go up another plan, which is 'Call Us' pricing."
@@ -205,7 +205,7 @@
   percent_increase:  50%
   pricing_source: https://pagertree.com/pricing/
   updated_at: 2018-11-08
-  
+
 - name: Quip
   url: https://quip.com/
   base_pricing: $10 per u/m
@@ -229,6 +229,14 @@
   percent_increase:  100%
   pricing_source: https://rocket.chat/pricing#cloud
   updated_at: 2018-10-22
+
+- name: Sensu
+  url: https://sensu.io
+  base_pricing: free
+  sso_pricing: $899 per m + $3 server per m
+  percent_increase: Infinity
+  pricing_source: https://sensu.io/pricing
+  updated_at: 2019-09-23
 
 - name: Sentry
   url: https://sentry.io
