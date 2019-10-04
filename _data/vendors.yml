@@ -305,6 +305,14 @@
   pricing_source: https://victorops.com/pricing
   updated_at: 2018-10-17
 
+- name: Zapier
+  url: https://zapier.com/
+  base_pricing: $250 per u/m (Team)
+  sso_pricing: $600 per u/m
+  percent_increase:  240%
+  pricing_source: https://zapier.com/app/billing/plans/
+  updated_at: 2019-10-04
+
 - name: Zendesk Support
   url: https://www.zendesk.com/support/
   base_pricing: $19 per u/m
