@@ -230,6 +230,14 @@
   pricing_source: https://rocket.chat/pricing#cloud
   updated_at: 2018-10-22
 
+- name: SauceLabs
+  url: https://saucelabs.com
+  base_pricing: $199 for 1k Minutes per Month, 2 concurrent sessions
+  sso_pricing: Tailored Pricing. Minimum plan upgrade that nets SSO is $2,000/month for an Enterprise plan with 10 concurrent sessions
+  percent_increase: 1000% 
+  pricing_source: https://billing.saucelabs.com/plans
+  updated_at: 2019-10-20
+
 - name: Sentry
   url: https://sentry.io
   base_pricing: $26 for 100K events
@@ -312,3 +320,4 @@
   percent_increase:  157%
   pricing_source: https://www.zendesk.com/support/compare/
   updated_at: 2018-10-19
+
