@@ -206,6 +206,14 @@
   pricing_source: https://pagertree.com/pricing/
   updated_at: 2018-11-08
   
+- name: PandaDoc
+  url: https://www.pandadoc.com
+  base_pricing: $9 per u/m
+  sso_pricing: Call us!
+  percent_increase:  ???
+  pricing_source: https://www.pandadoc.com/pricing/
+  updated_at: 2019-10-16
+  
 - name: Quip
   url: https://quip.com/
   base_pricing: $10 per u/m
