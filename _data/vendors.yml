@@ -230,6 +230,15 @@
   pricing_source: https://quip.com/about/pricing
   updated_at: 2019-02-15
 
+- name: Raygun
+  url: https://raygun.com
+  base_pricing: $19/mo
+  sso_pricing: $649/mo
+  percent_increase: 3,315%
+  pricing_source: https://raygun.com/platform/crash-reporting#crash-side-project
+  updated_at: 2019-10-10
+  footnotes: '[^Raygun]: "From their SSO tooltip: Basic SSO covers social SSO providers only (e.g. Facebook), Advanced SSO includes SAML2 providers (including ActiveDirectory, Auth0, Okta and OneLogin)"'
+
 - name: RingCentral
   url: https://www.ringcentral.com
   base_pricing: $25 per u/m
@@ -320,6 +329,7 @@
   percent_increase: 69%
   pricing_source: https://victorops.com/pricing
   updated_at: 2018-10-17
+  footnotes: '[^VictorOps]: You can add SSO to a plan for $5 per u/m'
 
 - name: Zapier
   url: https://zapier.com/
