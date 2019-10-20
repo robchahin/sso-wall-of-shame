@@ -2,11 +2,11 @@
   url: https://airtable.com
   base_pricing: $10 per u/m
   sso_pricing: $60 per u/m
-  percent_increase: 600%
+  percent_increase: 500%
   pricing_source: https://airtable.com/pricing
-  pricing_note: quote
+  pricing_note: Quote
   footnotes: "[^airtable-price]: $60 per user per month, minimum of $3000 per month."
-  updated_at: 2019-09-07
+  updated_at: 2019-10-19
 
 - name: Atlassian (Jira Cloud)
   url: https://www.atlassian.com
