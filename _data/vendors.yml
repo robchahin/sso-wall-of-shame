@@ -2,7 +2,7 @@
   url: https://airtable.com
   base_pricing: $10 per u/m
   sso_pricing: $60 per u/m
-  percent_increase:  600%
+  percent_increase: 600%
   pricing_source: https://airtable.com/pricing
   pricing_note: quote
   footnotes: "[^airtable-price]: $60 per user per month, minimum of $3000 per month."
@@ -21,7 +21,7 @@
   url: https://www.bitrise.io
   base_pricing: $90
   sso_pricing: $270
-  percent_increase:  200%
+  percent_increase: 200%
   pricing_source: https://www.bitrise.io/pricing/teams
   updated_at: 2019-06-25
 
@@ -29,7 +29,7 @@
   url: https://www.box.com
   base_pricing: $5 per u/m
   sso_pricing: $15 per u/m
-  percent_increase:  200%
+  percent_increase: 200%
   pricing_source: https://www.box.com/pricing
   updated_at: 2018-10-17
 
@@ -45,7 +45,7 @@
   url: https://cloudsploit.com
   base_pricing: $36 pcm
   sso_pricing: $99 pcm
-  percent_increase:  175%
+  percent_increase: 175%
   pricing_source: https://cloudsploit.com
   updated_at: 2018-10-20
   
@@ -78,7 +78,7 @@
   url: https://www.docusign.com
   base_pricing: $25 per u/m
   sso_pricing: $50 per u/m
-  percent_increase:  100%
+  percent_increase: 100%
   pricing_source: https://www.docusign.com/products-and-pricing
   pricing_note: Quote
   updated_at: 2018-10-17
@@ -87,23 +87,31 @@
   url: https://www.dropbox.com
   base_pricing: $15 per u/m
   sso_pricing: $25 per u/m
-  percent_increase:  67%
-  pricing_source:  https://www.dropbox.com/business/pricing
+  percent_increase: 67%
+  pricing_source: https://www.dropbox.com/business/pricing
   updated_at: 2018-10-17
 
 - name: Expensify
   url: https://www.expensify.com
   base_pricing: $5 per u/m
   sso_pricing: $9 per u/m
-  percent_increase:  80%
+  percent_increase: 80%
   pricing_source: https://www.expensify.com/pricing#features
   updated_at: 2018-10-17
+  
+- name: Figma
+  url: https://www.figma.com
+  base_pricing: $12 per u/m
+  sso_pricing: $45 per u/m
+  percent_increase: 275%
+  pricing_source: https://www.figma.com/pricing
+  updated_at: 2019-1019
 
 - name: GitHub
   url: https://www.github.com
   base_pricing: $9 per u/m
   sso_pricing: $21 per u/m
-  percent_increase:  133%
+  percent_increase: 133%
   pricing_source: https://github.com/pricing
   updated_at: 2018-10-19
 
@@ -111,7 +119,7 @@
   url: https://about.gitlab.com
   base_pricing: $4 per u/m
   sso_pricing: $19 per u/m
-  percent_increase:  375%
+  percent_increase: 375%
   pricing_source: https://about.gitlab.com/pricing
   updated_at: 2018-10-21
 
@@ -120,7 +128,7 @@
   base_pricing: $4 per u/m
   sso_pricing: $4 per u/m[^gitlab-price]
   footnotes: '[^gitlab-price]: On-prem includes "site-wide SSO" in its basic tier which provides many of the core benefits of SSO, with additional SSO options in the next tier up.'
-  percent_increase:  0% 🎉
+  percent_increase: 0% 🎉
   pricing_source: https://about.gitlab.com/pricing
   updated_at: 2018-10-22
 
@@ -136,7 +144,7 @@
   url: https://www.intercom.com
   base_pricing: $136
   sso_pricing: $202
-  percent_increase:  49%
+  percent_increase: 49%
   pricing_source:
     - https://twitter.com/brianebeyer/status/1053797786301489153
     - https://www.intercom.com/pricing
@@ -146,17 +154,25 @@
   url: https://www.lucidchart.com
   base_pricing: $7 per u/m
   sso_pricing: Call Us!
-  percent_increase:  ???
+  percent_increase: ???
   pricing_source: https://www.lucidchart.com/users/registerLevel
   updated_at: 2018-10-17
 
 - name: Mattermost
-  url:  https://www.mattermost.com
+  url: https://www.mattermost.com
   base_pricing: $3.25 per u/m
   sso_pricing: $8.50 per u/m
-  percent_increase:  162%
+  percent_increase: 162%
   pricing_source: https://mattermost.com/pricing/
   updated_at: 2019-06-25
+
+- name: Miro
+  url: https://miro.com
+  base_pricing: $8 per u/m
+  sso_pricing: $16 per u/m
+  percent_increase: 100%
+  pricing_source: https://miro.com/pricing/
+  updated_at: 2019-09-13
 
 - name: NationBuilder
   url: https://nationbuilder.com
@@ -180,7 +196,7 @@
   base_pricing: $0.60 - $7.20 per host-month[^newrelic-price]
   footnotes: '[^newrelic-price]: Pricing varies by host size. The SSO cost increase does not.'
   sso_pricing: $1.20 - $14.40 per host-month
-  percent_increase:  100%
+  percent_increase: 100%
   pricing_source: https://newrelic.com/products/infrastructure/pricing
   updated_at: 2018-10-18
 
@@ -196,7 +212,7 @@
   url: https://www.pagerduty.com
   base_pricing: $9 per u/m
   sso_pricing: $39 per u/m
-  percent_increase:  333%
+  percent_increase: 333%
   pricing_source: https://www.pagerduty.com/pricing/
   updated_at: 2018-10-17
 
@@ -204,7 +220,7 @@
   url: https://pagertree.com
   base_pricing: $10 per u/m
   sso_pricing: $15 per u/m
-  percent_increase:  50%
+  percent_increase: 50%
   pricing_source: https://pagertree.com/pricing/
   updated_at: 2018-11-08
   
@@ -216,11 +232,20 @@
   pricing_source: https://quip.com/about/pricing
   updated_at: 2019-02-15
 
+- name: Raygun
+  url: https://raygun.com
+  base_pricing: $79/mo[^raygun]
+  sso_pricing: $649/mo
+  percent_increase: 721%
+  pricing_source: https://raygun.com/platform/crash-reporting
+  updated_at: 2019-10-10
+  footnotes: "[^raygun]: From their SSO tooltip: 'Basic SSO covers social SSO providers only (e.g. Facebook), Advanced SSO includes SAML2 providers (including ActiveDirectory, Auth0, Okta and OneLogin)'"
+
 - name: RingCentral
   url: https://www.ringcentral.com
   base_pricing: $25 per u/m
   sso_pricing: $35 per u/m
-  percent_increase:  40%
+  percent_increase: 40%
   pricing_source: https://www.ringcentral.com/office/plansandpricing.html
   updated_at: 2018-10-17
 
@@ -228,7 +253,7 @@
   url: https://rocket.chat/
   base_pricing: $2 per u/m
   sso_pricing: $4 per u/m
-  percent_increase:  100%
+  percent_increase: 100%
   pricing_source: https://rocket.chat/pricing#cloud
   updated_at: 2018-10-22
 
@@ -236,7 +261,7 @@
   url: https://sentry.io
   base_pricing: $26 for 100K events
   sso_pricing: $80 for 100K events
-  percent_increase:  208%
+  percent_increase: 208%
   pricing_source: https://sentry.io/pricing/
   updated_at: 2018-10-20
 
@@ -244,7 +269,7 @@
   url: https://slack.com
   base_pricing: $6.67 per u/m
   sso_pricing: $12.50 per u/m
-  percent_increase:  87%
+  percent_increase: 87%
   pricing_source: https://slack.com/pricing
   updated_at: 2018-10-17
 
@@ -278,7 +303,7 @@
   base_pricing: $90 per GB/m
   sso_pricing: $150 per GB/m[^sumologic]
   footnotes: "[^sumologic]: SumoLogic will add SSO as a line item without requiring a full upgrade to the next plan, which should be cheaper for almost everyone -- but we can't list that here because we don't know how the price is calculated."
-  percent_increase:  67%
+  percent_increase: 67%
   pricing_source: https://www.sumologic.com/pricing/
   updated_at: 2018-10-19
 
@@ -286,7 +311,7 @@
   url: https://trello.com
   base_pricing: $10 per u/m
   sso_pricing: $21 per u/m
-  percent_increase:  110%
+  percent_increase: 110%
   pricing_source: https://trello.com/pricing
   updated_at: 2018-10-17
 
@@ -302,15 +327,24 @@
 - name: VictorOps
   url: https://victorops.com
   base_pricing: $29 per u/m
-  sso_pricing: $49 per u/m
-  percent_increase:  69%
+  sso_pricing: $49 per u/m[^victorops]
+  percent_increase: 69%
   pricing_source: https://victorops.com/pricing
   updated_at: 2018-10-17
+  footnotes: "[^victorops]: You can add SSO to a plan for $5 per u/m"
+
+- name: Zapier
+  url: https://zapier.com/
+  base_pricing: $299 per u/m
+  sso_pricing: $600 per u/m
+  percent_increase: 100%
+  pricing_source: https://zapier.com/app/billing/plans/
+  updated_at: 2019-10-19
 
 - name: Zendesk Support
   url: https://www.zendesk.com/support/
   base_pricing: $19 per u/m
   sso_pricing: $49 per u/m
-  percent_increase:  157%
+  percent_increase: 157%
   pricing_source: https://www.zendesk.com/support/compare/
   updated_at: 2018-10-19
