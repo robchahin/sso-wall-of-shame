@@ -156,6 +156,14 @@
   pricing_source: https://mattermost.com/pricing/
   updated_at: 2019-06-25
 
+- name: Miro
+  url: https://miro.com
+  base_pricing: $8 per u/m
+  sso_pricing: $16 per u/m
+  percent_increase: 100%
+  pricing_source: https://miro.com/pricing/
+  updated_at: 2019-09-13
+
 - name: NationBuilder
   url: https://nationbuilder.com
   base_pricing: $29 per month
