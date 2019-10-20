@@ -161,7 +161,7 @@
   base_pricing: $8 per u/m
   sso_pricing: $16 per u/m
   percent_increase: 100%
-  pricing_source: https://miro.com/security/
+  pricing_source: https://miro.com/pricing/
   updated_at: 2019-09-13
 
 - name: NationBuilder
