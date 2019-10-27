@@ -166,6 +166,14 @@
   pricing_source: https://mattermost.com/pricing/
   updated_at: 2019-06-25
 
+- name: Mavenlink
+  url: https://www.mavenlink.com
+  base_pricing: $19/mo for 5 users or $39/mo/user
+  sso_pricing: Requires Enterprise; "contact for pricing"
+  percent_increase: ???
+  pricing_source: https://www.mavenlink.com/pricing/project-management-plan-comparison
+  updated_at: 2019-10-27
+
 - name: Miro
   url: https://miro.com
   base_pricing: $8 per u/m
