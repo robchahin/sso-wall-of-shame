@@ -333,6 +333,15 @@
   updated_at: 2018-10-17
   footnotes: "[^victorops]: You can add SSO to a plan for $5 per u/m"
 
+- name: Whitesource
+  url: https://www.whitesourcesoftware.com/
+  base_pricing: $250 per month
+  sso_pricing: $3,0000 per year
+  percent_increase: 169%
+  pricing_source: https://www.whitesourcesoftware.com/whitesource-pricing/
+  updated_at: 2019-11-06
+  footnotes: "[^whitesource]: Based on quote, price can increase by minimum $1k over a longer termed contract"
+
 - name: Zapier
   url: https://zapier.com/
   base_pricing: $299 per u/m
