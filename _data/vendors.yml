@@ -273,6 +273,13 @@
   pricing_source: https://slack.com/pricing
   updated_at: 2018-10-17
 
+- name: Teem by WeWork
+  url: https://www.teem.com/
+  base_pricing: $250 per room/yr
+  sso_pricing: Call us!
+  percent_increase: 80%
+  pricing_source: https://www.teem.com/pricing/
+  updated_at: 2019-11-08
 
 - name: SmartSheet
   url: https://smartsheet.com
