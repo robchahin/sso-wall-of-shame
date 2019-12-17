@@ -199,6 +199,14 @@
   percent_increase: 100%
   pricing_source: https://newrelic.com/products/infrastructure/pricing
   updated_at: 2018-10-18
+  
+- name: Notion
+  url: https://www.notion.so
+  base_pricing: $8 per u/m
+  sso_pricing: $20 per u/m
+  percent_increase: 150%
+  pricing_source: https://www.notion.so/pricing
+  updated_at: 2019-12-17
 
 - name: OpsGenie
   url: https://www.opsgenie.com/
