@@ -223,7 +223,15 @@
   percent_increase: 50%
   pricing_source: https://pagertree.com/pricing/
   updated_at: 2018-11-08
-  
+
+- name: Pivotal Tracker
+  url: https://www.pivotaltracker.com/
+  base_pricing: $0
+  sso_pricing: Contact us to learn more
+  percent_increase: ???
+  pricing_source: https://www.pivotaltracker.com/enterprise
+  updated_at: 2018-11-08
+
 - name: Quip
   url: https://quip.com/
   base_pricing: $10 per u/m
@@ -272,7 +280,6 @@
   percent_increase: 87%
   pricing_source: https://slack.com/pricing
   updated_at: 2018-10-17
-
 
 - name: SmartSheet
   url: https://smartsheet.com
