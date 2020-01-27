@@ -200,6 +200,15 @@
   pricing_source: https://newrelic.com/products/infrastructure/pricing
   updated_at: 2018-10-18
 
+- name: Notion
+  url: https://www.notion.so
+  base_pricing: $8 per user per month
+  sso_pricing: $20 per user per month[^enterprise-plan]
+  footnotes: '[^enterprise-plan]: Primary pricing page lists Enterprise as Contact Sales but pricing page in support has numbers.'
+  percent_increase: 150%
+  pricing_source: https://www.notion.so/Plans-pricing-6067b27f7a244ccc8320c984baea61d7
+  update_at: 2020-1-27
+
 - name: OpsGenie
   url: https://www.opsgenie.com/
   base_pricing: $9 per u/m
