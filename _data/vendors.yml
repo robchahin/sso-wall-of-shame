@@ -91,6 +91,14 @@
   pricing_source: https://www.dropbox.com/business/pricing
   updated_at: 2018-10-17
 
+- name: Envoy
+  url: https://envoy.com
+  base_pricing: $99 per location/m
+  sso_pricing: $299 per location/m
+  percent_increase: 202%
+  pricing_source: https://envoy.com/pricing/
+  updated_at: 2020-02-17
+
 - name: Expensify
   url: https://www.expensify.com
   base_pricing: $5 per u/m
