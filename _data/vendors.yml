@@ -224,6 +224,14 @@
   pricing_source: https://pagertree.com/pricing/
   updated_at: 2018-11-08
   
+- name: Postman
+  url: https://www.postman.com/
+  base_pricing: $12 per u/m
+  sso_pricing: $24 per u/m
+  percent_increase: 100%
+  pricing_source: https://www.postman.com/pricing
+  updated_at: 2020-02-19
+
 - name: Quip
   url: https://quip.com/
   base_pricing: $10 per u/m
