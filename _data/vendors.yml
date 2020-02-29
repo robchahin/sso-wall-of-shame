@@ -158,6 +158,15 @@
   pricing_source: https://www.itglue.com/pricing/
   updated_at: 2019-10-29
 
+- name: LaunchDarkly
+  url: https://launchdarkly.com
+  base_pricing: $65 per u/m
+  sso_pricing: $125 per u/m
+  percent_increase: 92%
+  pricing_source: https://launchdarkly.com/pricing/
+  pricing_note: Quote
+  updated_at: 2020-01-24
+
 - name: Lucidchart
   url: https://www.lucidchart.com
   base_pricing: $7 per u/m
