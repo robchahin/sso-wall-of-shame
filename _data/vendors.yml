@@ -149,6 +149,14 @@
     - https://twitter.com/brianebeyer/status/1053797786301489153
     - https://www.intercom.com/pricing
   updated_at: 2018-10-20
+  
+- name: IT Glue  
+  url: https://www.itglue.com
+  base_pricing: $19 per u/m
+  sso_pricing: $39 per u/m
+  percent_increase: 69%
+  pricing_source: https://www.itglue.com/pricing/
+  updated_at: 2019-10-29
 
 - name: Lucidchart
   url: https://www.lucidchart.com
