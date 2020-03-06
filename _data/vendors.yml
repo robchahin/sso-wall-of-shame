@@ -33,6 +33,14 @@
   pricing_source: https://www.box.com/pricing
   updated_at: 2018-10-17
 
+- name: BrowserStack
+  url: https://www.browserstack.com/
+  base_pricing: $129 per 5u/m
+  sso_pricing: Call Us!
+  percent_increase: 1.5x to 2x 
+  pricing_source: https://www.browserstack.com/accounts/subscriptions
+  updated_at: 2020-03-05
+
 - name: Checkly
   url: https://checklyhq.com/
   base_pricing: $29 per month
