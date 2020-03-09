@@ -118,7 +118,8 @@
 - name: GitLab Hosted
   url: https://about.gitlab.com
   base_pricing: $4 per u/m
-  sso_pricing: $19 per u/m
+  sso_pricing: $19 per u/m[^gitlab-onprem]
+  footnotes: "[^gitlab-onprem]GitLab's on premise solution offers LDAP auth and sync for every tier."
   percent_increase: 375%
   pricing_source: https://about.gitlab.com/pricing
   updated_at: 2018-10-21
