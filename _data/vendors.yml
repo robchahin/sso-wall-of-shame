@@ -91,6 +91,14 @@
   pricing_source: https://www.dropbox.com/business/pricing
   updated_at: 2018-10-17
 
+- name: Envoy
+  url: https://envoy.com
+  base_pricing: $99 per location/m
+  sso_pricing: $299 per location/m
+  percent_increase: 202%
+  pricing_source: https://envoy.com/pricing/
+  updated_at: 2020-02-17
+
 - name: Expensify
   url: https://www.expensify.com
   base_pricing: $5 per u/m
@@ -149,6 +157,23 @@
     - https://twitter.com/brianebeyer/status/1053797786301489153
     - https://www.intercom.com/pricing
   updated_at: 2018-10-20
+  
+- name: IT Glue  
+  url: https://www.itglue.com
+  base_pricing: $19 per u/m
+  sso_pricing: $39 per u/m
+  percent_increase: 105%
+  pricing_source: https://www.itglue.com/pricing/
+  updated_at: 2019-10-29
+
+- name: LaunchDarkly
+  url: https://launchdarkly.com
+  base_pricing: $65 per u/m
+  sso_pricing: $125 per u/m
+  percent_increase: 92%
+  pricing_source: https://launchdarkly.com/pricing/
+  pricing_note: Quote
+  updated_at: 2020-01-24
 
 - name: Lucidchart
   url: https://www.lucidchart.com
@@ -231,6 +256,14 @@
   percent_increase: ???
   pricing_source: https://www.pivotaltracker.com/enterprise
   updated_at: 2018-11-08
+  
+- name: Postman
+  url: https://www.postman.com/
+  base_pricing: $12 per u/m
+  sso_pricing: $24 per u/m
+  percent_increase: 100%
+  pricing_source: https://www.postman.com/pricing
+  updated_at: 2020-02-19
 
 - name: Quip
   url: https://quip.com/
@@ -296,6 +329,16 @@
   percent_increase: 67%
   pricing_source: https://snyk.io/plans
   updated_at: 2018-10-22
+
+- name: Squadcast
+  url: https://www.squadcast.com
+  base_pricing: $9 per u/m
+  sso_pricing: $19 per u/m [^squadcast]
+  footnotes: "[^squadcast]: Upon request, you can also add SSO to Squadcast Pro for an additional $4 per u/m, making it a 44% increase from the base pricing."
+  percent_increase: 111%
+  pricing_source: https://www.squadcast.com/pricing
+  updated_at: 2019-12-21
+  
 
 - name: Stack Overflow
   url: https://stackoverflow.com
