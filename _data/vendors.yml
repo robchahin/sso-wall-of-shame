@@ -358,6 +358,14 @@
   pricing_source: https://trello.com/pricing
   updated_at: 2018-10-17
 
+- name: Tuple
+  url: https://tuple.app
+  base_pricing: $25 per u/m
+  sso_pricing: $33.33 per u/m
+  percent_increase: 33%
+  pricing_source: https://tuple.app/pricing
+  updated_at: 2020-03-10
+
 - name: Twilio
   url: https://twilio.com
   base_pricing: $0
