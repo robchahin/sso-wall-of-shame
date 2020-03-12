@@ -74,6 +74,20 @@
   pricing_source: https://databricks.com/product/aws-pricing
   updated_at: 2018-10-22
 
+- name: Discourse
+  url: https://discourse.org/
+  base_pricing: |
+    $100/month (Standard)
+  sso_pricing: |
+    $100/month (Custom SSO Protocol[^discourse-sso])
+    $300/month (OAuth2, OIDC)
+    "Email us!" + $250/month (Enterprise + SAML)
+  percent_increase: 0% (Custom) 200% (OAuth2, OIDC) 16% (SAML)
+  footnotes: [^discourse-sso]: Requires [custom development](https://meta.discourse.org/t/-/13045) by the customer.
+  pricing_source: https://www.discourse.org/pricing
+  pricing_note: & Quote
+  updated_at: 2020-03-12
+
 - name: DocuSign
   url: https://www.docusign.com
   base_pricing: $25 per u/m
