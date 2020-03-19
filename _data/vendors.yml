@@ -233,6 +233,14 @@
   pricing_source: https://www.opsgenie.com/pricing
   updated_at: 2018-11-08
 
+- name: Oxford Medical Simulation
+  url: http://oxfordmedicalsimulation.com/
+  base_pricing: $150-300 per u/y
+  sso_pricing: $152-302 per u/y
+  percent_increase: <1%
+  pricing_source: Quote
+  updated_at: 2020-03-19
+
 - name: PagerDuty
   url: https://www.pagerduty.com
   base_pricing: $9 per u/m
