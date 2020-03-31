@@ -113,7 +113,7 @@
   sso_pricing: $45 per u/m
   percent_increase: 275%
   pricing_source: https://www.figma.com/pricing
-  updated_at: 2019-1019
+  updated_at: 2019-10-19
 
 - name: GitHub
   url: https://www.github.com
