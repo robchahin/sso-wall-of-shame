@@ -323,6 +323,15 @@
   pricing_source: https://snyk.io/plans
   updated_at: 2018-10-22
 
+- name: Sqreen
+  url: https://www.sqreen.com/
+  base_pricing: Free
+  sso_pricing: Call us! (Over $499/mo)
+  percent_increase: ???
+  pricing_source: https://www.sqreen.com/pricing
+  footnotes: "[^sqree-price]: More than $499/mo which is the cost of their Lite plan that doesn't include SSO"
+  updated_at: 2020-04-14
+  
 - name: Squadcast
   url: https://www.squadcast.com
   base_pricing: $9 per u/m
