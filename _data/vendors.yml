@@ -323,6 +323,14 @@
   pricing_source: https://snyk.io/plans
   updated_at: 2018-10-22
 
+- name: Sonatype
+  url: https://www.sonatype.com
+  base_pricing: $0 u/m
+  sso_pricing: $120 per u/m
+  percent_increase: NaN
+  pricing_source: https://www.sonatype.com/product-pricing
+  updated_at: 2020-04-21
+
 - name: Squadcast
   url: https://www.squadcast.com
   base_pricing: $9 per u/m
