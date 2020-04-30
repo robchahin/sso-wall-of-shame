@@ -8,6 +8,14 @@
   footnotes: "[^airtable-price]: $60 per user per month, minimum of $3000 per month."
   updated_at: 2019-10-19
 
+  - name: Asana
+  url: https://www.asana.com
+  base_pricing: $11 per u/m
+  sso_pricing: Call Us!
+  percent_increase: ???
+  pricing_source: https://asana.com/pricing
+  updated_at: 2020-04-30
+
 - name: Atlassian (Jira Cloud)
   url: https://www.atlassian.com
   base_pricing: $7 per u/m
