@@ -113,15 +113,15 @@
   sso_pricing: $45 per u/m
   percent_increase: 275%
   pricing_source: https://www.figma.com/pricing
-  updated_at: 2019-1019
+  updated_at: 2019-10-19
 
 - name: GitHub
   url: https://www.github.com
-  base_pricing: $9 per u/m
+  base_pricing: $4 per u/m
   sso_pricing: $21 per u/m
-  percent_increase: 133%
+  percent_increase: 425%
   pricing_source: https://github.com/pricing
-  updated_at: 2018-10-19
+  updated_at: 2020-04-14
 
 - name: GitLab Hosted
   url: https://about.gitlab.com
