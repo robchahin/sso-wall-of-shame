@@ -66,6 +66,14 @@
   pricing_source: https://coderpad.io/pricing
   updated_at: 2019-06-28
 
+- name: Customer.io
+  url: https://customer.io/
+  base_pricing: $150 per month
+  sso_pricing: $995 per month
+  percent_increase: 463%
+  pricing_source: https://customer.io/pricing
+  updated_at: 2020-05-09
+
 - name: Databricks
   url: https://databricks.com
   base_pricing: $0.20 per DBU
