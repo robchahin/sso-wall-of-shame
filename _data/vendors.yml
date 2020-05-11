@@ -7,6 +7,15 @@
   pricing_note: Quote
   footnotes: "[^airtable-price]: $60 per user per month, minimum of $3000 per month."
   updated_at: 2019-10-19
+  
+- name: Algolia
+  url: https://www.algolia.com
+  base_pricing: $499/mo/site
+  sso_pricing: $$$$
+  percent_increase: XX%
+  pricing_source: https://www.algolia.com/pricing/
+  pricing_note: Website
+  updated: 2020-05-11
 
 - name: Atlassian (Jira Cloud)
   url: https://www.atlassian.com
