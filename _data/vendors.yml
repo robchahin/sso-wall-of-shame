@@ -17,6 +17,15 @@
   pricing_source: https://www.atlassian.com/software/jira/pricing
   updated_at: 2018-10-22
 
+- name: Auth0
+  url: https://auth0.com/
+  base_pricing: $0.14 per u/m
+  sso_pricing: $0.168 per u/m
+  percent_increase: 20%
+  pricing_source: https://auth0.com/pricing/
+  pricing_note: Quote
+  updated_at: 2020-05-12
+
 - name: Bitrise
   url: https://www.bitrise.io
   base_pricing: $90
