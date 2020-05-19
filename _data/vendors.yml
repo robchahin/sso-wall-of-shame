@@ -357,6 +357,15 @@
   percent_increase: 67%
   pricing_source: https://www.sumologic.com/pricing/
   updated_at: 2018-10-19
+  
+- name: TestRail Cloud
+  url: https://www.gurock.com/testrail/
+  base_pricing: $32 per u/m
+  sso_pricing: $60 per u/m
+  percent_increase: 88%
+  pricing_source: https://www.gurock.com/testrail/pricing/cloud-enterprise
+  updated_at: 2020-05-19
+  footnotes: "[^testrail]: Price scales with users. At their highest tier, the percent increase is 90%"
 
 - name: Trello
   url: https://trello.com
