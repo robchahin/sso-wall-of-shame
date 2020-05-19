@@ -358,6 +358,14 @@
   pricing_source: https://www.sumologic.com/pricing/
   updated_at: 2018-10-19
 
+- name: SurveyMonkey
+  url: https://www.surveymonkey.com/
+  base_pricing: $25 per u/m
+  sso_pricing: Call Us!
+  percent_increase: ???
+  pricing_source: https://www.surveymonkey.com/pricing/
+  updated_at: 2020-05-19
+
 - name: Trello
   url: https://trello.com
   base_pricing: $10 per u/m
