@@ -33,6 +33,14 @@
   pricing_source: https://www.box.com/pricing
   updated_at: 2018-10-17
 
+- name: Cascade (Strategy Execution Tracking)
+  url: https://www.executestrategy.net/
+  base_pricing: $9 - $55 per u/m
+  sso_pricing: Call Us!
+  percent_increase: ???
+  pricing_source: https://www.executestrategy.net/pricing
+  updated_at: 2020-04-14
+
 - name: Checkly
   url: https://checklyhq.com/
   base_pricing: $29 per month
