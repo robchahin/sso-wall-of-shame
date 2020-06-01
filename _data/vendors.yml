@@ -205,7 +205,7 @@
   base_pricing: $8 per u/m
   sso_pricing: $20 per u/m
   percent_increase: 150%
-  pricing_source: https://www.notion.so/pricing
+  pricing_source: https://www.notion.so/Plans-pricing-6067b27f7a244ccc8320c984baea61d7#bbb051f972bb45c8a8c250ed8ae686ea
   updated_at: 2019-12-17
 
 - name: OpsGenie
