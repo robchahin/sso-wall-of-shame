@@ -48,7 +48,7 @@
   percent_increase: 175%
   pricing_source: https://cloudsploit.com
   updated_at: 2018-10-20
-  
+
 - name: Copper CRM
   url: https://copper.com
   base_pricing: $49 per u/m
@@ -56,7 +56,6 @@
   percent_increase: 143%
   pricing_source: https://copper.com/pricing
   updated_at: 2019-07-31
-  
 
 - name: CoderPad
   url: https://coderpad.io/
@@ -106,7 +105,7 @@
   percent_increase: 80%
   pricing_source: https://www.expensify.com/pricing#features
   updated_at: 2018-10-17
-  
+
 - name: Figma
   url: https://www.figma.com
   base_pricing: $12 per u/m
@@ -149,8 +148,8 @@
     - https://twitter.com/brianebeyer/status/1053797786301489153
     - https://www.intercom.com/pricing
   updated_at: 2018-10-20
-  
-- name: IT Glue  
+
+- name: IT Glue
   url: https://www.itglue.com
   base_pricing: $19 per u/m
   sso_pricing: $39 per u/m
@@ -168,7 +167,6 @@
   updated_at: 2020-01-24
 
 - name: Lucidchart
-
   url: https://www.lucidchart.com
   base_pricing: $7 per u/m
   sso_pricing: Call Us!
@@ -196,7 +194,7 @@
   url: https://nationbuilder.com
   base_pricing: $29 per month
   sso_pricing: Call Us! (over $199/month)
-  percent_increase: 586%++[^nationbuilder] 
+  percent_increase: 586%++[^nationbuilder]
   pricing_source: https://nationbuilder.com/pricing
   updated_at: 2019-02-09
   footnotes: "[^nationbuilder]: To upgrade one plan level is represented by this price increase, but to get single sign-on, you actually have to go up another plan, which is 'Call Us' pricing."
@@ -217,7 +215,7 @@
   percent_increase: 100%
   pricing_source: https://newrelic.com/products/infrastructure/pricing
   updated_at: 2018-10-18
-  
+
 - name: Notion
   url: https://www.notion.so
   base_pricing: $8 per u/m
@@ -249,7 +247,15 @@
   percent_increase: 50%
   pricing_source: https://pagertree.com/pricing/
   updated_at: 2018-11-08
-  
+
+- name: Playvox
+  url: https://www.playvox.com
+  base_pricing: $15 per u/m
+  sso_pricing: $30 per u/m
+  percent_increase: 100%
+  pricing_source: https://www.playvox.com/pricing
+  updated_at: 2020-06-09
+
 - name: Postman
   url: https://www.postman.com/
   base_pricing: $12 per u/m
