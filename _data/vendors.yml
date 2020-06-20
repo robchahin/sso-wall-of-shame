@@ -16,6 +16,16 @@
   percent_increase: 42%
   pricing_source: https://www.atlassian.com/software/jira/pricing
   updated_at: 2018-10-22
+  
+- name: Asana
+  url: https://asana.com
+  base_pricing: $6.99 per u/m
+  sso_pricing: $49.99 per u/m
+  percent_increase: 715%
+  pricing_source: https://asana.com/pricing
+  pricing_note: Quote
+  footnotes: "[^asana-price]: $49.99 per user per month, commitment of 1 year required"
+  updated_at: 2020-06-20
 
 - name: Bitrise
   url: https://www.bitrise.io
