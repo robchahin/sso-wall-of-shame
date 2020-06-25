@@ -43,11 +43,11 @@
 
 - name: CloudSploit
   url: https://cloudsploit.com
-  base_pricing: $36 pcm
-  sso_pricing: $99 pcm
-  percent_increase: 175%
+  base_pricing: $110 per month
+  sso_pricing: $110 per month
+  percent_increase: 0%
   pricing_source: https://cloudsploit.com
-  updated_at: 2018-10-20
+  updated_at: 2020-06-25
   
 - name: Copper CRM
   url: https://copper.com
