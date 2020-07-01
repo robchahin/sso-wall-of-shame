@@ -250,6 +250,15 @@
   pricing_source: https://pagertree.com/pricing/
   updated_at: 2018-11-08
   
+- name: Pluralsight
+  url: https://www.postman.com/
+  base_pricing: $579 per u/y
+  sso_pricing: $2500 per year
+  percent_increase: 331%
+  pricing_source: https://www.pluralsight.com/pricing/skills
+  pricing_note: Quote
+  updated_at: 2020-06-30
+  
 - name: Postman
   url: https://www.postman.com/
   base_pricing: $12 per u/m
