@@ -251,7 +251,7 @@
   updated_at: 2018-11-08
   
 - name: Pluralsight
-  url: https://www.postman.com/
+  url: https://www.pluralsight.com/
   base_pricing: $579 per u/y
   sso_pricing: $2500 per year
   percent_increase: 331%
