@@ -191,6 +191,14 @@
   percent_increase: 100%
   pricing_source: https://miro.com/pricing/
   updated_at: 2019-09-13
+  
+- name: Monday
+  url: https://monday.com
+  base_pricing: $8 per u/m
+  sso_pricing: Call Us!
+  percent_increase: 
+  pricing_source: https://monday.com/pricing/
+  updated_at: 2020-07-11
 
 - name: NationBuilder
   url: https://nationbuilder.com
