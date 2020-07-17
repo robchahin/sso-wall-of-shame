@@ -41,6 +41,14 @@
   pricing_source: https://checklyhq.com/pricing/
   updated_at: 2019-07-30
 
+- name: CloudFlare
+  url: https://www.cloudflare.com
+  base_pricing: $20
+  sso_pricing: Call us!
+  percent_increase: ???
+  pricing_source: https://www.cloudflare.com/plans/
+  updated_at: 2020-07-17
+
 - name: CloudSploit
   url: https://cloudsploit.com
   base_pricing: $36 pcm
