@@ -48,7 +48,7 @@
   percent_increase: 175%
   pricing_source: https://cloudsploit.com
   updated_at: 2018-10-20
-  
+
 - name: Copper CRM
   url: https://copper.com
   base_pricing: $49 per u/m
@@ -56,7 +56,6 @@
   percent_increase: 143%
   pricing_source: https://copper.com/pricing
   updated_at: 2019-07-31
-  
 
 - name: CoderPad
   url: https://coderpad.io/
@@ -106,7 +105,7 @@
   percent_increase: 80%
   pricing_source: https://www.expensify.com/pricing#features
   updated_at: 2018-10-17
-  
+
 - name: Figma
   url: https://www.figma.com
   base_pricing: $12 per u/m
@@ -149,8 +148,8 @@
     - https://twitter.com/brianebeyer/status/1053797786301489153
     - https://www.intercom.com/pricing
   updated_at: 2018-10-20
-  
-- name: IT Glue  
+
+- name: IT Glue
   url: https://www.itglue.com
   base_pricing: $19 per u/m
   sso_pricing: $39 per u/m
@@ -196,7 +195,7 @@
   url: https://nationbuilder.com
   base_pricing: $29 per month
   sso_pricing: Call Us! (over $199/month)
-  percent_increase: 586%++[^nationbuilder] 
+  percent_increase: 586%++[^nationbuilder]
   pricing_source: https://nationbuilder.com/pricing
   updated_at: 2019-02-09
   footnotes: "[^nationbuilder]: To upgrade one plan level is represented by this price increase, but to get single sign-on, you actually have to go up another plan, which is 'Call Us' pricing."
@@ -212,12 +211,12 @@
 - name: New Relic Infrastructure
   url: https://newrelic.com/products/infrastructure
   base_pricing: $0.60 - $7.20 per host-month[^newrelic-price]
-  footnotes: '[^newrelic-price]: Pricing varies by host size. The SSO cost increase does not.'
+  footnotes: "[^newrelic-price]: Pricing varies by host size. The SSO cost increase does not."
   sso_pricing: $1.20 - $14.40 per host-month
   percent_increase: 100%
   pricing_source: https://newrelic.com/products/infrastructure/pricing
   updated_at: 2018-10-18
-  
+
 - name: Notion
   url: https://www.notion.so
   base_pricing: $8 per u/m
@@ -249,7 +248,7 @@
   percent_increase: 50%
   pricing_source: https://pagertree.com/pricing/
   updated_at: 2018-11-08
-  
+
 - name: Postman
   url: https://www.postman.com/
   base_pricing: $12 per u/m
@@ -307,7 +306,6 @@
   pricing_source: https://slack.com/pricing
   updated_at: 2018-10-17
 
-
 - name: SmartSheet
   url: https://smartsheet.com
   base_pricing: $25 per u/m
@@ -332,7 +330,6 @@
   percent_increase: 111%
   pricing_source: https://www.squadcast.com/pricing
   updated_at: 2019-12-21
-  
 
 - name: Stack Overflow
   url: https://stackoverflow.com
@@ -341,15 +338,6 @@
   percent_increase: 120%
   pricing_source: https://stackoverflow.com/pricing
   updated_at: 2019-06-24
-
-- name: SumoLogic
-  url: https://www.sumologic.com
-  base_pricing: $90 per GB/m
-  sso_pricing: $150 per GB/m[^sumologic]
-  footnotes: "[^sumologic]: SumoLogic will add SSO as a line item without requiring a full upgrade to the next plan, which should be cheaper for almost everyone -- but we can't list that here because we don't know how the price is calculated."
-  percent_increase: 67%
-  pricing_source: https://www.sumologic.com/pricing/
-  updated_at: 2018-10-19
 
 - name: Trello
   url: https://trello.com
