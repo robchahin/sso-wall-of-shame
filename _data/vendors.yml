@@ -350,6 +350,7 @@
   percent_increase: 67%
   pricing_source: https://www.sumologic.com/pricing/
   updated_at: 2018-10-19
+
 - name: Teamwork
   url: https://teamwork.com
   base_pricing: $10 per u/m
