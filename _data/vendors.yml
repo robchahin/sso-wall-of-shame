@@ -131,6 +131,14 @@
   percent_increase: 375%
   pricing_source: https://about.gitlab.com/pricing
   updated_at: 2018-10-21
+  
+- name: Hashicorp (Terraform Cloud)
+  url: https://www.terraform.io/
+  base_pricing: $20 per u/m
+  sso_pricing: Call Us!
+  percent_increase: ??
+  pricing_source: https://www.hashicorp.com/products/terraform/pricing/
+  updated_at: 2020-08-12
 
 - name: Hubspot Marketing
   url: https://www.hubspot.com
