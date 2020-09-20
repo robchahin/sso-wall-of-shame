@@ -41,6 +41,14 @@
   pricing_source: https://checklyhq.com/pricing/
   updated_at: 2019-07-30
 
+- name: Clockify
+  url: https://clockify.me/
+  base_pricing: $9.99 per month
+  sso_pricing: $9.99 per u/m
+  percent_increase: Depends on User count
+  pricing_source: https://clockify.me/extra-features
+  updated_at: 2020-09-20
+  
 - name: CloudSploit
   url: https://cloudsploit.com
   base_pricing: $36 pcm
@@ -56,7 +64,6 @@
   percent_increase: 143%
   pricing_source: https://copper.com/pricing
   updated_at: 2019-07-31
-  
 
 - name: CoderPad
   url: https://coderpad.io/
