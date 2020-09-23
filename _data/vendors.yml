@@ -234,14 +234,6 @@
   pricing_source: https://www.opsgenie.com/pricing
   updated_at: 2018-11-08
 
-- name: PagerDuty
-  url: https://www.pagerduty.com
-  base_pricing: $9 per u/m
-  sso_pricing: $39 per u/m
-  percent_increase: 333%
-  pricing_source: https://www.pagerduty.com/pricing/
-  updated_at: 2018-10-17
-
 - name: PagerTree
   url: https://pagertree.com
   base_pricing: $10 per u/m
