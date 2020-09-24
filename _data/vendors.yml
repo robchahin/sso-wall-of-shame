@@ -114,6 +114,14 @@
   percent_increase: 275%
   pricing_source: https://www.figma.com/pricing
   updated_at: 2019-10-19
+  
+- name: FullStory
+  url: https://www.fullstory.com
+  base_pricing: Call Us!
+  sso_pricing: Call Us!
+  percent_increase: ???
+  pricing_source: https://www.fullstory.com/plans/
+  updated_at: 2020-09-24
 
 - name: GitHub
   url: https://www.github.com
