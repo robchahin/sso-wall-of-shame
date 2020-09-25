@@ -74,6 +74,15 @@
   pricing_source: https://databricks.com/product/aws-pricing
   updated_at: 2018-10-22
 
+- name: EasyGenerator
+  url: https://www.easygenerator.com
+  base_pricing: Unknown 
+  sso_pricing: Unknown / Requires updating to Enterprise Plan
+  percent_increase: Unknown
+  pricing_source: https://help.easygenerator.com/en/articles/1390800-easygenerator-for-authors-saml-2-0 - Note in the middle of the page saying:Note: SAML Single Sign On is available only within the Enterprise plan.
+  pricing_note: Quote
+  updated_at: 2020-09-25
+  
 - name: DocuSign
   url: https://www.docusign.com
   base_pricing: $25 per u/m
@@ -82,7 +91,7 @@
   pricing_source: https://www.docusign.com/products-and-pricing
   pricing_note: Quote
   updated_at: 2018-10-17
-
+  
 - name: Dropbox
   url: https://www.dropbox.com
   base_pricing: $15 per u/m
