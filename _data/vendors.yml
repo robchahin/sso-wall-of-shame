@@ -343,6 +343,14 @@
   pricing_source: https://www.sumologic.com/pricing/
   updated_at: 2018-10-19
 
+- name: Tailscale
+  url: https://tailscale.com
+  base_pricing: $10 per u/m
+  sso_pricing: Call us!
+  percent_increase: ???
+  pricing_source: https://tailscale.com/pricing/
+  updated_at: 2020-09-29
+
 - name: Trello
   url: https://trello.com
   base_pricing: $10 per u/m
