@@ -191,6 +191,14 @@
   percent_increase: 100%
   pricing_source: https://miro.com/pricing/
   updated_at: 2019-09-13
+  
+  - name: Mural
+  url: https://www.mural.co/
+  base_pricing: $12 per u/m
+  sso_pricing: $20 per u/m
+  percent_increase: 67%
+  pricing_source: https://www.mural.co/pricing
+  updated_at: 2020-10-09
 
 - name: NationBuilder
   url: https://nationbuilder.com
