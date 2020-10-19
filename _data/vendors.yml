@@ -343,6 +343,15 @@
   pricing_source: https://www.sumologic.com/pricing/
   updated_at: 2018-10-19
 
+- name: Terraform
+  url: https://www.hashicorp.com/products/terraform/
+  base_pricing: $20 per u/m[^terraform]
+  sso_pricing: Contact us![^terraform]
+  footnotes: "[^terraform]: There are two hosted/cloud tiers of service at $20 per u/m and $70 per u/m, but neither support SSO. For SSO, customers must purchase the Enterprise self-hosted edition"
+  percent_increase: ???
+  pricing_source: https://www.hashicorp.com/products/terraform/pricing
+  updated_at: 2019-11-11
+
 - name: Trello
   url: https://trello.com
   base_pricing: $10 per u/m
