@@ -267,6 +267,14 @@
   updated_at: 2019-10-10
   footnotes: "[^raygun]: From their SSO tooltip: 'Basic SSO covers social SSO providers only (e.g. Facebook), Advanced SSO includes SAML2 providers (including ActiveDirectory, Auth0, Okta and OneLogin)'"
 
+- name: ReadMe
+  url: https://readme.com
+  base_pricing: $99 per project/mo
+  sso_pricing: $2000 per project/mo
+  percent_increase: 1920%
+  pricing_source: https://readme.com/pricing
+  updated_at: 2020-10-30
+
 - name: RingCentral
   url: https://www.ringcentral.com
   base_pricing: $25 per u/m
