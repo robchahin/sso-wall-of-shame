@@ -325,6 +325,14 @@
   pricing_source: https://www.squadcast.com/pricing
   updated_at: 2019-12-21
   
+- name: SurveyMonkey
+  url: https://www.surveymonkey.com
+  base_pricing: $25 per u/m
+  sso_pricing: Call Us! (over $75 per u/m)
+  percent_increase: 300%++
+  pricing_source: https://www.surveymonkey.co.uk/pricing/details/
+  updated_at: 2020-11-10
+  
 
 - name: Stack Overflow
   url: https://stackoverflow.com
