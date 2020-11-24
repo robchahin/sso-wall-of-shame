@@ -33,6 +33,14 @@
   pricing_source: https://www.box.com/pricing
   updated_at: 2018-10-17
 
+- name: Canva
+  url: https://canva.com/
+  base_pricing: $7.77 per u/m
+  sso_pricing: $30 per u/m
+  percent_increase: 586%
+  pricing_source: https://www.canva.com/pricing/
+  updated_at: 2020-11-24
+
 - name: Checkly
   url: https://checklyhq.com/
   base_pricing: $29 per month
