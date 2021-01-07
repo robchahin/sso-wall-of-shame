@@ -376,3 +376,12 @@
   percent_increase: 100%
   pricing_source: https://zapier.com/app/billing/plans/
   updated_at: 2019-10-19
+
+- name: Zeplin
+  url: https://zeplin.io/
+  base_pricing: $10.75 per u/m
+  sso_pricing: $21.50 per u/m
+  percent_increase: 100%
+  pricing_source: Quote
+  updated_at: 2021-01-06
+  footnotes: "[^zepllin]: Also requires paying for a minimum of 50 seats, compared to 12 with the Business plan"
