@@ -115,6 +115,14 @@
   pricing_source: https://www.figma.com/pricing
   updated_at: 2019-10-19
 
+- name: Front
+  url: https://frontapp.com
+  base_pricing: $9 per u/m
+  sso_pricing: $79 per u/m
+  percent_increase: 778%
+  pricing_source: https://frontapp.com/pricing
+  updated_at: 2021-01-19
+
 - name: GitHub
   url: https://www.github.com
   base_pricing: $4 per u/m
