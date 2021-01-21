@@ -91,6 +91,14 @@
   pricing_source: https://www.dropbox.com/business/pricing
   updated_at: 2018-10-17
 
+- name: Elastico
+  url: https://www.elastic.co/
+  base_pricing: $0.0257 per hour
+  sso_pricing: $0.0297 per hour
+  percent_increase: 13%
+  pricing_source: https://cloud.elastic.co/pricing
+  updated_at: 2021-01-21
+
 - name: Envoy
   url: https://envoy.com
   base_pricing: $99 per location/m
