@@ -158,6 +158,14 @@
   pricing_source: https://www.itglue.com/pricing/
   updated_at: 2019-10-29
 
+- name: Kandji
+  url: https://www.kandji.io
+  base_pricing: $399 per month
+  sso_pricing: $150 per month
+  percent_increase: 38%
+  pricing_source: https://www.kandji.io/pricing
+  updated_at: 2021-02-04
+
 - name: LaunchDarkly
   url: https://launchdarkly.com
   base_pricing: $65 per u/m
