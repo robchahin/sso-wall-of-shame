@@ -90,6 +90,15 @@
   pricing_source: https://www.dropbox.com/business/pricing
   updated_at: 2018-10-17
 
+- name: Elastic
+  url: https://elastic.co
+  base_pricing: $0.2992[^elastic-note]
+  sso_pricing: $0.3429
+  footnotes: "[^elastic-note]: Pricing based on a random small deployment using their pricing calculator."
+  percent_increase: 15%
+  pricing_source: https://www.elastic.co/subscriptions
+  updated_at: 2021-02-12
+
 - name: Envoy
   url: https://envoy.com
   base_pricing: $99 per location/m
@@ -210,7 +219,7 @@
 - name: New Relic Infrastructure
   url: https://newrelic.com/products/infrastructure
   base_pricing: $0.60 - $7.20 per host-month[^newrelic-price]
-  footnotes: '[^newrelic-price]: Pricing varies by host size. The SSO cost increase does not.'
+  footnotes: "[^newrelic-price]: Pricing varies by host size. The SSO cost increase does not."
   sso_pricing: $1.20 - $14.40 per host-month
   percent_increase: 100%
   pricing_source: https://newrelic.com/products/infrastructure/pricing
@@ -231,14 +240,6 @@
   percent_increase: 111%
   pricing_source: https://www.opsgenie.com/pricing
   updated_at: 2018-11-08
-
-- name: PagerDuty
-  url: https://www.pagerduty.com
-  base_pricing: $9 per u/m
-  sso_pricing: $39 per u/m
-  percent_increase: 333%
-  pricing_source: https://www.pagerduty.com/pricing/
-  updated_at: 2018-10-17
 
 - name: PagerTree
   url: https://pagertree.com
@@ -313,7 +314,6 @@
   pricing_source: https://slack.com/pricing
   updated_at: 2018-10-17
 
-
 - name: SmartSheet
   url: https://smartsheet.com
   base_pricing: $25 per u/m
@@ -338,7 +338,6 @@
   percent_increase: 111%
   pricing_source: https://www.squadcast.com/pricing
   updated_at: 2019-12-21
-  
 
 - name: Stack Overflow
   url: https://stackoverflow.com
@@ -347,15 +346,6 @@
   percent_increase: 120%
   pricing_source: https://stackoverflow.com/pricing
   updated_at: 2019-06-24
-
-- name: SumoLogic
-  url: https://www.sumologic.com
-  base_pricing: $90 per GB/m
-  sso_pricing: $150 per GB/m[^sumologic]
-  footnotes: "[^sumologic]: SumoLogic will add SSO as a line item without requiring a full upgrade to the next plan, which should be cheaper for almost everyone -- but we can't list that here because we don't know how the price is calculated."
-  percent_increase: 67%
-  pricing_source: https://www.sumologic.com/pricing/
-  updated_at: 2018-10-19
 
 - name: Trello
   url: https://trello.com
