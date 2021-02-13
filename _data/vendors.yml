@@ -90,6 +90,14 @@
   pricing_source: https://www.dropbox.com/business/pricing
   updated_at: 2018-10-17
 
+- name: Elasticsearch
+  url: https://elastic.co
+  base_pricing: $0
+  sso_pricing: Call us!
+  percent_increase: ???
+  pricing_source: https://www.elastic.co/subscriptions
+  updated_at: 2020-06-05
+
 - name: Envoy
   url: https://envoy.com
   base_pricing: $99 per location/m
