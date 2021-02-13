@@ -390,3 +390,11 @@
   percent_increase: 100%
   pricing_source: https://zapier.com/app/billing/plans/
   updated_at: 2019-10-19
+  
+- name: Redash
+  url: https://redash.io/
+  base_pricing: $49 per month, unlimited users
+  sso_pricing: $450 per month, unlimited users
+  percent_increase: ~900%
+  pricing_source: https://redash.io/pricing/
+  updated_at: 2020-07-09
