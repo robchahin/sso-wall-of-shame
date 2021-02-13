@@ -186,7 +186,6 @@
   updated_at: 2020-01-24
 
 - name: Lucidchart
-
   url: https://www.lucidchart.com
   base_pricing: $7 per u/m
   sso_pricing: Call Us!
@@ -259,6 +258,14 @@
   percent_increase: 50%
   pricing_source: https://pagertree.com/pricing/
   updated_at: 2018-11-08
+
+- name: Playvox
+  url: https://www.playvox.com
+  base_pricing: $15 per u/m
+  sso_pricing: $30 per u/m
+  percent_increase: 100%
+  pricing_source: https://www.playvox.com/pricing
+  updated_at: 2020-06-09
 
 - name: Postman
   url: https://www.postman.com/
