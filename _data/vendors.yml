@@ -188,10 +188,10 @@
 - name: Lucidchart
   url: https://www.lucidchart.com
   base_pricing: $7 per u/m
-  sso_pricing: Call Us!
-  percent_increase: ???
-  pricing_source: https://www.lucidchart.com/users/registerLevel
-  updated_at: 2018-10-17
+  sso_pricing: $19.99 per u/m
+  percent_increase: 286%
+  pricing_source: Quote
+  updated_at: 2021-02-26
 
 - name: Mattermost
   url: https://www.mattermost.com
