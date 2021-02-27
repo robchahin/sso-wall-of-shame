@@ -51,6 +51,14 @@
   pricing_source: https://checklyhq.com/pricing/
   updated_at: 2019-07-30
 
+- name: CloudFlare
+  url: https://cloudsploit.com
+  base_pricing: $200 per month
+  sso_pricing: $2500 per month
+  percent_increase: 1150%
+  pricing_source: Quote
+  updated_at: 2021-02-27
+  
 - name: CloudSploit
   url: https://cloudsploit.com
   base_pricing: $36 pcm
