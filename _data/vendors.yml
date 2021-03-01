@@ -399,3 +399,10 @@
   pricing_source: https://zapier.com/app/billing/plans/
   updated_at: 2019-10-19
   
+- name: Quoter
+  url: https://www.quoter.com/
+  base_pricing: $99 /month
+  sso_pricing: $299 /month
+  percent_increase: 200%
+  pricing_source: https://www.quoter.com/pricing/
+  updated_at: 2021-03-01
