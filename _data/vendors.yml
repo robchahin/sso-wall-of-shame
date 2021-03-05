@@ -347,6 +347,16 @@
   percent_increase: 67%
   pricing_source: https://snyk.io/plans
   updated_at: 2018-10-22
+  
+  - name: Splashtop
+  url: https://splashtop.com
+  base_pricing: $11.96 per PC/y
+  sso_pricing: $150 per PC/y
+  percent_increase: 1,254%
+  pricing_source: Contacted Sales
+  pricing_note: Quote
+  footnotes: "[^Splashtop]: Based on Remote Support Plus Subscription vs Enterprise for 25PCs. Assume one user per PC."
+  updated_at: 2021-03-05
 
 - name: Squadcast
   url: https://www.squadcast.com
