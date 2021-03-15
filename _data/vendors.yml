@@ -147,6 +147,14 @@
   percent_increase: 0% 🎉
   pricing_source: https://about.gitlab.com/pricing
   updated_at: 2018-10-22
+  
+- name: Guru
+  url: https://www.getguru.com/
+  base_pricing: $6 per u/m
+  sso_pricing: $12 per u/m
+  percent_increase: 100%
+  pricing_source: https://www.getguru.com/pricing
+  updated_at: 2021-03-15
 
 - name: Hubspot Marketing
   url: https://www.hubspot.com
