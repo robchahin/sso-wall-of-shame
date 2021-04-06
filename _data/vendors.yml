@@ -83,6 +83,15 @@
   pricing_source: https://databricks.com/product/aws-pricing
   updated_at: 2018-10-22
 
+- name: Docsend
+  url: https://docsend.com
+  base_pricing: $45 per u/m
+  sso_pricing: Call Us!
+  percent_increase: 33%+[^docsend-note]
+  footnotes: "[^docsend-note]: Increase is inferred from the previous (non-enterprise) level at $60 per u/m after the initial included users."
+  pricing_source: https://www.docsend.com/pricing/
+  updated_at: 2021-04-06
+
 - name: DocuSign
   url: https://www.docusign.com
   base_pricing: $25 per u/m
