@@ -99,6 +99,14 @@
   percent_increase: 67%
   pricing_source: https://www.dropbox.com/business/pricing
   updated_at: 2018-10-17
+  
+- name: Ease
+  url: https://www.ease.com
+  base_pricing: $379 per u/m
+  sso_pricing: Call Us!
+  percent_increase: ???
+  pricing_source: https://www.ease.com/pricing/
+  updated_at: 2021-04-06
 
 - name: Elastic
   url: https://elastic.co
