@@ -365,6 +365,14 @@
   pricing_source: https://stackoverflow.com/pricing
   updated_at: 2019-06-24
 
+- name: Toggl
+  url: https://toggl.com
+  base_pricing: $9 per u/m
+  sso_pricing: $18 per u/m
+  percent_increase: 100%
+  pricing_source: https://toggl.com/track/pricing/
+  updated_at: 2021-04-12
+
 - name: Trello
   url: https://trello.com
   base_pricing: $10 per u/m
