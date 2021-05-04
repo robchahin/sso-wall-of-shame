@@ -150,6 +150,15 @@
   pricing_source: https://about.gitlab.com/pricing
   updated_at: 2018-10-21
 
+- name: HubPlanner
+  url: https://hubplanner.com/
+  base_pricing: $7 u/m
+  sso_pricing: $18 u/m[^hubplanner]
+  footnotes: "[^hubplanner]: SSO is offered as a premium extension for $299 extra a month. Signing up to the Premium or ??? priced Enterprise tier appears to include Extensions, though it's not clear if SSO is one of them."
+  percent_increase: 157%
+  pricing_source: https://hubplanner.com/pricing/
+  updated_at: 2021-05-04
+
 - name: Hubspot Marketing
   url: https://www.hubspot.com
   base_pricing: $46 per month
@@ -299,6 +308,14 @@
   percent_increase: 818%
   pricing_source: https://redash.io/pricing/
   updated_at: 2021-02-12
+  
+  - name: ResourceGuru
+  url: https://resourceguruapp.com/
+  base_pricing: $2.50 per u/m
+  sso_pricing: $6.65 per u/m
+  percent_increase: 166%
+  pricing_source: https://resourceguruapp.com/pricing
+  updated_at: 2021-05-04
 
 - name: RingCentral
   url: https://www.ringcentral.com
@@ -365,6 +382,14 @@
   pricing_source: https://stackoverflow.com/pricing
   updated_at: 2019-06-24
 
+- name: Toggl
+  url: https://toggl.com/
+  base_pricing: $9 per u/m
+  sso_pricing: $15 per u/m
+  percent_increase: 67%
+  pricing_source: https://toggl.com/plan/pricing
+  updated_at: 2021-05-04
+  
 - name: Trello
   url: https://trello.com
   base_pricing: $10 per u/m
