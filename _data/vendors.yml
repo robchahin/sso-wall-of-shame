@@ -193,6 +193,14 @@
   pricing_source: https://www.lucidchart.com/users/registerLevel
   updated_at: 2018-10-17
 
+- name: Mailcow
+  url: https://mailcow.email
+  base_pricing: free
+  sso_pricing: main developer says its a coperate feature and don't want to add it
+  percent_increase: none
+  pricing_source: https://github.com/mailcow/mailcow-dockerized/issues/2316#issuecomment-835438431
+  updated_at: 2021-05-08
+
 - name: Mattermost
   url: https://www.mattermost.com
   base_pricing: $3.25 per u/m
