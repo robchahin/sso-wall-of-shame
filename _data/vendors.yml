@@ -75,14 +75,6 @@
   pricing_source: https://coderpad.io/pricing
   updated_at: 2019-06-28
 
-- name: Databricks
-  url: https://databricks.com
-  base_pricing: $0.20 per DBU
-  sso_pricing: $0.35 per DBU
-  percent_increase: 75%
-  pricing_source: https://databricks.com/product/aws-pricing
-  updated_at: 2018-10-22
-
 - name: DocuSign
   url: https://www.docusign.com
   base_pricing: $25 per u/m
