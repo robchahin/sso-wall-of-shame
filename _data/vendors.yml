@@ -284,14 +284,6 @@
   updated_at: 2019-10-10
   footnotes: "[^raygun]: From their SSO tooltip: 'Basic SSO covers social SSO providers only (e.g. Facebook), Advanced SSO includes SAML2 providers (including ActiveDirectory, Auth0, Okta and OneLogin)'"
 
-- name: Redash
-  url: https://redash.io/
-  base_pricing: $49 per month
-  sso_pricing: $450 per month
-  percent_increase: 818%
-  pricing_source: https://redash.io/pricing/
-  updated_at: 2021-02-12
-
 - name: RingCentral
   url: https://www.ringcentral.com
   base_pricing: $25 per u/m
