@@ -74,6 +74,16 @@
   percent_increase: 500%
   pricing_source: https://coderpad.io/pricing
   updated_at: 2019-06-28
+  
+- name: Contentful
+  url: https://www.contentful.com/
+  base_pricing: $0 per month
+  sso_pricing: Call Us! (starting at $32,688 annually)
+  footnotes: "[^contentful-price]: They only offer SSO for enterprise, and this quote is based off of their lowest packages for their pricing model by Space, Platform, and SLA"
+  percent_increase: 
+  pricing_source: https://www.contentful.com/pricing/
+  pricing_note: Quote
+  updated_at: 2021-02-25
 
 - name: DocuSign
   url: https://www.docusign.com
