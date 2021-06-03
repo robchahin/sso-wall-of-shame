@@ -8,6 +8,16 @@
   footnotes: "[^airtable-price]: $60 per user per month, minimum of $3000 per month."
   updated_at: 2019-10-19
 
+- name: Appaegis
+  url: https://appaegis.com
+  base_pricing: $9.95 per u/m
+  sso_pricing: $??? per u/m[^appaegis-price]
+  percent_increase: ???%
+  pricing_source: https://www.appaegis.com/pricing
+  pricing_note: Quote
+  footnotes: "[^appaegis-price]: Requires a call to the sales team to get a price. There's also a free tier that does not support SSO either."
+  updated_at: 2021-05-20
+
 - name: Asana
   url: https://asana.com
   base_pricing: $25 per u/m
