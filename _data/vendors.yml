@@ -142,6 +142,14 @@
   pricing_source: https://about.gitlab.com/pricing
   updated_at: 2018-10-21
 
+- name: Grafana
+  url: https://grafana.com
+  base_pricing: $0
+  sso_pricing: $49/mo for 10 users (+ $5/mo/user for more users)
+  percent_increase: -
+  pricing_source: https://grafana.com/products/cloud/pricing/
+  updated_at: 2021-04-29
+
 - name: Hubspot Marketing
   url: https://www.hubspot.com
   base_pricing: $46 per month
