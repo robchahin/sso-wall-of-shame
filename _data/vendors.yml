@@ -349,6 +349,14 @@
   pricing_source: https://stackoverflow.com/pricing
   updated_at: 2019-06-24
 
+- name: ToolUp
+  url: https://www.toolup.io/
+  base_pricing: $3 per u/m
+  sso_pricing: $4.5 per u/m
+  percent_increase: 50%
+  pricing_source: https://www.toolup.io/pricing
+  updated_at: 2021-04-28
+  
 - name: Trello
   url: https://trello.com
   base_pricing: $10 per u/m
