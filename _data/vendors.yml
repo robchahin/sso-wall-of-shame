@@ -133,15 +133,6 @@
   pricing_source: https://github.com/pricing
   updated_at: 2020-04-14
 
-- name: GitLab Hosted
-  url: https://about.gitlab.com
-  base_pricing: $4 per u/m
-  sso_pricing: $19 per u/m[^gitlab]
-  footnotes: "[^gitlab]: GitLab's on premise solution offers LDAP auth and sync for every tier."
-  percent_increase: 375%
-  pricing_source: https://about.gitlab.com/pricing
-  updated_at: 2018-10-21
-
 - name: Hubspot Marketing
   url: https://www.hubspot.com
   base_pricing: $46 per month
