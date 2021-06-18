@@ -341,14 +341,6 @@
   pricing_source: https://www.squadcast.com/pricing
   updated_at: 2019-12-21
 
-- name: Stack Overflow
-  url: https://stackoverflow.com
-  base_pricing: $5 per u/m
-  sso_pricing: $11 per u/m
-  percent_increase: 120%
-  pricing_source: https://stackoverflow.com/pricing
-  updated_at: 2019-06-24
-
 - name: Trello
   url: https://trello.com
   base_pricing: $10 per u/m
