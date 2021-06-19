@@ -75,6 +75,14 @@
   pricing_source: https://coderpad.io/pricing
   updated_at: 2019-06-28
 
+- name: Crowdin
+  url: https://crowdin.com/
+  base_pricing: $40 per month
+  sso_pricing: $1500 per month
+  percent_increase: 3750%
+  pricing_source: https://crowdin.com/pricing#crowdin-pricing-key-features
+  updated_at: 2021-06-19
+
 - name: DocuSign
   url: https://www.docusign.com
   base_pricing: $25 per u/m
