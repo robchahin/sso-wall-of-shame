@@ -58,6 +58,14 @@
   percent_increase: 175%
   pricing_source: https://cloudsploit.com
   updated_at: 2018-10-20
+  
+- name: Connect2
+  url: https://www.connect2mycloud.com
+  base_pricing: $195 per month
+  sso_pricing: $295 per month
+  percent_increase: 52%
+  pricing_source: Call Us!
+  updated_at: 2021-04-06
 
 - name: Copper CRM
   url: https://copper.com
