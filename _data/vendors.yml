@@ -51,6 +51,15 @@
   pricing_source: https://checklyhq.com/pricing/
   updated_at: 2019-07-30
 
+- name: ClickUp
+  url: https://clickup.com
+  base_pricing: $5 per u/m
+  sso_pricing: $25 per u/m
+  percent_increase: 500%
+  pricing_source: https://clickup.com/pricing
+  footnotes: "[^clickup]: Call us pricing.  Enterprise MSRP quoted at $299 per user per year."
+  updated_at: 2021-04-08
+
 - name: CloudSploit
   url: https://cloudsploit.com
   base_pricing: $36 pcm
