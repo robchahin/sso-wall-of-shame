@@ -8,6 +8,14 @@
   footnotes: "[^airtable-price]: $60 per user per month, minimum of $3000 per month."
   updated_at: 2019-10-19
 
+- name: Apollo Graph Inc.
+  url: https://www.apollographql.com
+  base_pricing: $49 per u/m
+  sso_pricing: See Notes[^apollo-price]
+  pricing_source: https://www.apollographql.com/pricing
+  footnotes: "[^apollo-price]: Based on team vs. enterprise tier quote; enterprise is custom pricing"
+  updated_at: 2021-06-23
+
 - name: Asana
   url: https://asana.com
   base_pricing: $25 per u/m
@@ -382,4 +390,4 @@
   percent_increase: 100%
   pricing_source: https://zapier.com/app/billing/plans/
   updated_at: 2019-10-19
-  
+
