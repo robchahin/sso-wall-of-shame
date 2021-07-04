@@ -349,6 +349,14 @@
   pricing_source: https://stackoverflow.com/pricing
   updated_at: 2019-06-24
 
+- name: TeamViewer
+  url: https://www.teamviewer.com
+  base_pricing: 124€ per m
+  sso_pricing: On call and only if you're eligible to Tensor line (+1000 devices and 10 users)
+  percent_increase:  ???
+  pricing_source: https://www.teamviewer.com/en/teamviewer-tensor/#gref
+  updated_at: 2018-11-01
+
 - name: Trello
   url: https://trello.com
   base_pricing: $10 per u/m
