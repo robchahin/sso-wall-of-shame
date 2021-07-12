@@ -43,6 +43,14 @@
   pricing_source: https://www.box.com/pricing
   updated_at: 2018-10-17
 
+- name: Calendly
+  url: https://calendly.com/
+  base_pricing: $8 per month
+  sso_pricing: Call Us!
+  percent_increase: ???
+  pricing_source: https://calendly.com/pricing/
+  updated_at: 2021-07-12
+
 - name: Checkly
   url: https://checklyhq.com/
   base_pricing: $29 per month
