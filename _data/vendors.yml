@@ -45,7 +45,7 @@
 
 - name: Calendly
   url: https://calendly.com/
-  base_pricing: $8 per month
+  base_pricing: $10 per u/m
   sso_pricing: Call Us!
   percent_increase: ???
   pricing_source: https://calendly.com/pricing/
