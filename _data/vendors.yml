@@ -75,6 +75,14 @@
   pricing_source: https://coderpad.io/pricing
   updated_at: 2019-06-28
 
+- name: Docker
+  url: https://www.docker.com/
+  base_pricing: $7 per u/m
+  sso_pricing: $21 per u/m
+  percent_increase: 33%
+  pricing_source: https://www.docker.com/pricing
+  updated_at: 2021-08-31
+  
 - name: DocuSign
   url: https://www.docusign.com
   base_pricing: $25 per u/m
