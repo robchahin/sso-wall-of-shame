@@ -79,6 +79,7 @@
   url: https://www.docker.com/
   base_pricing: $7 per u/m
   sso_pricing: $21 per u/m
+  footnotes: "[^docker]: SSO "coming soon" as of 08/21 so you may just be paying for the promise!"
   percent_increase: 300%
   pricing_source: https://www.docker.com/pricing
   updated_at: 2021-08-31
