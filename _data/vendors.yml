@@ -205,11 +205,11 @@
 
 - name: Netlify
   url: https://www.netlify.com/
-  base_pricing: $9 per u/m
+  base_pricing: $19 per u/m
   sso_pricing: $99 per u/m
-  percent_increase: 1000%
+  percent_increase: 421%
   pricing_source: https://www.netlify.com/pricing/
-  updated_at: 2018-10-20
+  updated_at: 2021-09-06
 
 - name: New Relic Infrastructure
   url: https://newrelic.com/products/infrastructure
