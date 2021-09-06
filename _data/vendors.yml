@@ -8,6 +8,14 @@
   footnotes: "[^airtable-price]: $60 per user per month, minimum of $3000 per month."
   updated_at: 2019-10-19
 
+- name: Aqua
+  url: https://aquasec.com
+  base_pricing: $849 per month
+  sso_pricing: $2099 per month
+  percent_increase: 147%
+  pricing_source: https://aquasec.com/pricing/
+  updated_at: 2021-09-06
+ 
 - name: Asana
   url: https://asana.com
   base_pricing: $25 per u/m
@@ -42,22 +50,14 @@
   percent_increase: 200%
   pricing_source: https://www.box.com/pricing
   updated_at: 2018-10-17
-
-- name: CloudSploit
-  url: https://cloudsploit.com
-  base_pricing: $36 pcm
-  sso_pricing: $99 pcm
-  percent_increase: 175%
-  pricing_source: https://cloudsploit.com
-  updated_at: 2018-10-20
-
-- name: CoderPad
-  url: https://coderpad.io/
-  base_pricing: $250 per month
-  sso_pricing: $1500 per month
-  percent_increase: 500%
-  pricing_source: https://coderpad.io/pricing
-  updated_at: 2019-06-28
+ 
+- name: Copper CRM
+  url: https://copper.com
+  base_pricing: $49 per u/m
+  sso_pricing: $119 per u/m
+  percent_increase: 143%
+  pricing_source: https://copper.com/pricing
+  updated_at: 2019-07-31
 
 - name: Copper CRM
   url: https://copper.com
