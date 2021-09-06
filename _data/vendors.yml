@@ -50,15 +50,16 @@
   percent_increase: 200%
   pricing_source: https://www.box.com/pricing
   updated_at: 2018-10-17
- 
-- name: Copper CRM
-  url: https://copper.com
-  base_pricing: $49 per u/m
-  sso_pricing: $119 per u/m
-  percent_increase: 143%
-  pricing_source: https://copper.com/pricing
-  updated_at: 2019-07-31
 
+- name: CloudFlare
+  url: https://cloudflare.com
+  base_pricing: $200 per month
+  sso_pricing: $2500 per month
+  percent_increase: 1150%
+  pricing_source: https://cloudflare.com/plans/
+  pricing_note: Quote
+  updated_at: 2021-02-27
+  
 - name: Copper CRM
   url: https://copper.com
   base_pricing: $49 per u/m
