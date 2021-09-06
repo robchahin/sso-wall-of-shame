@@ -206,8 +206,8 @@
 - name: Netlify
   url: https://www.netlify.com/
   base_pricing: $9 per u/m
-  sso_pricing: Call Us!
-  percent_increase: ???
+  sso_pricing: $99 per u/m
+  percent_increase: 1000%
   pricing_source: https://www.netlify.com/pricing/
   updated_at: 2018-10-20
 
