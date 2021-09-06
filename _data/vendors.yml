@@ -183,6 +183,15 @@
   percent_increase: 100%
   pricing_source: https://miro.com/pricing/
   updated_at: 2019-09-13
+  
+  - name: Monday.com
+  url: https://monday.com
+  base_pricing: $7 per u/m
+  sso_pricing: $27 per u/m
+  footnotes: '[^monday-price]: Compared the Basic tier to the Enterprise tier which is the only level offering SSO.'
+  percent_increase: 237%
+  pricing_source: https://monday.com/pricing/
+  updated_at: 2020-05-26
 
 - name: NationBuilder
   url: https://nationbuilder.com
