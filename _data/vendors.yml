@@ -43,6 +43,14 @@
   pricing_source: https://www.bitrise.io/pricing/teams
   updated_at: 2019-06-25
 
+- name: Bintray
+  url: https://bintray.com/
+  base_pricing: $150/mo Pro
+  sso_pricing: $699/mo Enterprise
+  percent_increase: 466%
+  pricing_source: https://jfrog.com/pricing/#cloud
+  updated_at: 2020-08-13
+
 - name: Box
   url: https://www.box.com
   base_pricing: $5 per u/m
