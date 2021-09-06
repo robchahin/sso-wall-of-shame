@@ -125,21 +125,21 @@
   pricing_source: https://www.expensify.com/pricing#features
   updated_at: 2018-10-17
 
-- name: Figma
-  url: https://www.frontapp.com
-  base_pricing: $19 per u/m
-  sso_pricing: $99 per u/m
-  percent_increase: 421%
-  pricing_source: https://www.frontapp.com/pricing
-  updated_at: 2021-05-12
-  
-  - name: Front
+  - name: Figma
   url: https://www.figma.com
   base_pricing: $12 per u/m
   sso_pricing: $45 per u/m
   percent_increase: 275%
   pricing_source: https://www.figma.com/pricing
   updated_at: 2019-10-19
+  
+- name: Front
+  url: https://www.frontapp.com
+  base_pricing: $19 per u/m
+  sso_pricing: $99 per u/m
+  percent_increase: 421%
+  pricing_source: https://www.frontapp.com/pricing
+  updated_at: 2021-05-12
 
 - name: GitHub
   url: https://www.github.com
