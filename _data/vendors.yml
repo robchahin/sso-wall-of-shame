@@ -332,6 +332,14 @@
   percent_increase: 111%
   pricing_source: https://www.squadcast.com/pricing
   updated_at: 2019-12-21
+ 
+- name: TestRail Cloud
+  url: https://www.gurock.com/testrail/
+  base_pricing: $36 per u/m
+  sso_pricing: $69 per u/m
+  percent_increase: 92%
+  pricing_source: https://www.gurock.com/testrail/pricing/cloud-enterprise
+  updated_at: 2021-09-06
 
 - name: Trello
   url: https://trello.com
