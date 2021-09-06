@@ -1,6 +1,6 @@
 ---
 ---
-{% include_relative assets/js/sorttable.js %}
+<script src="assets/js/sorttable.js"></script>
 
 <details open>
 <summary>
