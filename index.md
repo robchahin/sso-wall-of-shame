@@ -1,5 +1,7 @@
 ---
 ---
+<script src="assets/js/sorttable.js"></script>
+
 <details open>
 <summary>
 Why does this exist?
@@ -25,7 +27,7 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
 
 ## The List
 
-<table>
+<table class="sortable">
 <thead>
 <tr><th>Vendor</th><th>Base Pricing</th><th>SSO Pricing</th><th>% Increase</th><th>Source</th><th>Date Updated</th></tr>
 </thead>
