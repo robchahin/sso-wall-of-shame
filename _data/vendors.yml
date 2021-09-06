@@ -284,6 +284,14 @@
   updated_at: 2019-10-10
   footnotes: "[^raygun]: From their SSO tooltip: 'Basic SSO covers social SSO providers only (e.g. Facebook), Advanced SSO includes SAML2 providers (including ActiveDirectory, Auth0, Okta and OneLogin)'"
 
+- name: Resource Guru
+  url: https://resourceguruapp.com
+  base_pricing: $2.50 per u/m
+  sso_pricing: $6.65 per u/m
+  percent_increase: 166%
+  pricing_source: https://resourceguruapp.com/pricing
+  updated_at: 2021-09-06
+
 - name: RingCentral
   url: https://www.ringcentral.com
   base_pricing: $25 per u/m
