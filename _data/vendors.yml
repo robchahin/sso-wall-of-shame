@@ -189,9 +189,10 @@
   url: https://miro.com
   base_pricing: $8 per u/m
   sso_pricing: $16 per u/m
-  percent_increase: 100%
+  percent_increase: 200% to 2000%
   pricing_source: https://miro.com/pricing/
-  updated_at: 2019-09-13
+  pricing_note: Gaining the SSO featureset requires not only going up one or two plans, from Free or Team to Business, but you also move from a minimum of two paid users on Team to twenty paid users on Business.  So, at the least, you're increasing 200%, and at most, 2000%.
+  updated_at: 2021-04-22
 
 - name: NationBuilder
   url: https://nationbuilder.com
