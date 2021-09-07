@@ -219,6 +219,14 @@
   pricing_note: Quote
   updated_at: 2020-05-26
 
+- name: Mural
+  url: https://www.mural.co/
+  base_pricing: $10 per u/m
+  sso_pricing: $18 per u/m
+  percent_increase: 80%
+  pricing_source: https://www.mural.co/pricing
+  updated_at: 2021-09-06
+
 - name: NationBuilder
   url: https://nationbuilder.com
   base_pricing: $29 per month
