@@ -83,6 +83,14 @@
   percent_increase: 143%
   pricing_source: https://copper.com/pricing
   updated_at: 2019-07-31
+  
+- name: Docker Hub
+  url: https://hub.docker.com
+  base_pricing: $0 per u/m
+  sso_pricing: $21 per u/m
+  percent_increase: Infinity%
+  pricing_source: https://www.docker.com/pricing
+  updated_at: 2021-09-09
 
 - name: DocuSign
   url: https://www.docusign.com
