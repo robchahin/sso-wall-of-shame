@@ -86,9 +86,9 @@
   
 - name: Docker Hub
   url: https://hub.docker.com
-  base_pricing: $0 per u/m
+  base_pricing: $5 per u/m
   sso_pricing: $21 per u/m
-  percent_increase: Infinity%
+  percent_increase: 420%
   pricing_source: https://www.docker.com/pricing
   updated_at: 2021-09-09
 
