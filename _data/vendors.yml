@@ -375,15 +375,6 @@
   percent_increase: 67%
   pricing_source: https://snyk.io/plans
   updated_at: 2018-10-22
-
-- name: Squadcast
-  url: https://www.squadcast.com
-  base_pricing: $9 per u/m
-  sso_pricing: $19 per u/m [^squadcast]
-  footnotes: "[^squadcast]: Upon request, you can also add SSO to Squadcast Pro for an additional $4 per u/m, making it a 44% increase from the base pricing."
-  percent_increase: 111%
-  pricing_source: https://www.squadcast.com/pricing
-  updated_at: 2019-12-21
  
 - name: SurveyMonkey
   url: https://www.surveymonkey.com
