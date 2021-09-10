@@ -145,10 +145,10 @@
 - name: Hubspot Marketing
   url: https://www.hubspot.com
   base_pricing: $46 per month
-  sso_pricing: $2944 per month
-  percent_increase: 6300%
+  sso_pricing: $3200 per month
+  percent_increase: 7011%
   pricing_source: https://www.hubspot.com/pricing/marketing
-  updated_at: 2018-11-23
+  updated_at: 2021-09-10
 
 - name: Intercom
   url: https://www.intercom.com
