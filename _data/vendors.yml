@@ -59,15 +59,14 @@
   pricing_source: https://www.box.com/pricing
   updated_at: 2018-10-17
 
-- name: CloudFlare
-  url: https://cloudflare.com
-  base_pricing: $200 per month
-  sso_pricing: $2500 per month
-  percent_increase: 1150%
-  pricing_source: https://cloudflare.com/plans/
-  pricing_note: Quote
-  updated_at: 2021-02-27
-  
+- name: Canva
+  url: https://canva.com/
+  base_pricing: $7.77 per u/m
+  sso_pricing: $30 per u/m
+  percent_increase: 286%
+  pricing_source: https://www.canva.com/pricing/
+  updated_at: 2020-11-24
+ 
 - name: Clockify
   url: https://clockify.me
   base_pricing: $3.99 per u/m
