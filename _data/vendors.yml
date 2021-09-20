@@ -178,7 +178,7 @@
 
 - name: Kubecost
   url: https://www.kubecost.com
-  base_pricing: Free, or $449/mo
+  base_pricing: $449/mo
   sso_pricing: Contact us!
   percent_increase: ???
   pricing_source: https://www.kubecost.com/pricing
