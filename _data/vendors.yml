@@ -176,6 +176,14 @@
   pricing_source: https://jfrog.com/pricing/
   updated_at: 2021-09-06
 
+- name: Kubecost
+  url: https://www.kubecost.com
+  base_pricing: Free, or $449/mo
+  sso_pricing: Contact us!
+  percent_increase: ???
+  pricing_source: https://www.kubecost.com/pricing
+  updated_at: 2021-09-20
+
 - name: LaunchDarkly
   url: https://launchdarkly.com
   base_pricing: $65 per u/m
