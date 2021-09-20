@@ -35,6 +35,14 @@
   pricing_source: https://www.atlassian.com/software/jira/pricing
   updated_at: 2018-10-22
 
+- name: Bit.ly
+  url: https://www.bit.ly
+  base_pricing: $119/month
+  sso_pricing: $416/month
+  percent_increase: 250%
+  pricing_source: https://bitly.com/pages/pricing
+  updated_at: 2021-09-20
+
 - name: Bitrise
   url: https://www.bitrise.io
   base_pricing: $90
