@@ -301,6 +301,14 @@
   percent_increase: 100%
   pricing_source: https://www.postman.com/pricing
   updated_at: 2020-02-19
+  
+- name: Productboard
+  url: https://www.productboard.com/
+  base_pricing: $20 per u/m
+  sso_pricing: $100 per u/m
+  percent_increase: 500%
+  pricing_source: https://www.productboard.com/pricing/
+  updated_at: 2021-02-09
 
 - name: Quip
   url: https://quip.com/
