@@ -402,11 +402,12 @@
  
 - name: Trello
   url: https://trello.com
-  base_pricing: $10 per u/m
-  sso_pricing: $21 per u/m
-  percent_increase: 110%
-  pricing_source: https://trello.com/pricing
-  updated_at: 2018-10-17
+  base_pricing: $17.5 per u/m
+  sso_pricing: $3 per u/m at 100 users
+  footnotes: Requires Trello Enterprise and Atlassian Access prices at 100 Users. Higer or lower price/user depending on user count
+  percent_increase: 17.4%
+  pricing_source: https://www.atlassian.com/software/access/pricing & https://trello.com/en/pricing
+  updated_at: 2020-10-17
 
 - name: Twilio
   url: https://twilio.com
