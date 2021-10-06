@@ -374,6 +374,15 @@
   percent_increase: 67%
   pricing_source: https://snyk.io/plans
   updated_at: 2018-10-22
+  
+- name: SproutSocial
+  url: https://sproutsocial.com
+  base_pricing: $99-$249 per u/m
+  sso_pricing: Call Us!
+  footnotes: "[^sproutsocial]: $2500 one time fee, can be waived with a signed commitment to an annual plan."
+  percent_increase: ???
+  pricing_source: https://sproutsocial.com/pricing
+  updated_at: 2020-03-04
 
 - name: Squadcast
   url: https://www.squadcast.com
