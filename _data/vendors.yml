@@ -426,6 +426,15 @@
   updated_at: 2018-10-17
   footnotes: "[^victorops]: You can add SSO to a plan for $5 per u/m"
 
+- name: Wrike
+  url: https://www.wrike.com/price/
+  base_pricing: $9.80 per u/m
+  sso_pricing: "Call us!" but around $35 per u/m[^wrike-note]
+  percent_increase: 357%
+  pricing_source: https://www.wrike.com/price/
+  footnotes: "[^wrike-note]: You have to contact them for enterprise pricing, but for teams in the 10-20 range you're looking at ~$35 u/m and edging closer to $30 as you go past the 50 user mark."
+  updated_at: 2021-04-22
+  
 - name: Zapier
   url: https://zapier.com/
   base_pricing: $299 per u/m
