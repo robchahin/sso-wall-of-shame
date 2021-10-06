@@ -141,6 +141,14 @@
   pricing_source: https://github.com/pricing
   updated_at: 2020-04-14
 
+- name: Hashicorp (Terraform)
+  url: https://www.terraform.io/
+  base_pricing: Call Us!
+  sso_pricing: Call Us!
+  percent_increase: ???
+  pricing_source: https://www.hashicorp.com/products/terraform/enterprise
+  updated_at: 2019-04-19
+
 - name: Hubspot Marketing
   url: https://www.hubspot.com
   base_pricing: $46 per month
