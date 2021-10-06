@@ -7,6 +7,15 @@
   pricing_note: Quote
   footnotes: "[^airtable-price]: $60 per user per month, minimum of $3000 per month."
   updated_at: 2019-10-19
+  
+- name: Adobe Creative Cloud for Teams
+  url: https://www.adobe.com/creativecloud/business/teams.html
+  base_pricing: $33.99 or $79.99 per u/m[^adobe-pricing]
+  sso_pricing: Call Us!
+  pricing_source: https://www.adobe.com/creativecloud/business/teams/plans.html
+  pricing_note: SSO is included in Enterprise tier plan which requires quote from Adobe or VAR.
+  footnotes: "[^adobe-pricing]: $33.99 is per single application. $79.99 is a bundle of all applications"
+  updated_at: 2020-02-17
 
 - name: Aqua
   url: https://aquasec.com
