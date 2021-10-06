@@ -226,6 +226,14 @@
   pricing_source: https://www.mural.co/pricing
   updated_at: 2021-09-06
 
+- name: Mixpanel
+  url: https://mixpanel.com/
+  base_pricing: $89
+  sso_pricing: Call Us!
+  percent_increase: ???
+  pricing_source: https://mixpanel.com/pricing/
+  updated_at: 2020-07-17
+
 - name: NationBuilder
   url: https://nationbuilder.com
   base_pricing: $29 per month
