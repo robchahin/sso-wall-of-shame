@@ -35,6 +35,14 @@
   pricing_source: https://www.atlassian.com/software/jira/pricing
   updated_at: 2018-10-22
 
+- name: AutoDesk
+  url: https://www.autodesk.com
+  base_pricing: AutoCAD: $1,775/User/Year
+  sso_pricing: $300/User/Year  
+  percent_increase: 17%
+  pricing_source: Sales Rep
+  updated_at: 2021-04-19
+
 - name: Bitrise
   url: https://www.bitrise.io
   base_pricing: $90
