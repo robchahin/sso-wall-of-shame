@@ -1,0 +1,10 @@
+---
+base_pricing: $9 per u/m
+footnotes: '[^squadcast]: Upon request, you can also add SSO to Squadcast Pro for
+  an additional $4 per u/m, making it a 44% increase from the base pricing.'
+name: Squadcast
+percent_increase: 111%
+pricing_source: https://www.squadcast.com/pricing
+sso_pricing: $19 per u/m [^squadcast]
+updated_at: 2019-12-21
+url: https://www.squadcast.com

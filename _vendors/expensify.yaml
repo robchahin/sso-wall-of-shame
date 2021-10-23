@@ -1,0 +1,8 @@
+---
+base_pricing: $5 per u/m
+name: Expensify
+percent_increase: 80%
+pricing_source: https://www.expensify.com/pricing#features
+sso_pricing: $9 per u/m
+updated_at: 2018-10-17
+url: https://www.expensify.com

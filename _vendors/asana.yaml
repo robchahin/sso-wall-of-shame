@@ -1,0 +1,11 @@
+---
+base_pricing: $25 per u/m
+footnotes: '[^asana-price]: Based on business vs. enterprise tier quote; premium is
+  the lower paid tier and would reflect a larger tax.'
+name: Asana
+percent_increase: 140%
+pricing_note: Quote
+pricing_source: https://asana.com/pricing
+sso_pricing: $60 per u/m[^asana-price]
+updated_at: 2020-12-09
+url: https://asana.com

@@ -32,7 +32,8 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
 <tr><th>Vendor</th><th>Base Pricing</th><th>SSO Pricing</th><th>% Increase</th><th>Source</th><th>Date Updated</th></tr>
 </thead>
 <tbody>
-{% for vendor in site.data.vendors %}
+{% assign vendors = site.vendors | sort: "name" %}
+{% for vendor in vendors %}
 <tr>
 <td markdown="span"><a href="{{ vendor.url }}">{{ vendor.name }}</a></td>
 <td markdown="span">{{ vendor.base_pricing }}</td>
@@ -104,6 +105,6 @@ But it costs money to provide SAML support, so we can't offer it for free!
 </details>
 
 ## Footnotes
-{% for vendor in site.data.vendors %}
+{% for vendor in vendors %}
 {{ vendor.footnotes }}
 {% endfor %}
