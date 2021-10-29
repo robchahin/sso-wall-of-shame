@@ -61,9 +61,9 @@
 
  name: BrowserStack
   url: https://www.browserstack.com
-  base_pricing: $25 per u/m
-  sso_pricing: $33.52 per u/m
-  percent_increase: 200%
+  base_pricing: $150 per month[^5 users]
+  sso_pricing: $402.24 per month[^5 users]
+  percent_increase: 268%
   pricing_source: https://www.browserstack.com/pricing
   updated_at: 2021-10-29
 
