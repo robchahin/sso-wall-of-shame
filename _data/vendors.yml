@@ -59,6 +59,14 @@
   pricing_source: https://www.box.com/pricing
   updated_at: 2018-10-17
 
+ name: BrowserStack
+  url: https://www.browserstack.com
+  base_pricing: $150 per month[^5 users]
+  sso_pricing: $402.24 per month[^5 users]
+  percent_increase: 268%
+  pricing_source: https://www.browserstack.com/pricing
+  updated_at: 2021-10-29
+
 - name: Canva
   url: https://canva.com/
   base_pricing: $7.77 per u/m
