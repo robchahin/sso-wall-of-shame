@@ -1,3 +1,11 @@
+- name: 1Password
+  url: https://1password.com
+  base_pricing: $4 per u/m
+  sso_pricing: $8 per u/m
+  percent_increase: 100%
+  pricing_source: https://1password.com/teams/pricing/
+  updated_at: 2021-11-09
+
 - name: Airtable
   url: https://airtable.com
   base_pricing: $10 per u/m
@@ -82,6 +90,14 @@
   percent_increase: 143%
   pricing_source: https://copper.com/pricing
   updated_at: 2019-07-31
+  
+- name: Dashlane
+  url: https://dashlane.com
+  base_pricing: $5 per u/m
+  sso_pricing: $8 per u/m
+  percent_increase: 60%
+  pricing_source: https://www.dashlane.com/business/pricing
+  updated_at: 2021-11-09
 
 - name: DocuSign
   url: https://www.docusign.com
@@ -176,6 +192,14 @@
   pricing_source: https://jfrog.com/pricing/
   updated_at: 2021-09-06
 
+- name: LastPass
+  url: https://lastpass.com
+  base_pricing: $4 per u/m
+  sso_pricing: $8 per u/m
+  percent_increase: 100%
+  pricing_source: https://www.lastpass.com/team-password-manager
+  updated_at: 2021-11-09
+  
 - name: LaunchDarkly
   url: https://launchdarkly.com
   base_pricing: $65 per u/m
