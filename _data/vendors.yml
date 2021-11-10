@@ -83,6 +83,14 @@
   pricing_source: https://copper.com/pricing
   updated_at: 2019-07-31
 
+- name: Dialpad
+  url: https://www.dialpad.com/
+  base_pricing: $15 per u/m
+  sso_pricing: Call Us! (Over $25/u/m & 100 seat minimum)
+  percent_increase: ???
+  pricing_source: https://www.dialpad.com/pricing/
+  updated_at: 2021-11-09
+
 - name: DocuSign
   url: https://www.docusign.com
   base_pricing: $25 per u/m
