@@ -82,6 +82,15 @@
   percent_increase: 143%
   pricing_source: https://copper.com/pricing
   updated_at: 2019-07-31
+  
+- name: Docker
+  url: https://www.docker.com
+  base_pricing: $7 per u/m
+  sso_pricing: $21 per u/m
+  percent_increase: 200%
+  pricing_source: https://www.docker.com/pricing
+  footnotes: "[^docker-note]: Base pricing uses the Team tier, assuming that team structures were needed."
+  updated_at: 2021-12-08
 
 - name: DocuSign
   url: https://www.docusign.com
