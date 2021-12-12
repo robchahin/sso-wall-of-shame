@@ -384,6 +384,15 @@
   pricing_source: https://www.squadcast.com/pricing
   updated_at: 2019-12-21
  
+- name: Strapi
+  url: https://strapi.io/
+  base_pricing: $25 per u/m
+  sso_pricing: Contact Us
+  percent_increase: ???
+  pricing_source: https://strapi.io/pricing-self-hosted
+  updated_at: 2021-12-11
+  
+
 - name: SurveyMonkey
   url: https://www.surveymonkey.com
   base_pricing: $25 per u/m
