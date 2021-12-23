@@ -1,0 +1,9 @@
+---
+base_pricing: $29 per u/m
+footnotes: '[^victorops]: You can add SSO to a plan for $5 per u/m'
+name: VictorOps
+percent_increase: 69%
+pricing_source: https://victorops.com/pricing
+sso_pricing: $49 per u/m[^victorops]
+updated_at: 2018-10-17
+url: https://victorops.com

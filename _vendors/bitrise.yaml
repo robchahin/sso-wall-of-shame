@@ -1,0 +1,8 @@
+---
+base_pricing: $90
+name: Bitrise
+percent_increase: 200%
+pricing_source: https://www.bitrise.io/pricing/teams
+sso_pricing: $270
+updated_at: 2019-06-25
+url: https://www.bitrise.io

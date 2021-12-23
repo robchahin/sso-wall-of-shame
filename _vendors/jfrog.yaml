@@ -1,0 +1,10 @@
+---
+base_pricing: $98/mo
+footnotes: '[^jfrog]: Includes all JFrog products under one license, including Artifactory,
+  Bintray, XRay, etc.'
+name: JFrog
+percent_increase: 613%
+pricing_source: https://jfrog.com/pricing/
+sso_pricing: $699/mo[^jfrog]
+updated_at: 2021-09-06
+url: https://jfrog.com/

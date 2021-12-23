@@ -1,0 +1,11 @@
+---
+base_pricing: $29 per month
+footnotes: '[^nationbuilder]: To upgrade one plan level is represented by this price
+  increase, but to get single sign-on, you actually have to go up another plan, which
+  is ''Call Us'' pricing.'
+name: NationBuilder
+percent_increase: 586%++[^nationbuilder]
+pricing_source: https://nationbuilder.com/pricing
+sso_pricing: Call Us! (over $199/month)
+updated_at: 2019-02-09
+url: https://nationbuilder.com
