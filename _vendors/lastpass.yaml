@@ -1,0 +1,8 @@
+---
+base_pricing: $3 per u/m
+name: Lastpass
+percent_increase: 100%
+pricing_source: https://www.lastpass.com/pricing
+sso_pricing: $6 per u/m
+updated_at: 2022-03-01
+url: https://lastpass.com
