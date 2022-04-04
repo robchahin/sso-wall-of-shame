@@ -1,0 +1,11 @@
+---
+base_pricing: $1.00/1k search requests, 1k records
+footnotes: '[^algolia-price]: Pricing is based on requests and records; 
+    SSO requires custom pricing based on usage.
+name: Algolia
+percent_increase: XX%
+pricing_note: Quote 
+pricing_source: https://www.algolia.com/pricing/
+sso_pricing: Unknown[^algolia-price]
+updated_at: 2022-04-04
+url: https://www.algolia.com
