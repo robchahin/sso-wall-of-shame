@@ -9,4 +9,4 @@ percent_increase: 42%
 pricing_source: https://www.atlassian.com/software/jira/pricing
 sso_pricing: $10 per u/m[^jira-price]
 updated_at: 2018-10-22
-url: https://www.atlassian.com
+vendor_url: https://www.atlassian.com
