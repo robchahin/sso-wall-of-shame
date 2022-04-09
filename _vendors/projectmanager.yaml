@@ -1,8 +1,9 @@
 ---
-base_pricing: $11.50 per user/mo for Team
+base_pricing: $11.50 per u/m
 name: Project Manager
 percent_increase: 291%
 pricing_source: https://www.projectmanager.com/pricing
-sso_pricing: $45 per user/mo with annual contract
+pricing_note: Quote
+sso_pricing: $45 per u/m
 updated_at: 2022-03-30
 url: https://www.projectmanager.com/
