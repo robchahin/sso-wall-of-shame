@@ -35,7 +35,7 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
 {% assign vendors = site.vendors | sort: "name" %}
 {% for vendor in vendors %}
 <tr>
-<td markdown="span"><a href="{{ vendor.url }}">{{ vendor.name }}</a></td>
+<td markdown="span"><a href="{{ vendor.vendor_url }}">{{ vendor.name }}</a></td>
 <td markdown="span">{{ vendor.base_pricing }}</td>
 <td markdown="span">{{ vendor.sso_pricing }}</td>
 <td markdown="span">{{ vendor.percent_increase }}</td>
