@@ -1,0 +1,10 @@
+---
+base_pricing: $16 per u/m
+footnotes: '[^calendly-price]: $60 per user per month, minimum of $30 seats per month.'
+name: Calendly
+percent_increase: 500%
+pricing_note: Quote
+pricing_source: https://airtable.com/pricing
+sso_pricing: $60 per u/m
+updated_at: 2019-10-19
+vendor_url: https://airtable.com
