@@ -1,0 +1,10 @@
+---
+base_pricing: $0 per month
+footnotes: 'Enterprise - Custom'
+name: CloudfFlare
+percent_increase: 500%
+pricing_note: 
+pricing_source: https://www.cloudflare.com/en-gb/plans
+sso_pricing: > $200 per month
+updated_at: 2022-05-20
+vendor_url: https://www.cloudflare.com
