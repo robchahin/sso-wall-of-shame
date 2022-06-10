@@ -1,0 +1,8 @@
+---
+base_pricing: $10 per u/m
+name: Linear
+percent_increase: 50%
+pricing_source: https://linear.app/pricing
+sso_pricing: $15 per u/m
+updated_at: 2022-06-09
+vendor_url: https://www.linear.app
