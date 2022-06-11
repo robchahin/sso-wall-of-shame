@@ -64,7 +64,7 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
 </table>
 
 ## The Other List ##
-Some vendors simply do not list their pricing for SSO because the pricing is negotiated with an account manager. These vendors get their own table as we assume they apply a significant premium for SSO.
+Many vendors do not list pricing for their Enterprise tier because they use negotiated pricing. For these vendors, “Call Us!” is listed as a placeholder. If you have numbers, please share them.
 
 <table class="sortable">
 <thead>
@@ -105,13 +105,6 @@ Correct. Since we don't know who's reading the page, it's easiest to just assume
 How is base pricing determined?
 </summary>
 We disregard free tier pricing, as we can assume these aren't intended for long term business customer use. We also disregard "single person" pricing, under the assumption that we're looking on behalf of a team of 5, 10, or more people.
-</details>
-
-<details>
-<summary>
-What does "Call Us!" mean?
-</summary>
-Many vendors do not list pricing for Enterprise-tier pricing. To avoid needing to call all of them to get this data, "Call Us!" may be listed as a placeholder. If you have numbers, please share them.
 </details>
 
 <details>
