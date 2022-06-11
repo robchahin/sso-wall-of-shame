@@ -109,13 +109,6 @@ We disregard free tier pricing, as we can assume these aren't intended for long 
 
 <details>
 <summary>
-What does "Call Us!" mean?
-</summary>
-Many vendors do not list pricing for Enterprise-tier pricing. To avoid needing to call all of them to get this data, "Call Us!" may be listed as a placeholder. If you have numbers, please share them.
-</details>
-
-<details>
-<summary>
 What does "Quote" mean in the Source column?
 </summary>
 If a vendor doesn't list pricing but a user has submitted pricing based on a quote, it can be included here. If a vendor feels that their actual pricing is inaccurately reflected by this quote, feel free to let me know and I'll update the page.
