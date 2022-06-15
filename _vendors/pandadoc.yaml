@@ -1,0 +1,12 @@
+---
+base_pricing: $19 per u/m
+footnotes: '[^pandadoc]: SSO is included with the Enterprise plan for $89 u/m, or
+  can be added to the Business plan for $120 u/y. All prices given require an annual
+  commitment'
+name: PandaDoc
+percent_increase: 210%
+pricing_note: Quote
+pricing_source: https://www.pandadoc.com/pricing/
+sso_pricing: $59 per u/m[^pandadoc]
+updated_at: 2019-10-16
+vendor_url: https://www.pandadoc.com

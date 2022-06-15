@@ -1,0 +1,8 @@
+---
+base_pricing: $26 for 100K events
+name: Sentry
+percent_increase: 208%
+pricing_source: https://sentry.io/pricing/
+sso_pricing: $80 for 100K events
+updated_at: 2018-10-20
+vendor_url: https://sentry.io

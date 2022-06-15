@@ -1,0 +1,8 @@
+---
+base_pricing: $7 per u/m
+name: Docker
+percent_increase: 200%
+pricing_source: https://www.docker.com/pricing
+sso_pricing: $21 per u/m
+updated_at: 2021-01-26
+vendor_url: https://www.docker.com/

@@ -1,0 +1,8 @@
+---
+base_pricing: $2 per u/m
+name: Rocket.Chat Cloud
+percent_increase: 100%
+pricing_source: https://rocket.chat/pricing#cloud
+sso_pricing: $4 per u/m
+updated_at: 2018-10-22
+vendor_url: https://rocket.chat/

@@ -1,0 +1,8 @@
+---
+base_pricing: $25 per u/m
+name: RingCentral
+percent_increase: 40%
+pricing_source: https://www.ringcentral.com/office/plansandpricing.html
+sso_pricing: $35 per u/m
+updated_at: 2018-10-17
+vendor_url: https://www.ringcentral.com
