@@ -1,7 +1,7 @@
 ---
-base_pricing: $9.99 per month
+base_pricing: $24.99 per month
 name: Mailtrap
-percent_increase: 2902%
+percent_increase: 1100%
 pricing_source: https://mailtrap.io/pricing/
 sso_pricing: $299.99 per month
 updated_at: 2022-06-14
