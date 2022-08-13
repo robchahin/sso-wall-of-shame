@@ -1,0 +1,8 @@
+---
+base_pricing: $0
+name: Ubiquiti
+percent_increase: 400-500%
+pricing_source: https://ui.com/uid#pricing-plans
+sso_pricing: $4-$5 per u/m
+updated_at: 2022-08-12
+vendor_url: https://ui.com/
