@@ -1,0 +1,9 @@
+---
+base_pricing: $35 per month
+footnotes: '[^Sender]: There is also a base plan for 10$ per month and discounts for yearly purchases, but the monthly 'Professional' plan is listed here. To get single-sign-on you must upgrade to 'Enterprise', which has ''Call Us'' pricing.
+name: Sender
+percent_increase: ???%[^Sender]
+pricing_source: https://www.sender.net/pricing/
+sso_pricing: Call Us! ( $???/month)
+updated_at: 2022-09-0
+vendor_url: https://www.sender.net
