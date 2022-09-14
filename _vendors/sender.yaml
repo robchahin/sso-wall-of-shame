@@ -1,5 +1,5 @@
 ---
-base_pricing: $35 per month
+base_pricing: $10 per month
 footnotes: '[^Sender]: SSO is only offered on the Enterprise plan, which has ''Call Us'' pricing.'
 name: Sender
 percent_increase: ???%[^Sender]
