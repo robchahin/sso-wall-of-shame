@@ -1,0 +1,8 @@
+---
+base_pricing: $14.99 per u/m
+name: Zoom
+percent_increase: 33.3%
+pricing_source: https://zoom.us/pricing
+sso_pricing: $19.99 per u/m
+updated_at: 2022-10-31
+vendor_url: https://zoom.us/
