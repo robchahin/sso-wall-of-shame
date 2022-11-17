@@ -1,0 +1,8 @@
+---
+base_pricing: $0 per u/m
+name: Nexus Repository
+percent_increase: 
+pricing_source: https://www.sonatype.com/products/pricing
+sso_pricing: $13 per u/m
+updated_at: 2022-11/17
+vendor_url: https://www.sonatype.com/products/nexus-repository
