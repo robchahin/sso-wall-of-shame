@@ -1,0 +1,10 @@
+---
+base_pricing: $171 per m
+footnotes: '[^breezyhr-price]: SSO is a $1000 per m addon to Pro plan which is $500 per m minimum'
+name: Breezy HR
+percent_increase:  %580
+pricing_note: Quote
+pricing_source: https://breezy.hr/pricing
+sso_pricing: $1000 per m[^breezyhr-price]
+updated_at: 2023-01-15
+vendor_url: https://breezy.hr
