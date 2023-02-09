@@ -1,0 +1,9 @@
+---
+base_pricing: $10.83 per u/m
+name: TextExpander
+percent_increase: 35-100%
+pricing_note: Quote
+pricing_source: https://textexpander.com/pricing
+sso_pricing: $13 per u/m for SAML or $20 u/m to include SCIM
+updated_at: 2022-2-5
+vendor_url: https://textexpander.com
