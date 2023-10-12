@@ -1,7 +1,7 @@
 ---
 base_pricing: $12 per u/m
 name: Postman
-percent_increase: 408%
+percent_increase: 308%
 pricing_source: https://www.postman.com/pricing
 sso_pricing: $49 per u/m
 updated_at: 2023-12-10
