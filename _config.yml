@@ -5,6 +5,10 @@ description: >-
 
 url: https://robchahin.github.io/sso-wall-of-shame
 
+# Not included by default but throws a Liquid exception if not present;
+# error only thrown in GHA, not during local builds
+repository: robchahin/sso-wall-of-shame
+
 theme: jekyll-theme-cayman
 kramdown:
   parse_block_html: true
