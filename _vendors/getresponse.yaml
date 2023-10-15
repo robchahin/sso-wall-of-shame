@@ -1,9 +1,8 @@
-
 ---
 base_pricing: $48 per month
 name: GetResponse
 percent_increase: 104%+
 pricing_source: https://www.getresponse.com/pricing#max
-sso_pricing: Call Us! (>$98/month)
+sso_pricing: Call Us! ($98/month+)
 updated_at: 2023-10-15
 vendor_url: https://www.getresponse.com
