@@ -1,10 +1,9 @@
 
 ---
-base_pricing: $19 per month
-footnotes: '[^GetResponse]: Only offered with Max² plan, which has ''Call Us'' pricing.'
+base_pricing: $48 per month
 name: GetResponse
-percent_increase: ++5163%[^GetResponse]
+percent_increase: 104%+
 pricing_source: https://www.getresponse.com/pricing#max
-sso_pricing: Call Us! (>$1000/month)
-updated_at: 2022-09-13
+sso_pricing: Call Us! (>$98/month)
+updated_at: 2023-10-15
 vendor_url: https://www.getresponse.com
