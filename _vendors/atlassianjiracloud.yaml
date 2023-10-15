@@ -1,12 +1,12 @@
 ---
-base_pricing: $7 per u/m
+base_pricing: $7.75 per u/m
 footnotes: '[^jira-price]: Hard to compare since Access seems to cover all Atlassian
   products, so should get cheaper per seat as more products are used - but that doesn''t
   help people only using Jira. (Jira was chosen as probably the most common Atlassian
   product.)'
 name: Atlassian (Jira Cloud)
-percent_increase: 42%
-pricing_source: https://www.atlassian.com/software/jira/pricing
-sso_pricing: $10 per u/m[^jira-price]
-updated_at: 2018-10-22
+percent_increase: 51%
+pricing_source: https://www.atlassian.com/software/access/pricing
+sso_pricing: $11.75 per u/m[^jira-price]
+updated_at: 2023-09-22
 vendor_url: https://www.atlassian.com
