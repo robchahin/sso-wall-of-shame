@@ -1,0 +1,9 @@
+---
+base_pricing: $10 per month
+footnotes: '[^Sender]: SSO is only offered on the Enterprise plan, which has ''Call Us'' pricing.'
+name: Sender
+percent_increase: ???%[^Sender]
+pricing_source: https://www.sender.net/pricing/
+sso_pricing: Call Us! ( $???/month)
+updated_at: 2022-09-0
+vendor_url: https://www.sender.net
