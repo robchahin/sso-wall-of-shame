@@ -1,7 +1,7 @@
 ---
 base_pricing: $7.25 per u/m
 name: Slack
-percent_increase: 72.41%
+percent_increase: 72%
 pricing_source: https://slack.com/pricing
 sso_pricing: $12.50 per u/m
 updated_at: 2023-06-29
