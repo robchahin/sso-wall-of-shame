@@ -1,0 +1,8 @@
+---
+base_pricing: $99 per u/m
+name: Stoplight
+percent_increase: 400%
+pricing_source: https://stoplight.io/pricing
+sso_pricing: $399 per u/m
+updated_at: 2023-01-27
+vendor_url: https://stoplight.io
