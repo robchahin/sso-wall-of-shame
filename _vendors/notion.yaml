@@ -1,8 +1,8 @@
 ---
 base_pricing: $8 per u/m
 name: Notion
-percent_increase: 150%
-pricing_source: https://www.notion.so/Plans-pricing-6067b27f7a244ccc8320c984baea61d7#bbb051f972bb45c8a8c250ed8ae686ea
-sso_pricing: $20 per u/m
-updated_at: 2020-04-29
+percent_increase: 87.5%
+pricing_source: https://www.notion.so/pricing?utm_campaign=Pricing+milestone+2+email&utm_campaigntype=behavioral&utm_content=Updates+to+your+Notion+plan&utm_medium=email&utm_source=customer.io
+sso_pricing: $15 per u/m
+updated_at: 2022-12-07
 vendor_url: https://www.notion.so
