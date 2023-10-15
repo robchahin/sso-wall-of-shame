@@ -1,0 +1,8 @@
+---
+base_pricing: $20 per month
+name: Sendgrid
+percent_increase: 350%
+pricing_source: https://sendgrid.com/pricing/
+sso_pricing: $90 per month
+updated_at: 2023-10-15
+vendor_url: https://sendgrid.com
