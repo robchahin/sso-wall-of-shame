@@ -1,9 +1,11 @@
 ---
-base_pricing: $2500 for Administrative Edition, 
-footnotes: '[^twilio]: SSO is now part of their Administrative and Enterprise Editions, starting at 2500/month and up as an addon package'
+name: Twilio
+base_pricing: ?
+footnotes: '[^twilio]: SSO is included in the Administrative and Enterprise editions, starting at $2500 per month. Because irony is dead, SSO is not included in the Security edition.'
 name: Twilio
 percent_increase: 30%
+pricing_note: Quote
 pricing_source: https://www.twilio.com/editions
-sso_pricing: See Notes[^twilio]
-updated_at: 2022-05-05
+sso_pricing: Ironic[^twilio]
+updated_at: 2023-10-16
 vendor_url: https://twilio.com
