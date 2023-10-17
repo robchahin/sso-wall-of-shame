@@ -1,10 +1,9 @@
 ---
-base_pricing: $0
-footnotes: '[^twilio]: Base pricing is extremely variable. SSO is the greater of $15,000
-  or a 30% surcharge, so could be anywhere from 30% to ''000s%'
+base_pricing: $2500 for Administrative Edition, 
+footnotes: '[^twilio]: SSO is now part of their Administrative and Enterprise Editions, starting at 2500/month and up as an addon package'
 name: Twilio
 percent_increase: 30%
-pricing_source: https://www.twilio.com/enterprise
+pricing_source: https://www.twilio.com/editions
 sso_pricing: See Notes[^twilio]
-updated_at: 2018-10-22
+updated_at: 2022-05-05
 vendor_url: https://twilio.com
