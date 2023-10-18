@@ -1,8 +1,9 @@
 ---
-base_pricing: $7 per u/m
+base_pricing: $9 per u/m
 name: Lucidchart
-percent_increase: ???
-pricing_source: https://www.lucidchart.com/users/registerLevel
-sso_pricing: Call Us!
-updated_at: 2018-10-17
+percent_increase: 122%
+pricing_source: https://lucid.app/pricing/lucidchart
+pricing_note: Quote
+sso_pricing: $20 per u/m
+updated_at: 2022-05-24
 vendor_url: https://www.lucidchart.com

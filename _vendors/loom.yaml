@@ -1,8 +1,10 @@
 ---
 base_pricing: $12.50 per u/m
 name: Loom
-percent_increase: ???
+percent_increase: 260%
+pricing_note: Quote
 pricing_source: https://www.loom.com/pricing
-sso_pricing: Call Us!
-updated_at: 2023-08-11
-vendor_url: https://www.loom.com
+sso_pricing: $45 per u/m
+updated_at: 2023-10-14
+vendor_url: https://www.loom.com/
+

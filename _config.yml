@@ -3,7 +3,11 @@ description: >-
   A list of vendors that treat single sign-on as a luxury feature, not a core
   security requirement.
 
-url: https://robchahin.github.io/sso-wall-of-shame
+url: https://sso.tax
+
+# Not included by default but throws a Liquid exception if not present;
+# error only thrown in GHA, not during local builds
+repository: robchahin/sso-wall-of-shame
 
 theme: jekyll-theme-cayman
 kramdown:
