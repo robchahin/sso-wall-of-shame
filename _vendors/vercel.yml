@@ -1,9 +1,9 @@
 ---
-base_pricing: $20 USD/month per team member on Pro plan
-footnotes: '[^vercel]: Hard to give a direct comparisson because the Enterprise plan includes a lot of other things, but SSO is not available standalone.'
+base_pricing: $20 per u/m
+footnotes: '[^vercel]: Enterprise for 8 users is "low-to-mid 4 figures", so pricing increase is based on $2000 split 8 ways.'
 name: Vercel
-percent_increase: 100-500%
+percent_increase: 1150%
 pricing_source: https://vercel.com/pricing
-sso_pricing: Call for pricing: "mid to low 4 digit USD / month for team of 8"
-updated_at: 2022-10-05
+sso_pricing: Call Us![^vercel]
+updated_at: 2023-10-17
 vendor_url: https://vercel.com
