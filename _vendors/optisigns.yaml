@@ -1,0 +1,8 @@
+---
+base_pricing: $10 per device/m
+name: OptiSigns
+percent_increase: 50%
+pricing_source: https://www.optisigns.com/pricing
+sso_pricing: $15 per device/m
+updated_at: 2023-10-17
+vendor_url: https://www.optisigns.com
