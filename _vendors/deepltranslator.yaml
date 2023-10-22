@@ -1,7 +1,8 @@
-base_pricing: $10.49 per month
+---
+base_pricing: $10.49 per u/m
 name: DeepL Translator
 percent_increase: 229%
-pricing_source: https://www.deepl.com/pro?cta=header-prices
-sso_pricing: $34.49 per u/m[^asana-price]
-updated_at: 2022-10-07
+pricing_source: https://www.deepl.com/pro
+sso_pricing: $34.49 per u/m
+updated_at: 2023-10-22
 vendor_url: https://deepl.com
