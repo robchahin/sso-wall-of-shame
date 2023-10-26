@@ -1,0 +1,9 @@
+---
+base_pricing: $20 per month
+footnotes: '[^mixpanel]: Base plan includes 10K events, whereas SSO-enabled plan (Entreprise) includes 5M events.'
+name: Mixpanel
+percent_increase: 4065%
+pricing_source: https://mixpanel.com/pricing
+sso_pricing: $833 per month[^mixpanel]
+updated_at: 2023-10-25
+vendor_url: https://mixpanel.com
