@@ -1,0 +1,8 @@
+---
+base_pricing: $199/mo or unknown for self-hosted EE
+name: Signoz
+percent_increase: ∞%
+pricing_source: https://signoz.io/pricing/
+sso_pricing: depends on the plan
+updated_at: 2023-12-12
+vendor_url: https://signoz.io
