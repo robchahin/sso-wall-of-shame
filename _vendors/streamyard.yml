@@ -1,0 +1,8 @@
+---
+base_pricing: $0.00
+name: StreamYard
+percent_increase: n%
+pricing_source: https://streamyard.com/plan?planType=businesses
+sso_pricing: $99.00
+updated_at: 2024-01-10
+vendor_url: https://www.streamyard.com
