@@ -1,0 +1,11 @@
+---
+base_pricing: $20 per d/m
+footnotes: '[^cloudflare-price]: Based on pro vs. enterprise tier quote; premium is
+  the lower paid tier and would reflect a larger tax.'
+name: Cloudflare
+percent_increase: 4900%
+pricing_note: Quote
+pricing_source: https://www.cloudflare.com/plans/
+sso_pricing: $1000 per d/m[^cloudflare-price]
+updated_at: 2023-11-23
+vendor_url: https://cloudflare.com
