@@ -1,0 +1,10 @@
+---
+base_pricing: $99 per mo
+footnotes: '[^logrocket]: Monthly per user pricing not included/listed'
+name: LogRocket
+percent_increase: 254%
+pricing_note: Pricing based on 10k session/mo
+pricing_source: https://logrocket.com/pricing
+sso_pricing: $350 per mo[^logrocket]
+updated_at: 2024-01-12
+vendor_url: https://logrocket.com/
