@@ -6,4 +6,4 @@ pricing_source: https://streamyard.com/plan?planType=businesses
 sso_pricing: Call Us! (over $299/mo)
 updated_at: 2024-01-14
 vendor_url: https://www.streamyard.com
-footnotes: '[streamyard]: Only available on the highest level enterprise plan called "Business", which is ''Call Us!'' pricing.'
+footnotes: '[^streamyard]: Only available on the highest level enterprise plan called "Business", which is ''Call Us!'' pricing.'
