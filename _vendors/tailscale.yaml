@@ -1,0 +1,9 @@
+---
+base_pricing: Free
+footnotes: '[^tailscale]: For "Advanced idP" (ex Okta, OneLogin). Call Us for Enterprise, which includes SCIM'
+name: Tailscale
+percent_increase: ???
+pricing_source: https://tailscale.com/pricing
+sso_pricing: $18 per u/m [^tailscale]
+updated_at: 2024-02-29
+vendor_url: https://tailscale.com/
