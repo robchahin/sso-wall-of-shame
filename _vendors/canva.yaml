@@ -1,0 +1,9 @@
+---
+base_pricing: $10 per u/m
+name: Canva
+percent_increase: 100%
+pricing_source: https://www.canva.com/pricing/
+sso_pricing: $20 per u/m
+pricing_note: Quote
+updated_at: 2024-05-28
+vendor_url: https://canva.com/
