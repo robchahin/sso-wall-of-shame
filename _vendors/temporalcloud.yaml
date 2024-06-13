@@ -1,0 +1,10 @@
+---
+base_pricing: $25 per 1,000,000 actions, $0.042 per GB per hour
+footnotes: '[^temporal-price]: Pay-as-you-go based on actions and storage with an additional $200 support fee regardless of SSO.'
+name: Temporal Cloud
+percent_increase: 100%
+pricing_note: Quote
+pricing_source: https://temporal.io/pricing
+sso_pricing: $200 per month
+updated_at: 2024-04-09
+vendor_url: https://temporal.io
