@@ -5,8 +5,8 @@ footnotes: '[^gitbook-price]: Google SSO is provided for free, but
   adds a fixed $99/mo "platform fee". The percent increase reflects this
   platform fee with a single user.'
 name: GitBook
-percent_increase: 1325%
+percent_increase: 87.5%
 pricing_source: https://www.gitbook.com/pricing
-sso_pricing: $15 per u/m + $99/mo[^gitbook-price]
+sso_pricing: $15 per u/m[^gitbook-price]
 updated_at: 2024-05-09
 vendor_url: https://www.gitbook.com
