@@ -2,8 +2,7 @@
 base_pricing: $8 per u/m
 footnotes: '[^gitbook-price]: Google SSO is provided for free, but
   SAML is only included at the Pro tier. The move from Plus to Pro also
-  adds a fixed $99/mo "platform fee". The percent increase reflects this
-  platform fee with a single user.'
+  adds a fixed $99/mo "platform fee".'
 name: GitBook
 percent_increase: 87.5%
 pricing_source: https://www.gitbook.com/pricing
