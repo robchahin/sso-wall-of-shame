@@ -1,9 +1,9 @@
 ---
-base_pricing: $10 per u/m
+base_pricing: $10 per u/m (minimum purchase amount is $30 per m)
 name: Canva
-percent_increase: 100%
+percent_increase: 300%
 pricing_source: https://www.canva.com/pricing/
-sso_pricing: $20 per u/m
+sso_pricing: $40 per u/m (minimum purchase amount is $12000 per year, paid upfront)
 pricing_note: Quote
-updated_at: 2024-05-28
+updated_at: 2024-06-17
 vendor_url: https://canva.com/
