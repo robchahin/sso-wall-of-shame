@@ -1,8 +1,8 @@
 ---
 base_pricing: $4 per u/m
 name: BitWarden
-percent_increase: 67%
+percent_increase: 50%
 pricing_source: https://bitwarden.com/pricing/business
 sso_pricing: $6 per u/m
-updated_at: 2024-06-06
+updated_at: 2024-08-28
 vendor_url: https://bitwarden.com
