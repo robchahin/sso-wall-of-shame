@@ -1,0 +1,8 @@
+---
+base_pricing: $0 per u/m
+name: Passbolt (Self-hosted)
+percent_increase: ∞%
+pricing_source: https://www.passbolt.com/pricing/pro
+sso_pricing: $4.9 per u/m
+updated_at: 2024-10-10
+vendor_url: https://www.passbolt.com/
