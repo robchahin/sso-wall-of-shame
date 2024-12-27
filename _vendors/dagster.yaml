@@ -1,9 +1,8 @@
 ---
-base_pricing: $10 per u/m
+base_pricing: $100 per u/m
 name: Dagster
-percent_increase: N/A
-pricing_note: Quote
+percent_increase: ???
 pricing_source: https://dagster.io/pricing
-sso_pricing: N/A
+sso_pricing: Call Us!
 updated_at: 2024-12-04
 vendor_url: https://dagster.io/
