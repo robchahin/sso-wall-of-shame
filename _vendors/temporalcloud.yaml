@@ -1,0 +1,11 @@
+---
+base_pricing: $200 per month[^temporal]
+footnotes: '[^temporal]: Pay-as-you-go based on actions and storage with an additional $200 support fee. SSO requires an additional monthly fee of $200 to $500 depending on users.'
+name: Temporal Cloud
+percent_increase: 100%+
+pricing_source:
+- https://temporal.io/pricing
+- https://docs.temporal.io/cloud/pricing#sso-and-saml
+sso_pricing: $400+ per month[^temporal]
+updated_at: 2024-12-27
+vendor_url: https://temporal.io
