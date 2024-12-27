@@ -1,11 +1,11 @@
 ---
 name: Twilio
 base_pricing: ???
-footnotes: '[^twilio]: SSO is included in the Administrative and Enterprise editions, starting at $2500 per month. Because irony is dead, SSO is not included in the Security edition.'
+footnotes: '[^twilio]: SSO is included in all three Twilio Editions, starting at $3,500 per month. This is on top of all normal spend'
 name: Twilio
-percent_increase: 30%
+percent_increase: ???%
 pricing_note: Quote
 pricing_source: https://www.twilio.com/editions
-sso_pricing: Ironic[^twilio]
-updated_at: 2023-10-16
+sso_pricing: $3500 per month[^twilio]
+updated_at: 2024-10-08
 vendor_url: https://twilio.com
