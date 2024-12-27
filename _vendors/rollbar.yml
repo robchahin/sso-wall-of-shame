@@ -1,0 +1,9 @@
+---
+base_pricing: $19 per month (25k events)
+footnotes: '[^rollbar]: Basic SSO for Google and GitHub on all plans.  Okta, Azure, etc. are on Advanced plan and up. Increase % varies based on event volume from 105% to 85% at maximum volume'
+name: Rollbar
+percent_increase: 105%
+pricing_source: https://rollbar.com/pricing/
+sso_pricing: $39 per month (25K events)[^rollbar]
+updated_at: 2024-11-08
+vendor_url: https://rollbar.com/developer/ 
