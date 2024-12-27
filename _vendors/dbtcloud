@@ -1,5 +1,5 @@
 ---
-base_pricing: $100 u/m
+base_pricing: $100 per u/m
 name: dbt Cloud
 percent_increase: ???
 pricing_source: https://www.getdbt.com/pricing
