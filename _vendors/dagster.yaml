@@ -1,5 +1,5 @@
 ---
-base_pricing: $100 per u/m
+base_pricing: $100 per month
 name: Dagster
 percent_increase: ???
 pricing_source: https://dagster.io/pricing
