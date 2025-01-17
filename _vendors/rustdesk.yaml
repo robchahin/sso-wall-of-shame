@@ -1,0 +1,8 @@
+---
+base_pricing: $0 per u/m
+name: RustDesk
+percent_increase: ∞
+pricing_source: https://rustdesk.com/pricing/?lang=en
+sso_pricing: $19.90 for 10 u/m
+updated_at: 2025-01-17
+vendor_url: https://rustdesk.com/
