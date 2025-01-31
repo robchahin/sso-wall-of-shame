@@ -1,0 +1,8 @@
+---
+base_pricing: $6.67 per u/m
+name: Zulip Cloud
+percent_increase: 50%
+pricing_source: https://zulip.com/plans/
+sso_pricing: $10.00 per u/m
+updated_at: 2025-31-01
+vendor_url: https://zulip.com/
