@@ -1,0 +1,8 @@
+---
+base_pricing: $20.00
+name: Cursor
+percent_increase: 50%
+pricing_source: https://www.cursor.com/en/pricing
+sso_pricing: $40.00
+updated_at: 2025-03-24
+vendor_url: https://www.cursor.com
