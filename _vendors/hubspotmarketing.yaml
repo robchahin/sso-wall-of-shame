@@ -1,8 +1,8 @@
 ---
-base_pricing: $46 per month
+base_pricing: $15 per month (starter plan)
 name: Hubspot Marketing
-percent_increase: 6300%
+percent_increase: 1777%
 pricing_source: https://www.hubspot.com/pricing/marketing
-sso_pricing: $2944 per month
-updated_at: 2018-11-23
+sso_pricing: $266 per month ($800/mo for 3 users  - professional tier)
+updated_at: 2025-04-10
 vendor_url: https://www.hubspot.com
