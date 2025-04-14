@@ -1,0 +1,8 @@
+---
+base_pricing: $19.99 per screen/m
+name: Playlister
+percent_increase: 100%
+pricing_source: https://www.playlister.app/pricing
+sso_pricing: $39.99 per screen/m
+updated_at: 2023-01-14
+vendor_url: https://www.playlister.app
