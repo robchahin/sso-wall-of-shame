@@ -1,0 +1,10 @@
+---
+base_pricing: starts at $100 per month
+footnotes: '[^plaid-price]: SSO is included in the Basic Support plan at $2000 per month addon' 
+name: Plaid
+percent_increase: 1900%
+pricing_note: Quote
+pricing_source: https://plaid.com/docs/account/billing/
+sso_pricing: $2000 per month[^plaid-price]
+updated_at: 2024-06-06
+vendor_url: https://plaid.com
