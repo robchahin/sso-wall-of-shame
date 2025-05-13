@@ -1,0 +1,12 @@
+---
+base_pricing: $79 per u/m
+footnotes: '[^writesonic-price]: Writesonic has with multiple products and
+  pricing models. Starting at $1500 per month is the Enterprise plan, which is the only
+  one that includes SSO. The $79 per u/m is for the Standard plan.'
+name: Writesonic
+percent_increase: 1798%
+pricing_note: Quote
+pricing_source: https://writesonic.com/pricing
+sso_pricing: $1500[^writesonic-price]
+updated_at: 2025-05-13
+vendor_url: https://writesonic.com
