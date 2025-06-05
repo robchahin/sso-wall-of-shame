@@ -1,0 +1,9 @@
+---
+base_pricing: $15 per u/m
+footnotes: '[^appsmith-price]: SSO pricing is high due to a 100 user minimum.'
+name: Appsmith
+percent_increase: 16567%
+pricing_source: https://www.appsmith.com/pricing
+sso_pricing: $2500[^appsmith-price]
+updated_at: 2025-06-04
+vendor_url: https://www.appsmith.com
