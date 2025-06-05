@@ -1,11 +1,9 @@
 ---
-base_pricing: $0 per u/m
-footnotes: '[^asana-price]: Based on Free vs. Enterprise tier quote; Free and Business include Google and Github OAuth only,
- Enterprise for other OAuth and OIDC is where the tax applies to. Enterprise tier is up to 100 users, comparison is for 5.'
+base_pricing: $15 per u/m
+footnotes: '[^appsmith-price]: SSO pricing is high due to a 100 user minimum.'
 name: Appsmith
-percent_increase: 666%
-pricing_note: Quote
+percent_increase: 16567%
 pricing_source: https://www.appsmith.com/pricing
-sso_pricing: $500 per u/m[^appsmith-price]
-updated_at: 2025-05-30
+sso_pricing: $2500[^appsmith-price]
+updated_at: 2025-06-04
 vendor_url: https://www.appsmith.com
