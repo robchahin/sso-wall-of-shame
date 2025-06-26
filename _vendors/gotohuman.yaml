@@ -1,0 +1,9 @@
+---
+base_pricing: $29 per u/m
+name: Gotohuman
+percent_increase: 241%
+pricing_source: https://app.gotohuman.com/Accounts/{ACCOUNTCODE}/subscription
+sso_pricing: $99 per u/m
+updated_at: 2025-06-26
+vendor_url: https://www.gotohuman.com
+footnotes: Requires sign up for free tier to view pricing
