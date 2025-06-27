@@ -1,0 +1,10 @@
+---
+base_pricing: $1380.0 per u/m
+name: Strapi
+percent_increase: 16%
+pricing_source: https://strapi.io/pricing-self-hosted
+sso_pricing: $1594.0 per u/m
+updated_at: '2021-01-31'
+vendor_url: https://strapi.io/
+footnotes: Cloud solutions always cost extra, while self-hosted is free. SSO is an
+  additional paid feature in the self-hosted solution.

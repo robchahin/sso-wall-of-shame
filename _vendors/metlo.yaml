@@ -1,0 +1,18 @@
+---
+<<<<<<< HEAD
+base_pricing: $15.0 per u/m
+name: Metlo
+percent_increase: 73%
+pricing_source: No, it's public on their pricing page.
+sso_pricing: $26.0 per u/m
+updated_at: '2024-09-27'
+vendor_url: https://www.metlo.com/pricing
+=======
+base_pricing: $15 per u/m
+name: Metlo
+percent_increase: 73%
+pricing_source: Public pricing page
+sso_pricing: $26 per u/m
+updated_at: 2024-09-27
+vendor_url: https://www.metlo.com/pricing
+>>>>>>> 625a8c7 (Add Metlo vendor information)

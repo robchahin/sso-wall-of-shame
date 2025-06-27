@@ -1,0 +1,10 @@
+---
+base_pricing: $18.0 per u/m
+name: Brevo
+percent_increase: 75%
+pricing_source: Quote
+sso_pricing: $2000.0 per u/m
+updated_at: '2023-09-04'
+vendor_url: https://www.brevo.com/pricing/
+footnotes: You need to have an email volume of 1 million and a minimum monthly cost
+  of $2,000 for SSO support.

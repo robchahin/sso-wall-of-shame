@@ -1,0 +1,9 @@
+---
+base_pricing: $24.0 per u/m
+name: Pipedrive
+percent_increase: 0%
+pricing_source: Public on website
+sso_pricing: $24.0 per u/m
+updated_at: '2023-11-16'
+vendor_url: https://www.pipedrive.com/en/pricing
+footnotes: The SSO needs configuration. 2FA is only via email.

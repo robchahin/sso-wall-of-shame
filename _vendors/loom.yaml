@@ -1,9 +1,10 @@
 ---
-base_pricing: $12.50 per u/m
+base_pricing: $8.0 per u/m
 name: Loom
-percent_increase: 260%
-pricing_note: Quote
-pricing_source: https://www.loom.com/pricing
-sso_pricing: $45 per u/m
-updated_at: 2023-10-14
-vendor_url: https://www.loom.com/
+percent_increase: 50%
+pricing_source: via quote, have used this service with my company and payed 12 dollar
+  per user per month for SSO
+sso_pricing: $12.0 per u/m
+updated_at: '2023-07-25'
+vendor_url: https://www.loom.com/pricing
+footnotes: 

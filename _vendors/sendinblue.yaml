@@ -1,0 +1,10 @@
+---
+base_pricing: $25.0 per u/m
+name: SendInBlue
+percent_increase: 3900%
+pricing_source: https://www.sendinblue.com/pricing/marketing/see-all-features/
+sso_pricing: $1000.0 per u/m
+updated_at: '2023-07-24'
+vendor_url: https://www.sendin.com
+footnotes: Business" plan is nearly the same as "Enterprise" in terms of features
+  and is only $65/mo.

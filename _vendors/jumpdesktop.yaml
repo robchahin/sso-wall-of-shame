@@ -1,0 +1,10 @@
+---
+base_pricing: $9.99 per u/m
+name: Jump Desktop
+percent_increase: 100%
+pricing_source: 'No'
+sso_pricing: $19.99 per u/m
+updated_at: '2023-04-26'
+vendor_url: https://app.jumpdesktop.com/pricing
+footnotes: They do at least offer 2FA (with the option for mandatory enrollment) for
+  the lower tier.

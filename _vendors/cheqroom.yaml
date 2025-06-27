@@ -1,0 +1,10 @@
+---
+base_pricing: $100.0 per u/m
+name: Cheqroom
+percent_increase: 1057%
+pricing_source: Quote came from sales agent as SSO is part of Premium plan which is
+  priced on demand
+sso_pricing: $1157.0 per u/m
+updated_at: '2023-06-08'
+vendor_url: https://www.cheqroom.com/pricing/?_gl=1*1i51d69*_up*MQ..&gclid=EAIaIQobChMI77LAjbTe_AIV-yytBh1tSAi_EAAYASAAEgJTOvD_BwE
+footnotes: Premium has lots of other features but SSO is only available at this level.
