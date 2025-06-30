@@ -1,0 +1,11 @@
+---
+base_pricing: $0.0055 per active user
+footnotes: '[^cognito-price]: The free usage tier includes 50,000 free non-SSO users
+  and only 50 free SSO users.  Between 50 and 50,000 monthly active users, the price
+  increase is infinite.
+name: Amazon AWS (Cognito)
+percent_increase: 172%
+pricing_source: https://aws.amazon.com/cognito/pricing/
+sso_pricing: $0.015 per active user
+updated_at: 2022-02-07
+url: https://aws.amazon.com/cognito/
