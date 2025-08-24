@@ -1,0 +1,10 @@
+---
+base_pricing: $2.75 per u/m
+name: Miradore
+percent_increase: 3000%
+pricing_source: Public pricing on site
+sso_pricing: $3.95 per u/m
+updated_at: '2024-11-12'
+vendor_url: https://www.miradore.com/plans-pricing/
+footnotes: They support EntraID and Google Workspace on the Premium+ plan as SSO.
+  Being an MDM that gets very expensive for administrators.

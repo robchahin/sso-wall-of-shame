@@ -1,0 +1,9 @@
+---
+base_pricing: $89.0 per u/m
+name: packagecloud
+percent_increase: 625%
+pricing_source: Public information
+sso_pricing: $699.0 per u/m
+updated_at: '1074-03-24'
+vendor_url: '[https://packagecloud.io/pricing/](https://packagecloud.com/pricing/)'
+footnotes: 'No'

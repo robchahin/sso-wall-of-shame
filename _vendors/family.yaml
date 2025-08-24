@@ -1,0 +1,7 @@
+---
+base_pricing: $3.5 per u/m
+name: family
+percent_increase: 1400000%
+pricing_source: kerberos sso
+sso_pricing: $298.6 per u/m
+updated_at: '2024-07-20'
