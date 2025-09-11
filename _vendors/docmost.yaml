@@ -1,0 +1,9 @@
+---
+base_pricing: $5 per u/m
+name: Docmost
+percent_increase: 200%
+pricing_source: https://docmost.com/pricing
+sso_pricing: Call Us! (15$ per u/m)
+updated_at: 2025-09-11
+vendor_url: https://docmost.com/
+footnotes: '[^docmost]: Docmost self-hosted is free, still 15$ per u/m to access SSO features. And implementation have been mostly developed by community.'
