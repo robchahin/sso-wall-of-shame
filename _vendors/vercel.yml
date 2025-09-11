@@ -2,7 +2,7 @@
 base_pricing: $20 per u/m
 footnotes: '[^vercel]: % increase is based on 5 person team.'
 name: Vercel
-percent_increase: 200%[^vercel]
+percent_increase: 300%[^vercel]
 pricing_source: https://vercel.com/pricing
 sso_pricing: $300 per month
 updated_at: 2025-09-10
