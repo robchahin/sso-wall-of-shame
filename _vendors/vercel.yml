@@ -1,9 +1,9 @@
 ---
 base_pricing: $20 per u/m
-footnotes: '[^vercel]: Enterprise for 8 users is "low-to-mid 4 figures", so pricing increase is based on $2000 split 8 ways.'
+footnotes: '[^vercel]: % increase is based on 5 person team.'
 name: Vercel
-percent_increase: 1150%
+percent_increase: 1150%[^vercel]
 pricing_source: https://vercel.com/pricing
-sso_pricing: Call Us![^vercel]
-updated_at: 2023-10-17
+sso_pricing: $300 per month
+updated_at: 2025-09-10
 vendor_url: https://vercel.com
