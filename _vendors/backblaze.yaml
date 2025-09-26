@@ -1,12 +1,9 @@
 ---
-base_pricing: $99/year
-footnotes: '[^backblaze-price]: SSO via Google and Microsoft
-  is included in all product tiers (personal and business) but
-  "OIDC standard authentication including Okta and Azure AD"
-  are only available at the Enterprise Control tier.
+base_pricing: $99 per device/year
+footnotes: '[^backblaze-price]: SSO via Google and Microsoft is included in all product tiers (personal and business) but "OIDC standard authentication including Okta and Azure AD" are only available at the Enterprise Control tier.'
 name: Backblaze Computer Backup 
 percent_increase: ???
 pricing_source: https://www.backblaze.com/cloud-backup/pricing
-sso_pricing: Let's talk[^backblaze-price]
+sso_pricing: Call Us![^backblaze-price]
 updated_at: 2025-05-14
 vendor_url: https://www.backblaze.com
