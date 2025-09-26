@@ -1,0 +1,9 @@
+---
+base_pricing: $99 per connection per year
+footnotes: '[^genetec-price]: Each unique camera/device counts as a connection.'
+name: Genetec Video SaaS
+percent_increase: 51%+
+pricing_source: https://www.genetec.com/products/unified-security/security-center-saas/saas-pricing
+sso_pricing: $149 per connection per year[^genetec-price]
+updated_at: 2025-08-19
+vendor_url: https://genetec.com
