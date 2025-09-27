@@ -1,8 +1,9 @@
 ---
-base_pricing: $42 per u/m
+base_pricing: $42 per u/m[^stackhawk]
+footnotes: '[^stackhawk]Minimum base pricing is $980/month with minimum SSO pricing of $1,475/month.'
 name: StackHawk
 percent_increase: 40%
 pricing_source: https://www.stackhawk.com/pricing/
-sso_pricing: $59 per u/m
-updated_at: 2025-01-09
+sso_pricing: $59 per u/m[^stackhawk]
+updated_at: 2025-09-26
 vendor_url: https://www.stackhawk.com/
