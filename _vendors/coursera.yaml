@@ -1,9 +1,9 @@
 ---
-name: Coursera
-url: https://www.coursera.org
 base_pricing: $399 per u/y
-sso_pricing: $49875 per year[^coursera]
 footnotes: '[^coursera]: Coursera requires a minimum of 125 users to access SSO pricing. As they do not have an Enterprise price listed, this price just scales their lower cost tier up to 125 seats.'
+name: Coursera
 percent_increase: 12400%
 pricing_source: https://www.coursera.org/business/compare-plans
+sso_pricing: $49875 per year[^coursera]
 updated_at: 2023-10-22
+vendor_url: https://www.coursera.org
