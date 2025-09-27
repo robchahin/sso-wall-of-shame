@@ -1,8 +1,9 @@
 ---
-base_pricing: $46 per month
+base_pricing: $15 per user/month
+footnotes: '[^hubspot-marketing]SSO pricing is a flat $890/month for 3 users and $50/user/month for additional seats.'
 name: Hubspot Marketing
-percent_increase: 6300%
+percent_increase: 233%
 pricing_source: https://www.hubspot.com/pricing/marketing
-sso_pricing: $2944 per month
-updated_at: 2018-11-23
+sso_pricing: $50 per month[^hubspot-marketing]
+updated_at: 2025-09-26
 vendor_url: https://www.hubspot.com
