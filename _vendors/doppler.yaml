@@ -1,8 +1,8 @@
 ---
-base_pricing: 3 Free Users then $8/user
+base_pricing: $8 per u/m
 name: Doppler
 percent_increase: 162.5%
 pricing_source: https://www.doppler.com/pricing
-sso_pricing: $21/user
+sso_pricing: $21 per u/m
 updated_at: 2025-02-09
 vendor_url: https://www.doppler.com/
