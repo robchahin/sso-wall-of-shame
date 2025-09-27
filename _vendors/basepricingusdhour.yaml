@@ -1,0 +1,9 @@
+---
+base_pricing: $0.195 per u/m
+name: Base Pricing (USD/hour)
+percent_increase: 42%
+pricing_source: Toggl Website
+sso_pricing: $0.277 per u/m
+updated_at: '2024-02-29'
+vendor_url: https://toggl.com/track/pricing/
+footnotes: Includes a one-time setup fee.

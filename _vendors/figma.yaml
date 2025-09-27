@@ -1,8 +1,11 @@
 ---
-base_pricing: $12 per u/m
+base_pricing: $15.0 per u/m
 name: Figma
-percent_increase: 275%
-pricing_source: https://www.figma.com/pricing
-sso_pricing: $45 per u/m
-updated_at: 2019-10-19
-vendor_url: https://www.figma.com
+percent_increase: 0%
+pricing_source: Public
+sso_pricing: $45.0 per u/m
+updated_at: '2023-09-18'
+vendor_url: https://www.figma.com/pricing/
+footnotes: The SSO tax is at the $45/mo level. But, if you want to JIT provision your
+  users, you also get to pay a SCIM tax because that starts at the $75/mo level. Even
+  more taxes!

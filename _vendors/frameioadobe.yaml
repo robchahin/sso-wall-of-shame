@@ -1,0 +1,11 @@
+---
+base_pricing: $15.0 per u/m
+name: Frame.io (Adobe)
+percent_increase: 67%
+pricing_source: From pricing page of vendors website.
+sso_pricing: $25.0 per u/m
+updated_at: '2024-06-14'
+vendor_url: https://frame.io/pricing
+footnotes: I asked to have SSO enabled, and their support confirmed I'd need to be
+  on the enterprise tier. Also, they don't do 2 Factor Authentication until you are
+  on Enterprise!

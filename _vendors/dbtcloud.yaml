@@ -1,8 +1,9 @@
 ---
-base_pricing: $100 per u/m
+base_pricing: $100.0 per u/m
 name: dbt Cloud
-percent_increase: ???
-pricing_source: https://www.getdbt.com/pricing
-sso_pricing: Call Us!
-updated_at: 2024-12-18
+percent_increase: 233%
+pricing_source: https://www.getdbt.com/pricing/
+sso_pricing: $333.0 per u/m
+updated_at: '2023-04-11'
 vendor_url: https://www.getdbt.com/
+footnotes: '[^dbt-sso]: $333 per u/m'

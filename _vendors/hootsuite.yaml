@@ -1,8 +1,7 @@
 ---
-base_pricing: $249/mo
-name: HootSuite
-pricing_source: https://www.hootsuite.com/plans
-sso_pricing: Call Us! (over $249/mo)[^hootsuite]
-updated_at: 2024-02-09
-vendor_url: https://www.hootsuite.com/
-footnotes: '[^hootsuite]: Only available on Enterprise level plans with "Call Us!" pricing.'
+base_pricing: $89.0 per u/m
+name: Hootsuite
+percent_increase: 15619%
+sso_pricing: $13990.0 per u/m
+updated_at: '2024-06-17'
+vendor_url: https://www.hootsuite.com/plans
