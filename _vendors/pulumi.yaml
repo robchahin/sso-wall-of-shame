@@ -1,0 +1,9 @@
+---
+base_pricing: $0.1825 per resource/month
+footnotes: '[^pulumi-notes] Team plan is $40/month plus $0.1825 per resource, SSO requires Enterprise plan at $400/month plus $0.365 per resource.'
+name: Pulumi
+percent_increase: 100%
+pricing_source: https://www.pulumi.com/pricing
+sso_pricing: $0.365 per resource/month
+updated_at: 2025-09-26
+vendor_url: https://www.pulumi.com
