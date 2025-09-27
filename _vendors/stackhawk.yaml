@@ -1,6 +1,6 @@
 ---
 base_pricing: $42 per u/m[^stackhawk]
-footnotes: '[^stackhawk]Minimum base pricing is $980/month with minimum SSO pricing of $1,475/month.'
+footnotes: '[^stackhawk]: Minimum base pricing is $980/month with minimum SSO pricing of $1,475/month.'
 name: StackHawk
 percent_increase: 40%
 pricing_source: https://www.stackhawk.com/pricing/
