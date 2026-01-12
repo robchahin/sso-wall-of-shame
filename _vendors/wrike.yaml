@@ -1,0 +1,13 @@
+---
+base_pricing: $10.0 per u/m
+name: Wrike
+percent_increase: 200%
+pricing_source: quote
+sso_pricing: $50.0 per u/m
+updated_at: '2023-07-06'
+vendor_url: https://www.wrike.com/price/
+footnotes: '* SSO pricing is for Enterprise seats (by quote only) and may vary based
+  on custom quotes.* Minimum pricing before SSO availability mentioned in the context
+  was $25 per user/month but not confirmed if that''s standard or specific to a customer.*
+  Base pricing of $10/user/month is from public site, while other info comes from
+  non-public sources.'

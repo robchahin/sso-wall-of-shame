@@ -1,0 +1,14 @@
+---
+base_pricing: $7.25 per u/m
+name: OpenProject
+percent_increase: 0%
+pricing_source: Official pricing
+sso_pricing: $2175.0 per u/m
+updated_at: '2023-10-16'
+vendor_url: https://www.openproject.org/pricing/
+footnotes: '- Requires a minimum of 25 users
+
+  - Only yearly subscription available for self-hosted.
+
+  Note: Base pricing is $7.25 per user/month and SSO Pricing (for minimum 25 users)
+  is $2175/year.'

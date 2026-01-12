@@ -1,0 +1,12 @@
+---
+base_pricing: $199.0 per u/m
+name: Files.com
+percent_increase: 48734%
+pricing_source: Invoice and email from account manager.
+sso_pricing: $999.0 per u/m
+updated_at: '2025-06-10'
+vendor_url: https://www.files.com/pricing
+footnotes: Additional features received with SSO - please note as we were using SSO
+  and they have changed their model our bill increased from $350 per month to $999
+  for 50 users. We've been using this service without additional fees for over a year
+  before the increase in June of this year.
