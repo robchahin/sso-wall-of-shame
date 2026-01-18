@@ -1,0 +1,8 @@
+---
+base_pricing: $179 per u/y
+name: Overleaf
+percent_increase: 100%
+pricing_source: https://www.overleaf.com/user/subscription/plans?plan=group
+sso_pricing: $359 per u/y
+updated_at: 2026-01-18
+vendor_url: https://www.overleaf.com/
