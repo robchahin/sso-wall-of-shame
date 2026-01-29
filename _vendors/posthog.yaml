@@ -3,7 +3,7 @@ base_pricing: Usage-based (starts at $0, generous free tier)
 footnotes: '[^posthog]: Basic SSO (GitHub, GitLab, Google) is available on all plans including Free, but SSO enforcement requires the Boost add-on at $250/mo. SAML and SCIM SSO require the Scale add-on at $750/mo.'
 name: PostHog
 percent_increase: N/A[^posthog]
-pricing_source: https://posthog.com/pricing
+pricing_source: https://posthog.com/platform-packages
 sso_pricing: $250 per month (Boost add-on for SSO enforcement)[^posthog]
 updated_at: 2026-01-29
 vendor_url: https://posthog.com
