@@ -22,7 +22,9 @@ jobs:
         run: |
           # Prevent PRs from running maliciously modified scripts by restoring
           # the trusted version of scripts and tests from the base branch.
-          git checkout origin/${{ github.base_ref }} -- scripts/ tests/
+          # We use "|| true" to prevent failing if this is the very first PR
+          # where these folders don't exist on main yet.
+          git checkout origin/${{ github.base_ref }} -- scripts/ tests/ || true
 
       - name: Setup Python
         uses: actions/setup-python@v4
@@ -73,7 +75,7 @@ jobs:
             echo "has_warnings=false" >> $GITHUB_OUTPUT
           fi
 
-      - name: Comment PR
+      - name: Comment New Warnings
         uses: actions/github-script@v6
         if: github.event_name == 'pull_request' && steps.validate.outputs.has_warnings == 'true'
         with:
