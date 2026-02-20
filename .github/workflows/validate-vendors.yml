@@ -75,6 +75,17 @@ jobs:
             echo "has_warnings=false" >> $GITHUB_OUTPUT
           fi
 
+      - name: Commit Auto-Injected Changes
+        if: github.event_name == 'pull_request' && steps.changed-vendors.outputs.any_changed == 'true'
+        run: |
+          if [[ -n $(git status --porcelain _vendors/) ]]; then
+            git config --global user.name "github-actions[bot]"
+            git config --global user.email "github-actions[bot]@users.noreply.github.com"
+            git add _vendors/
+            git commit -m "Auto-inject calculated percent_increase"
+            git push
+          fi
+
       - name: Comment New Warnings
         uses: actions/github-script@v6
         if: github.event_name == 'pull_request' && steps.validate.outputs.has_warnings == 'true'
