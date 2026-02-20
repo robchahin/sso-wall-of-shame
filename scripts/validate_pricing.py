@@ -94,7 +94,13 @@ def validate_vendor_file(filepath):
 
     # If the user didn't provide a parseable percentage but we calculated one
     if provided_pct is None:
-        warnings.append(f"Calculated {calculated_pct:.0f}% increase, but no parseable 'percent_increase' was provided (got: '{percent_increase_raw}').")
+        formatted_pct = f"{calculated_pct:.0f}%"
+        try:
+            with open(filepath, 'a') as f:
+                f.write(f"percent_increase: {formatted_pct}\n")
+            warnings.append(f"Auto-injected `percent_increase: {formatted_pct}` because it was omitted.")
+        except Exception as e:
+            warnings.append(f"Calculated {formatted_pct} increase, but failed to auto-inject: {e}")
         return True, warnings, errors
 
     # Compare
