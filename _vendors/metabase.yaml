@@ -1,7 +1,7 @@
 ---
 base_pricing: $85 per month[^metabase]
 name: Metabase
-percent_increase: 588%
+percent_increase: 488%
 pricing_source: https://www.metabase.com/pricing/
 sso_pricing: $500 per month
 footnotes: '[^metabase]: Additional 100% increase in monthly user cost ($5->$10) above license increase.'

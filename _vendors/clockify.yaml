@@ -1,7 +1,7 @@
 ---
 base_pricing: $3.99 per u/m
 name: Clockify
-percent_increase: 300%
+percent_increase: 201%
 pricing_source: https://clockify.me/extra-features
 sso_pricing: $11.99 per u/m
 updated_at: 2021-03-17
