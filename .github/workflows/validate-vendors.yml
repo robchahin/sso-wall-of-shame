@@ -1,0 +1,90 @@
+name: Validate Vendors Pricing
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: read
+    
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Restore Trusted Scripts
+        if: github.event_name == 'pull_request'
+        run: |
+          # Prevent PRs from running maliciously modified scripts by restoring
+          # the trusted version of scripts and tests from the base branch.
+          # We use "|| true" to prevent failing if this is the very first PR
+          # where these folders don't exist on main yet.
+          git checkout origin/${{ github.base_ref }} -- scripts/ tests/ || true
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f scripts/requirements.txt ]; then pip install -r scripts/requirements.txt; fi
+
+      - name: Run Unit Tests
+        run: |
+          python -m unittest discover -s tests
+
+      - name: Get Changed Vendor Files
+        id: changed-vendors
+        uses: tj-actions/changed-files@v44
+        with:
+          files: _vendors/**.yaml
+
+      - name: Validate Changed Vendors
+        id: validate
+        if: steps.changed-vendors.outputs.any_changed == 'true'
+        env:
+          CHANGED_FILES: ${{ steps.changed-vendors.outputs.all_changed_files }}
+        run: |
+          # Run the script on only the changed vendor files safely via xargs
+          echo "$CHANGED_FILES" | xargs -r python scripts/validate_pricing.py > validation_output.txt
+          
+          # Print for github actions log
+          cat validation_output.txt
+          
+          # Check if there are warnings
+          if grep -q "⚠️" validation_output.txt; then
+            echo "has_warnings=true" >> $GITHUB_OUTPUT
+            
+            EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
+            echo "COMMENT_BODY<<$EOF" >> $GITHUB_OUTPUT
+            echo "## ⚠️ Pricing Validation Warnings" >> $GITHUB_OUTPUT
+            echo "The following potential issues were found in the pricing data. Maintainers, please review before approving." >> $GITHUB_OUTPUT
+            echo "" >> $GITHUB_OUTPUT
+            echo '```text' >> $GITHUB_OUTPUT
+            cat validation_output.txt >> $GITHUB_OUTPUT
+            echo '```' >> $GITHUB_OUTPUT
+            echo "$EOF" >> $GITHUB_OUTPUT
+          else
+            echo "has_warnings=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Comment New Warnings
+        uses: actions/github-script@v6
+        if: github.event_name == 'pull_request' && steps.validate.outputs.has_warnings == 'true'
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: process.env.COMMENT_BODY
+            })
+        env:
+          COMMENT_BODY: ${{ steps.validate.outputs.COMMENT_BODY }}
