@@ -1,0 +1,10 @@
+---
+base_pricing: $10 per u/m[^canva]
+name: Canva
+footnotes: '[^canva]: Minimum spend on base tier is $30/month; Minimum spend on SSO is $12,000/year paid upfront.'
+percent_increase: 300%[^canva]
+pricing_source: https://www.canva.com/pricing/
+sso_pricing: $40 per u/m[^canva]
+pricing_note: Quote
+updated_at: 2024-06-17
+vendor_url: https://canva.com/

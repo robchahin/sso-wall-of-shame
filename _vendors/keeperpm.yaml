@@ -1,0 +1,9 @@
+---
+base_pricing: $2 per u/m
+name: Keeper Password Manager
+percent_increase: 150%
+pricing_note: Quote
+pricing_source: https://www.keepersecurity.com/pricing/business-and-enterprise.html
+sso_pricing: $5 per u/m
+updated_at: 2023-10-16
+vendor_url: https://www.keepersecurity.com/

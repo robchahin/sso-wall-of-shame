@@ -1,0 +1,9 @@
+---
+base_pricing: $15 per u/m
+footnotes: '[^sanity]: SSO price based on 25 users - SSO is available as an account add on or at the price-unlisted enterprise tier.'
+name: Sanity
+percent_increase: 350%
+pricing_source: https://www.sanity.io/pricing
+sso_pricing: $70.96 per u/m[^sanity]
+updated_at: 2024-01-23
+vendor_url: https://www.sanity.io

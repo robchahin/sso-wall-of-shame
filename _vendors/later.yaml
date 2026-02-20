@@ -1,0 +1,9 @@
+---
+base_pricing: ???
+footnotes: '[^later-pricing]: Later Influence does not have published pricing but charges a flat $9,999/year to enable SSO. Later Social Media Management is a separate product and includes SSO at all tiers.'
+name: Later Influence
+percent_increase: ???[^later-pricing]
+pricing_source: https://help-influence.later.com/hc/en-us/articles/20800757677207-Single-Sign-on-With-Enterprise-Authorization
+sso_pricing: $9,999/year[^later-pricing]
+updated_at: 2025-02-20
+vendor_url: https://later.com/

@@ -6,7 +6,7 @@
 <summary>
 Why does this exist?
 </summary>
-Single sign-on (SSO) is a mechanism for outsourcing the authentication for your website (or other product) to a third party identity provider, such as Google, Azure AD, Okta, PingFederate, etc.
+Single sign-on (SSO) is a mechanism for outsourcing the authentication for your website (or other product) to a third party identity provider, such as Google, Okta, Entra ID (Azure AD), PingFederate, etc.
 
 In this context, SSO refers to a SaaS or similar vendor allowing a business client to manage user accounts via the client's own identity provider, without having to rely on the vendor to provide strong authentication with audit logs, and with the ability to create and delete user accounts centrally, for all users, across all software in use by that client.
 

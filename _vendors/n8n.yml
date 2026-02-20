@@ -1,0 +1,8 @@
+---
+base_pricing: $60 per month
+name: n8n
+percent_increase: 1500%
+pricing_source: https://n8n.io/pricing/
+sso_pricing: $960 per month
+updated_at: 2025-11-07
+vendor_url: https://n8n.io

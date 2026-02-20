@@ -1,0 +1,9 @@
+---
+base_pricing: $49 per month[^linearb]
+name: LinearB
+percent_increase: ???
+pricing_source: https://linearb.io/pricing
+footnotes: '[^linearb]: Business pricing starts at $49/month but only includes Social SSO.'
+sso_pricing: Call Us!
+updated_at: 2024-10-16
+vendor_url: https://linearb.io

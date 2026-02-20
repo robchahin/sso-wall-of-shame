@@ -1,0 +1,9 @@
+---
+base_pricing: $180 per repository/mo[^prismic]
+name: Prismic
+percent_increase: ???
+pricing_source: https://prismic.io/pricing
+sso_pricing: Call us
+footnotes: '[^prismic]: Plan limited to 25 users. Above 25 users price is $750 per repository/mo.'
+updated_at: 2024-07-26
+vendor_url: https://prismic.io
