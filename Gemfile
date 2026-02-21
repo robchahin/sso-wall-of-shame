@@ -13,10 +13,3 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 # Required by 'jekyll serve' as of Ruby 3
 gem "webrick", "~> 1.8"
 
-# Required by Jekyll 3.9 on Ruby 4.0+ (removed from stdlib)
-gem "csv"
-gem "bigdecimal"
-gem "logger"
-gem "ostruct"
-gem "base64"
-gem "mutex_m"
