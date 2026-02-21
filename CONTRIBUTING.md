@@ -2,7 +2,7 @@
 
 ## Running Locally
 
-Requires Ruby 3.2+ and Bundler. Install dependencies with:
+Requires Ruby and Bundler. Install dependencies with:
 
 ```
 bundle install
@@ -15,6 +15,10 @@ bin/serve
 ```
 
 This wrapper script handles Ruby 4.0+ compatibility (methods removed from stdlib). Do not use `bundle exec jekyll serve` directly — it will fail on Ruby 4.0+.
+
+### Ruby 4.0+ note
+
+If `bundle install` fails with a bundler version error, edit the last line of `Gemfile.lock` from `2.2.27` to your installed bundler version, then re-run. **Do not commit this change** — `Gemfile.lock` must stay pinned to a version compatible with GitHub Pages' Ruby environment.
 ## Call Us
 Vendors with the word "Call" in the sso_pricing field are automatically sorted into "The Other List" below "The List."
 
