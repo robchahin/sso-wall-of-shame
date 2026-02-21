@@ -29,7 +29,8 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
 {% assign vendors = "" | split: ',' %}
 {% assign call_us = "" | split: ',' %}
 {% for vendor in all %}
-	{% if vendor.sso_pricing contains "Call" %}
+	{% assign sso_lower = vendor.sso_pricing | downcase %}
+	{% if sso_lower contains "call" or sso_lower contains "contact" or sso_lower contains "custom" or sso_lower contains "quote" %}
 		{% assign call_us = call_us | push: vendor %}
 	{% else %}
 		{% assign vendors = vendors | push: vendor %}
