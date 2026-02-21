@@ -45,7 +45,9 @@ jobs:
         id: changed-vendors
         uses: tj-actions/changed-files@v46
         with:
-          files: _vendors/**.yaml
+          files: |
+            _vendors/**.yaml
+            _vendors/**.yml
 
       - name: Validate Changed Vendors
         id: validate
