@@ -43,7 +43,7 @@ jobs:
 
       - name: Get Changed Vendor Files
         id: changed-vendors
-        uses: tj-actions/changed-files@v44
+        uses: tj-actions/changed-files@v46
         with:
           files: _vendors/**.yaml
 
