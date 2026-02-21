@@ -5,3 +5,4 @@ _site
 vendor/
 venv/
 __pycache__/
+.claude/
