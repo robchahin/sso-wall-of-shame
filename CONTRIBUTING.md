@@ -1,4 +1,20 @@
 # sso.tax Contributing Guidelines
+
+## Running Locally
+
+Requires Ruby 3.2+ and Bundler. Install dependencies with:
+
+```
+bundle install
+```
+
+Then serve the site with:
+
+```
+bin/serve
+```
+
+This wrapper script handles Ruby 4.0+ compatibility (methods removed from stdlib). Do not use `bundle exec jekyll serve` directly — it will fail on Ruby 4.0+.
 ## Call Us
 Vendors with the word "Call" in the sso_pricing field are automatically sorted into "The Other List" below "The List."
 
