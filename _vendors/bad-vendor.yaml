@@ -5,3 +5,4 @@ pricing_source: https://www.example.com/pricing
 sso_pricing: $3
 updated_at: 2026-02-20
 vendor_url: https://www.example.com
+percent_increase: 200%
