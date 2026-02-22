@@ -57,7 +57,7 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
 {% if forloop.first == false %}
 &amp;
 {% endif %}
-<a href="{{ source }}">&#128279;</a>
+<a href="{{ source }}" aria-label="Pricing source for {{ vendor.name }}" title="Pricing source for {{ vendor.name }}">&#128279;</a>
 {% endfor %}
 {{ vendor.pricing_note }}</td>
 <td>{{ vendor.updated_at }}</td>
@@ -86,7 +86,7 @@ Some vendors simply do not list their pricing for SSO because the pricing is neg
 {% if forloop.first == false %}
 &amp;
 {% endif %}
-<a href="{{ source }}">&#128279;</a>
+<a href="{{ source }}" aria-label="Pricing source for {{ vendor.name }}" title="Pricing source for {{ vendor.name }}">&#128279;</a>
 {% endfor %}
 {{ vendor.pricing_note }}</td>
 <td>{{ vendor.updated_at }}</td>
