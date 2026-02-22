@@ -1,14 +1,12 @@
+# frozen_string_literal: true
+
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.9"
-gem "jekyll-theme-cayman"
-gem "github-pages", group: :jekyll_plugins
+# gem "rails"
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+#gem "jekyll", "~> 4.4"
+# Not sure if webrick is needed when switching to github-pages, let's find out
+#gem "webrick", "~> 1.9"
 
-# Performance-booster for watching directories on Windows
-gem "wdm", "~> 0.1.0" if Gem.win_platform?
-
-# Required by 'jekyll serve' as of Ruby 3
-gem "webrick", "~> 1.8"
+gem "github-pages", "~> 232", group: :jekyll_plugins
+gem "jekyll-theme-cayman", "~> 0.2.0"
