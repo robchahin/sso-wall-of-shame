@@ -1,4 +1,0 @@
-#!/bin/bash
-# Local development server. Wraps `bundle exec jekyll serve` with Ruby 4.0+
-# compatibility for methods removed from stdlib (tainted?, csv, etc.)
-RUBYOPT="-r $(pwd)/_plugins/ruby4_compat.rb" bundle exec jekyll serve "$@"
