@@ -17,7 +17,11 @@ collections:
   - vendors
 
 exclude:
+  - vendor/
   - venv/
   - bin/
   - scripts/
   - tests/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
