@@ -36,6 +36,8 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
 		{% assign vendors = vendors | push: vendor %}
 	{% endif %}
 {% endfor %}
+{% comment %}Staleness threshold: 18 months = 47336400 seconds{% endcomment %}
+{% assign stale_cutoff_ts = site.time | date: "%s" | plus: 0 | minus: 47336400 %}
 
 ## The List
 
@@ -45,6 +47,7 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
 </thead>
 <tbody>
 {% for vendor in vendors %}
+{% assign updated_ts = vendor.updated_at | date: "%s" | plus: 0 %}
 <tr>
 <td markdown="span"><a href="{{ vendor.vendor_url }}">{{ vendor.name }}</a></td>
 <td markdown="span">{{ vendor.base_pricing }}</td>
@@ -58,7 +61,7 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
 <a href="{{ source }}">&#128279;</a>
 {% endfor %}
 {{ vendor.pricing_note }}</td>
-<td>{{ vendor.updated_at }}</td>
+{% if updated_ts < stale_cutoff_ts %}<td class="stale-date" title="This pricing data is over 18 months old and may be outdated.">{{ vendor.updated_at }}</td>{% else %}<td>{{ vendor.updated_at }}</td>{% endif %}
 </tr>
 {% endfor %}
 </tbody>
@@ -73,6 +76,7 @@ Some vendors simply do not list their pricing for SSO because the pricing is neg
 </thead>
 <tbody>
 {% for vendor in call_us %}
+{% assign updated_ts = vendor.updated_at | date: "%s" | plus: 0 %}
 <tr>
 <td markdown="span"><a href="{{ vendor.vendor_url }}">{{ vendor.name }}</a></td>
 <td markdown="span">{{ vendor.base_pricing }}</td>
@@ -86,13 +90,20 @@ Some vendors simply do not list their pricing for SSO because the pricing is neg
 <a href="{{ source }}">&#128279;</a>
 {% endfor %}
 {{ vendor.pricing_note }}</td>
-<td>{{ vendor.updated_at }}</td>
+{% if updated_ts < stale_cutoff_ts %}<td class="stale-date" title="This pricing data is over 18 months old and may be outdated.">{{ vendor.updated_at }}</td>{% else %}<td>{{ vendor.updated_at }}</td>{% endif %}
 </tr>
 {% endfor %}
 </tbody>
 </table>
 
 ## FAQs
+
+<details>
+<summary>
+What does the ⚠ symbol mean on a date?
+</summary>
+Dates marked with ⚠ (and shown in grey) were last verified more than 18 months ago. SaaS pricing changes frequently, so this data may be outdated. If you notice a discrepancy, please <a href="https://github.com/robchahin/sso-wall-of-shame/issues/new?template=new-vendor.md">submit an update</a>.
+</details>
 
 <details>
 <summary>

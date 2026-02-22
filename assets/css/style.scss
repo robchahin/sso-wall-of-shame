@@ -40,3 +40,13 @@ tr {
 .footnotes {
   font-size: smaller;
 }
+
+.stale-date {
+  color: #aaa;
+  font-style: italic;
+}
+
+.stale-date::after {
+  content: " ⚠";
+  font-style: normal;
+}
