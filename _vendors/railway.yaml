@@ -1,0 +1,9 @@
+---
+name: Railway
+base_pricing: $20
+sso_pricing: $2000
+percent_increase: 9900%
+pricing_note: SSO price only becomes visible when you have already signed up to the Pro plan
+pricing_source: https://railway.com/pricing
+vendor_url: https://railway.com
+updated_at: 2026-02-18
