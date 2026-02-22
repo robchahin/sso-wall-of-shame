@@ -1,0 +1,87 @@
+name: Check Pricing Source Links
+
+on:
+  schedule:
+    # Run on the 1st of each month at 09:00 UTC
+    - cron: '0 9 1 * *'
+  workflow_dispatch:
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scripts/requirements.txt
+
+      - name: Check Links
+        id: check
+        run: |
+          python scripts/check_links.py _vendors/ > link_report.txt 2>&1 || true
+          cat link_report.txt
+
+          if grep -q "^  DEAD" link_report.txt; then
+            echo "has_dead=true" >> $GITHUB_OUTPUT
+
+            EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
+            echo "ISSUE_BODY<<$EOF" >> $GITHUB_OUTPUT
+            echo "## Dead pricing source links found" >> $GITHUB_OUTPUT
+            echo "" >> $GITHUB_OUTPUT
+            echo "The monthly link checker found the following broken URLs." >> $GITHUB_OUTPUT
+            echo "Please update the affected vendor files with working source links." >> $GITHUB_OUTPUT
+            echo "" >> $GITHUB_OUTPUT
+            echo '```' >> $GITHUB_OUTPUT
+            grep "^  DEAD" link_report.txt >> $GITHUB_OUTPUT
+            echo '```' >> $GITHUB_OUTPUT
+            echo "" >> $GITHUB_OUTPUT
+            echo "<details><summary>Full report</summary>" >> $GITHUB_OUTPUT
+            echo "" >> $GITHUB_OUTPUT
+            echo '```' >> $GITHUB_OUTPUT
+            cat link_report.txt >> $GITHUB_OUTPUT
+            echo '```' >> $GITHUB_OUTPUT
+            echo "" >> $GITHUB_OUTPUT
+            echo "</details>" >> $GITHUB_OUTPUT
+            echo "$EOF" >> $GITHUB_OUTPUT
+          else
+            echo "has_dead=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Open Issue for Dead Links
+        if: steps.check.outputs.has_dead == 'true'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const title = `Dead pricing source links detected (${new Date().toISOString().slice(0,10)})`;
+            const body = process.env.ISSUE_BODY;
+
+            // Check if an open issue with this title pattern already exists
+            const issues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'dead-link',
+            });
+            const alreadyOpen = issues.data.some(i => i.title.startsWith('Dead pricing source links'));
+            if (!alreadyOpen) {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body,
+                labels: ['dead-link'],
+              });
+            }
+        env:
+          ISSUE_BODY: ${{ steps.check.outputs.ISSUE_BODY }}
