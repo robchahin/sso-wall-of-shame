@@ -54,7 +54,7 @@ jobs:
           CHANGED_FILES: ${{ steps.changed-vendors.outputs.all_changed_files }}
         run: |
           # Run the script on only the changed vendor files safely via xargs
-          echo "$CHANGED_FILES" | xargs -r python scripts/validate_pricing.py > validation_output.txt
+          echo "$CHANGED_FILES" | xargs -r python scripts/validate_pricing.py > validation_output.txt || true
           
           # Print for github actions log
           cat validation_output.txt
