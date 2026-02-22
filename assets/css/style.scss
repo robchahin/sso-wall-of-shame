@@ -40,3 +40,19 @@ tr {
 .footnotes {
   font-size: smaller;
 }
+
+#vendor-search {
+  display: block;
+  width: 100%;
+  max-width: 24rem;
+  padding: 0.4rem 0.6rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-empty {
+  color: #999;
+  font-style: italic;
+}

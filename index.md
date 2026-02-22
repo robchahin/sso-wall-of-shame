@@ -1,6 +1,7 @@
 ---
 ---
 <script src="assets/js/sorttable.js"></script>
+<script src="assets/js/search.js"></script>
 
 <details open>
 <summary>
@@ -36,6 +37,8 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
 	{% endif %}
 {% endfor %}
 
+<input id="vendor-search" type="search" placeholder="Filter by vendor name…" aria-label="Filter vendors by name">
+
 ## The List
 
 <table class="sortable">
@@ -62,6 +65,7 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
 {% endfor %}
 </tbody>
 </table>
+<p class="search-empty" style="display:none">No vendors in this list match your search.</p>
 
 ## The Other List ##
 Some vendors simply do not list their pricing for SSO because the pricing is negotiated with an account manager. These vendors get their own table as we assume they apply a significant premium for SSO.
@@ -90,6 +94,7 @@ Some vendors simply do not list their pricing for SSO because the pricing is neg
 {% endfor %}
 </tbody>
 </table>
+<p class="search-empty" style="display:none">No vendors in this list match your search.</p>
 
 ## FAQs
 
