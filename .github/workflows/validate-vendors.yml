@@ -56,26 +56,44 @@ jobs:
           CHANGED_FILES: ${{ steps.changed-vendors.outputs.all_changed_files }}
         run: |
           # Run the script on only the changed vendor files safely via xargs
-          echo "$CHANGED_FILES" | xargs -r python scripts/validate_pricing.py > validation_output.txt
+          echo "$CHANGED_FILES" | xargs -r python scripts/validate_pricing.py > validation_output.txt || true
           
           # Print for github actions log
           cat validation_output.txt
           
-          # Check if there are warnings
+          # Check for errors and warnings separately
+          HAS_ERRORS=false
+          HAS_WARNINGS=false
+          if grep -q "❌" validation_output.txt; then
+            HAS_ERRORS=true
+          fi
           if grep -q "⚠️" validation_output.txt; then
-            echo "has_warnings=true" >> $GITHUB_OUTPUT
-            
+            HAS_WARNINGS=true
+          fi
+
+          echo "has_errors=$HAS_ERRORS" >> $GITHUB_OUTPUT
+          echo "has_warnings=$HAS_WARNINGS" >> $GITHUB_OUTPUT
+
+          # Build a PR comment if there are errors or warnings
+          if [ "$HAS_ERRORS" = "true" ] || [ "$HAS_WARNINGS" = "true" ]; then
+            echo "should_comment=true" >> $GITHUB_OUTPUT
+
             EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
             echo "COMMENT_BODY<<$EOF" >> $GITHUB_OUTPUT
-            echo "## ⚠️ Pricing Validation Warnings" >> $GITHUB_OUTPUT
-            echo "The following potential issues were found in the pricing data. Maintainers, please review before approving." >> $GITHUB_OUTPUT
+            if [ "$HAS_ERRORS" = "true" ]; then
+              echo "## ❌ Pricing Validation Errors" >> $GITHUB_OUTPUT
+              echo "The following errors must be fixed before this PR can be merged." >> $GITHUB_OUTPUT
+            else
+              echo "## ⚠️ Pricing Validation Warnings" >> $GITHUB_OUTPUT
+              echo "The following potential issues were found in the pricing data. Maintainers, please review before approving." >> $GITHUB_OUTPUT
+            fi
             echo "" >> $GITHUB_OUTPUT
             echo '```text' >> $GITHUB_OUTPUT
             cat validation_output.txt >> $GITHUB_OUTPUT
             echo '```' >> $GITHUB_OUTPUT
             echo "$EOF" >> $GITHUB_OUTPUT
           else
-            echo "has_warnings=false" >> $GITHUB_OUTPUT
+            echo "should_comment=false" >> $GITHUB_OUTPUT
           fi
 
       - name: Commit Auto-Injected Changes
@@ -89,9 +107,9 @@ jobs:
             git push origin HEAD:${{ github.head_ref }}
           fi
 
-      - name: Comment New Warnings
+      - name: Comment on PR
         uses: actions/github-script@v6
-        if: github.event_name == 'pull_request' && steps.validate.outputs.has_warnings == 'true'
+        if: github.event_name == 'pull_request' && steps.validate.outputs.should_comment == 'true'
         with:
           script: |
             github.rest.issues.createComment({
@@ -102,3 +120,9 @@ jobs:
             })
         env:
           COMMENT_BODY: ${{ steps.validate.outputs.COMMENT_BODY }}
+
+      - name: Fail on Validation Errors
+        if: steps.validate.outputs.has_errors == 'true'
+        run: |
+          echo "Validation errors were found. Failing the workflow."
+          exit 1
