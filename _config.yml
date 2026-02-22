@@ -15,3 +15,9 @@ kramdown:
 
 collections:
   - vendors
+
+exclude:
+  - venv/
+  - bin/
+  - scripts/
+  - tests/
