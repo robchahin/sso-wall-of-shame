@@ -1,0 +1,87 @@
+name: Staleness Reminder
+
+on:
+  schedule:
+    # Run on the 15th of each month at 09:00 UTC
+    - cron: '0 9 15 * *'
+  workflow_dispatch:
+
+jobs:
+  check-staleness:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scripts/requirements.txt
+
+      - name: Find Stale Vendors
+        id: stale
+        run: |
+          python scripts/find_stale_vendors.py --days 730 _vendors/ > stale_report.txt
+          cat stale_report.txt
+
+          if grep -q "^  20" stale_report.txt; then
+            echo "has_stale=true" >> $GITHUB_OUTPUT
+
+            STALE_COUNT=$(grep -c "^  20" stale_report.txt || true)
+            echo "stale_count=${STALE_COUNT}" >> $GITHUB_OUTPUT
+
+            EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
+            echo "ISSUE_BODY<<$EOF" >> $GITHUB_OUTPUT
+            echo "## Vendor pricing data overdue for review" >> $GITHUB_OUTPUT
+            echo "" >> $GITHUB_OUTPUT
+            echo "The following vendors have not had their pricing verified in over 2 years." >> $GITHUB_OUTPUT
+            echo "SaaS pricing changes frequently — please check and update these entries." >> $GITHUB_OUTPUT
+            echo "" >> $GITHUB_OUTPUT
+            echo "To update a vendor, edit its file in \`_vendors/\`, update \`updated_at\` to today," >> $GITHUB_OUTPUT
+            echo "correct any pricing fields, and submit a PR. See [CONTRIBUTING.md](../blob/main/CONTRIBUTING.md)." >> $GITHUB_OUTPUT
+            echo "" >> $GITHUB_OUTPUT
+            echo '```' >> $GITHUB_OUTPUT
+            cat stale_report.txt >> $GITHUB_OUTPUT
+            echo '```' >> $GITHUB_OUTPUT
+            echo "$EOF" >> $GITHUB_OUTPUT
+          else
+            echo "has_stale=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Open Issue for Stale Vendors
+        if: steps.stale.outputs.has_stale == 'true'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const count = process.env.STALE_COUNT;
+            const title = `${count} vendor(s) not updated in 2+ years — pricing review needed`;
+            const body = process.env.ISSUE_BODY;
+
+            // Check if an open staleness issue already exists to avoid duplicates
+            const issues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'stale-data',
+            });
+            const alreadyOpen = issues.data.some(i => i.title.includes('not updated in 2+'));
+            if (!alreadyOpen) {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body,
+                labels: ['stale-data'],
+              });
+            }
+        env:
+          STALE_COUNT: ${{ steps.stale.outputs.stale_count }}
+          ISSUE_BODY: ${{ steps.stale.outputs.ISSUE_BODY }}
