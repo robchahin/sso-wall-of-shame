@@ -6,5 +6,5 @@ vendor/
 venv/
 __pycache__/
 .claude/
-TODO.md
+_notes/
 

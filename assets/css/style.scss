@@ -37,8 +37,35 @@ tr {
   }
 }
 
-.footnotes {
-  font-size: smaller;
+.info-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #666;
+  padding: 0 0.2rem;
+  vertical-align: middle;
+  line-height: 1;
+
+  &:hover,
+  &:focus {
+    color: #159957;
+    outline: none;
+  }
+}
+
+.info-popover {
+  position: absolute;
+  z-index: 100;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem 0.75rem;
+  max-width: 300px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  white-space: normal;
 }
 
 #vendor-search {

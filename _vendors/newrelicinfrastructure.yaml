@@ -1,7 +1,6 @@
 ---
-base_pricing: $0.60 - $7.20 per host-month[^newrelic-price]
-footnotes: '[^newrelic-price]: Pricing varies by host size. The SSO cost increase
-  does not.'
+base_pricing: $0.60 - $7.20 per host-month
+vendor_note: Pricing varies by host size. The SSO cost increase does not.
 name: New Relic Infrastructure
 percent_increase: 100%
 pricing_source: https://newrelic.com/products/infrastructure/pricing
