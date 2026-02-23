@@ -3,7 +3,7 @@ base_pricing: $100 per month
 name: DatoCMS
 percent_increase: 567%
 pricing_source: https://www.datocms.com/pricing
-pricing_note: Quote
+pricing_source_info: Pricing comes from a quote
 sso_pricing: $667 per month
 updated_at: 2023-10-17
 vendor_url: https://datocms.com

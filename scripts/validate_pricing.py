@@ -9,7 +9,23 @@ REQUIRED_FIELDS = ['name', 'base_pricing', 'sso_pricing', 'vendor_url', 'pricing
 
 KNOWN_FIELDS = {
     'name', 'base_pricing', 'sso_pricing', 'percent_increase',
-    'vendor_url', 'pricing_source', 'updated_at', 'pricing_note', 'footnotes'
+    'vendor_url', 'pricing_source', 'updated_at', 'vendor_note', 'pricing_source_info',
+    # Deprecated fields — kept here to suppress the generic "unknown field" warning;
+    # a specific deprecation warning is issued instead (see validate_schema).
+    'footnotes', 'pricing_note',
+}
+
+DEPRECATED_FIELDS = {
+    'footnotes': (
+        "The 'footnotes' field is deprecated. "
+        "Use 'vendor_note' with plain text instead. "
+        "See CONTRIBUTING.md for details."
+    ),
+    'pricing_note': (
+        "The 'pricing_note' field is deprecated. "
+        "Use 'pricing_source_info' with plain text instead (e.g. 'Pricing comes from a quote'). "
+        "See CONTRIBUTING.md for details."
+    ),
 }
 
 class _DuplicateKeyLoader(yaml.SafeLoader):
@@ -67,6 +83,11 @@ def validate_schema(data, warnings, errors):
     if unknown:
         warnings.append(f"Unknown field(s): {', '.join(sorted(unknown))}. Check for typos.")
 
+    # Deprecated fields
+    for field, message in DEPRECATED_FIELDS.items():
+        if field in data:
+            warnings.append(message)
+
     # updated_at must be a parseable date
     updated_at = data.get('updated_at')
     if updated_at:
@@ -116,8 +137,12 @@ def validate_vendor_file(filepath):
     # Schema validation
     validate_schema(data, warnings, errors)
 
-    base_pricing = data.get('base_pricing')
-    sso_pricing = data.get('sso_pricing')
+    # Strip legacy footnote references (e.g. "[^id]") from pricing fields so
+    # old-format PRs don't generate spurious percentage warnings on top of the
+    # deprecation warning already issued above.
+    footnote_ref = re.compile(r'\[\^[^\]]+\]')
+    base_pricing = footnote_ref.sub('', str(data.get('base_pricing') or '')).strip() or None
+    sso_pricing = footnote_ref.sub('', str(data.get('sso_pricing') or '')).strip() or None
     percent_increase_raw = data.get('percent_increase')
 
     if not base_pricing or not sso_pricing:

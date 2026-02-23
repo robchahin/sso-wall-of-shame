@@ -1,6 +1,6 @@
 ---
-base_pricing: $26 for 100K events[^sentry]
-footnotes: '[^sentry]: Sentry also provides a self-hosted product in which SSO is included for free.'
+base_pricing: $26 for 100K events
+vendor_note: Sentry also provides a self-hosted product in which SSO is included for free.
 name: Sentry
 percent_increase: 208%
 pricing_source: https://sentry.io/pricing/

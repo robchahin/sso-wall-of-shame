@@ -1,7 +1,6 @@
 ---
-base_pricing: $0.2992[^elastic-note]
-footnotes: '[^elastic-note]: Pricing based on a random small deployment using their
-  pricing calculator.'
+base_pricing: $0.2992
+vendor_note: Pricing based on a random small deployment using their pricing calculator.
 name: Elastic
 percent_increase: 15%
 pricing_source: https://www.elastic.co/subscriptions

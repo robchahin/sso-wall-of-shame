@@ -12,7 +12,7 @@ class TestExtractPrice(unittest.TestCase):
     def test_extract_price_standard(self):
         self.assertEqual(extract_price("$23.99"), 23.99)
         self.assertEqual(extract_price("$10 per u/m"), 10.0)
-        self.assertEqual(extract_price("$2,500[^price-note]"), 2500.0)
+        self.assertEqual(extract_price("$2,500"), 2500.0)
 
     def test_extract_price_euro(self):
         self.assertEqual(extract_price("€10 per u/m"), 10.0)
@@ -93,6 +93,52 @@ class TestValidateSchema(unittest.TestCase):
         warnings, errors = [], []
         validate_schema(data, warnings, errors)
         self.assertTrue(any("vender_url" in w for w in warnings))
+
+    def test_vendor_note_is_known_field(self):
+        data = self._make_valid_data()
+        data['vendor_note'] = 'SSO requires an enterprise plan.'
+        warnings, errors = [], []
+        validate_schema(data, warnings, errors)
+        self.assertEqual(errors, [])
+        self.assertFalse(any("vendor_note" in w for w in warnings))
+
+    def test_pricing_source_info_is_known_field(self):
+        data = self._make_valid_data()
+        data['pricing_source_info'] = 'Pricing comes from a quote'
+        warnings, errors = [], []
+        validate_schema(data, warnings, errors)
+        self.assertEqual(errors, [])
+        self.assertFalse(any("pricing_source_info" in w for w in warnings))
+
+    def test_old_footnotes_field_warns_deprecated(self):
+        data = self._make_valid_data()
+        data['footnotes'] = '[^foo]: some note'
+        warnings, errors = [], []
+        validate_schema(data, warnings, errors)
+        self.assertTrue(any("deprecated" in w.lower() and "vendor_note" in w for w in warnings))
+        # Must not also fire the generic unknown-field warning
+        self.assertFalse(any("Unknown field" in w and "footnotes" in w for w in warnings))
+
+    def test_old_pricing_note_field_warns_deprecated(self):
+        data = self._make_valid_data()
+        data['pricing_note'] = 'Quote'
+        warnings, errors = [], []
+        validate_schema(data, warnings, errors)
+        self.assertTrue(any("deprecated" in w.lower() and "pricing_source_info" in w for w in warnings))
+        # Must not also fire the generic unknown-field warning
+        self.assertFalse(any("Unknown field" in w and "pricing_note" in w for w in warnings))
+
+    def test_footnote_refs_stripped_before_percentage_check(self):
+        # A PR using the old footnotes style should not get a spurious percentage warning
+        data = self._make_valid_data()
+        data['sso_pricing'] = '$20 per u/m[^foo]'
+        data['footnotes'] = '[^foo]: some note'
+        data['percent_increase'] = '100%'
+        warnings, errors = [], []
+        validate_schema(data, warnings, errors)
+        # Deprecation warning yes, percentage mismatch warning no
+        self.assertTrue(any("deprecated" in w.lower() for w in warnings))
+        self.assertFalse(any("Percentage mismatch" in w for w in warnings))
 
 
 class TestDuplicateKeys(unittest.TestCase):

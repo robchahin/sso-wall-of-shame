@@ -2,6 +2,7 @@
 ---
 <script src="assets/js/sort.js"></script>
 <script src="assets/js/search.js"></script>
+<script src="assets/js/popover.js"></script>
 
 <details open>
 <summary>
@@ -49,7 +50,7 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
 <tbody>
 {% for vendor in vendors %}
 <tr>
-<td markdown="span"><a href="{{ vendor.vendor_url }}">{{ vendor.name }}</a></td>
+<td markdown="span"><a href="{{ vendor.vendor_url }}">{{ vendor.name }}</a>{% if vendor.vendor_note %} <button class="info-toggle" aria-label="Note about {{ vendor.name }}" data-note="{{ vendor.vendor_note | escape }}">&#9432;</button>{% endif %}</td>
 <td markdown="span">{{ vendor.base_pricing }}</td>
 <td markdown="span">{{ vendor.sso_pricing }}</td>
 <td markdown="span">{{ vendor.percent_increase }}</td>
@@ -60,7 +61,7 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
 {% endif %}
 <a href="{{ source }}" aria-label="Pricing source for {{ vendor.name }}" title="Pricing source for {{ vendor.name }}">&#128279;</a>
 {% endfor %}
-{{ vendor.pricing_note }}</td>
+{% if vendor.pricing_source_info %}<button class="info-toggle" aria-label="Source info for {{ vendor.name }}" data-note="{{ vendor.pricing_source_info | escape }}">&#9432;</button>{% endif %}</td>
 <td>{{ vendor.updated_at }}</td>
 </tr>
 {% endfor %}
@@ -78,7 +79,7 @@ Some vendors simply do not list their pricing for SSO because the pricing is neg
 <tbody>
 {% for vendor in call_us %}
 <tr>
-<td markdown="span"><a href="{{ vendor.vendor_url }}">{{ vendor.name }}</a></td>
+<td markdown="span"><a href="{{ vendor.vendor_url }}">{{ vendor.name }}</a>{% if vendor.vendor_note %} <button class="info-toggle" aria-label="Note about {{ vendor.name }}" data-note="{{ vendor.vendor_note | escape }}">&#9432;</button>{% endif %}</td>
 <td markdown="span">{{ vendor.base_pricing }}</td>
 <td markdown="span">{{ vendor.sso_pricing }}</td>
 <td markdown="span">{{ vendor.percent_increase }}</td>
@@ -89,7 +90,7 @@ Some vendors simply do not list their pricing for SSO because the pricing is neg
 {% endif %}
 <a href="{{ source }}" aria-label="Pricing source for {{ vendor.name }}" title="Pricing source for {{ vendor.name }}">&#128279;</a>
 {% endfor %}
-{{ vendor.pricing_note }}</td>
+{% if vendor.pricing_source_info %}<button class="info-toggle" aria-label="Source info for {{ vendor.name }}" data-note="{{ vendor.pricing_source_info | escape }}">&#9432;</button>{% endif %}</td>
 <td>{{ vendor.updated_at }}</td>
 </tr>
 {% endfor %}
@@ -115,9 +116,9 @@ We disregard free tier pricing, as we can assume these aren't intended for long 
 
 <details>
 <summary>
-What does "Quote" mean in the Source column?
+What does the ⓘ icon next to a source mean?
 </summary>
-If a vendor doesn't list pricing but a user has submitted pricing based on a quote, it can be included here. If a vendor feels that their actual pricing is inaccurately reflected by this quote, feel free to let me know and I'll update the page.
+If a vendor doesn't publicly list their SSO pricing but a user has submitted pricing based on a quote or other non-public source, a note will be shown next to the source link. If a vendor feels that their actual pricing is inaccurately reflected, feel free to let me know and I'll update the page.
 </details>
 
 <details>
@@ -141,10 +142,3 @@ But it costs money to provide SAML support, so we can't offer it for free!
   While I'd like people to really consider it a <em>bare minimum</em> feature for business SaaS, I'm OK with it costing a little extra to cover maintenance costs. If your SSO support is a 10% price hike, you're not on this list. But these percentage increases are not maintenance costs, they're revenue generation because you know your customers have no good options.
 </details>
 
-## Footnotes
-{% for vendor in vendors %}
-{{ vendor.footnotes }}
-{% endfor %}
-{% for vendor in call_us %}
-{{ vendor.footnotes }}
-{% endfor %}
