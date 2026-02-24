@@ -1,6 +1,7 @@
 ---
 name: test vendor
 base_pricing: $1 u/m
-sso_pricing: $1000
+sso_pricing: $100 u/m
 vendor_url: https://www.example.com
 pricing_source: Quote
+updated_at: May 7 2024
