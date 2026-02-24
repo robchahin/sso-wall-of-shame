@@ -4,5 +4,5 @@ base_pricing: $1 u/m
 sso_pricing: $100 u/m
 percent_increase: 9900%
 vendor_url: https://www.example.com
-pricing_source: Quote
+pricing_source: Quote but cool
 updated_at: 2024-05-05
