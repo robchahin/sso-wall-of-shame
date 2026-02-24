@@ -1,6 +1,6 @@
 ---
 name: Coursera
-base_pricing: $1995 per u/y
+base_pricing: $1995 per year
 sso_pricing: $49875 per year
 vendor_note: Coursera requires a minimum of 125 users to access SSO pricing. As they do not have an Enterprise price listed, this price just scales their pricing to 5 and 125 seats.
 percent_increase: 2400%
