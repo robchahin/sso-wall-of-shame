@@ -4,4 +4,3 @@ base_pricing: $1 u/m
 sso_pricing: $1000
 vendor_url: https://www.example.com
 pricing_source: Quote
-footnote: [^bad_vendor]This is an old footnote, we don't use these anymore.
