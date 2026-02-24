@@ -121,13 +121,19 @@ def validate_schema(data, warnings, errors):
     if vendor_url and not _is_valid_url(vendor_url):
         errors.append(f"'vendor_url' does not look like a valid URL: '{vendor_url}'.")
 
-    # pricing_source can be a string or list; each entry must look like a URL
+    # pricing_source can be a string or list; each entry should look like a URL.
+    # Non-URL values are a warning rather than an error — maintainers may approve
+    # exceptions where a direct URL is not available (e.g. pricing via sales quote).
     pricing_source = data.get('pricing_source')
     if pricing_source:
         sources = pricing_source if isinstance(pricing_source, list) else [pricing_source]
         for src in sources:
             if not _is_valid_url(src):
-                errors.append(f"'pricing_source' entry does not look like a valid URL: '{src}'.")
+                warnings.append(
+                    f"'pricing_source' does not look like a valid URL: '{src}'. "
+                    f"Please provide a direct link to the pricing page wherever possible; "
+                    f"maintainers may approve exceptions where no URL is available."
+                )
 
 
 def validate_vendor_file(filepath):

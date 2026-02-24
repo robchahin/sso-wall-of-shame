@@ -78,7 +78,8 @@ class TestValidateSchema(unittest.TestCase):
         data['pricing_source'] = 'not-a-url'
         warnings, errors = [], []
         validate_schema(data, warnings, errors)
-        self.assertTrue(any("pricing_source" in e for e in errors))
+        self.assertEqual(errors, [])
+        self.assertTrue(any("pricing_source" in w for w in warnings))
 
     def test_pricing_source_list(self):
         data = self._make_valid_data()
