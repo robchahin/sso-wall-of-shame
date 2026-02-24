@@ -5,7 +5,7 @@ import tempfile
 
 # Add parent directory to path to import script
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from scripts.validate_pricing import extract_price, is_call_us, validate_schema, validate_vendor_file
+from scripts.validate_pricing import extract_price, extract_unit, is_call_us, validate_schema, validate_vendor_file
 
 class TestExtractPrice(unittest.TestCase):
 
@@ -139,6 +139,142 @@ class TestValidateSchema(unittest.TestCase):
         # Deprecation warning yes, percentage mismatch warning no
         self.assertTrue(any("deprecated" in w.lower() for w in warnings))
         self.assertFalse(any("Percentage mismatch" in w for w in warnings))
+
+
+class TestPercentIncrease(unittest.TestCase):
+
+    def _write_tempfile(self, content):
+        f = tempfile.NamedTemporaryFile(mode='w', suffix='.yaml', delete=False)
+        f.write(content)
+        f.close()
+        return f.name
+
+    def _valid_yaml(self, extra=''):
+        return (
+            "name: Test\n"
+            "base_pricing: $10 per u/m\n"
+            "sso_pricing: $20 per u/m\n"
+            "vendor_url: https://example.com\n"
+            "pricing_source: https://example.com/pricing\n"
+            "updated_at: 2024-01-15\n"
+            + extra
+        )
+
+    def test_missing_percent_increase_is_error(self):
+        tmpfile = self._write_tempfile(self._valid_yaml())
+        try:
+            is_valid, warnings, errors = validate_vendor_file(tmpfile)
+            self.assertFalse(is_valid)
+            self.assertTrue(any("percent_increase" in e for e in errors))
+            self.assertTrue(any("100%" in e for e in errors))
+        finally:
+            os.unlink(tmpfile)
+
+    def test_missing_percent_increase_does_not_modify_file(self):
+        tmpfile = self._write_tempfile(self._valid_yaml())
+        try:
+            original = open(tmpfile).read()
+            validate_vendor_file(tmpfile)
+            self.assertEqual(open(tmpfile).read(), original)
+        finally:
+            os.unlink(tmpfile)
+
+    def test_wrong_percent_increase_is_error(self):
+        tmpfile = self._write_tempfile(self._valid_yaml("percent_increase: 50%\n"))
+        try:
+            is_valid, warnings, errors = validate_vendor_file(tmpfile)
+            self.assertFalse(is_valid)
+            self.assertTrue(any("mismatch" in e.lower() for e in errors))
+        finally:
+            os.unlink(tmpfile)
+
+    def test_correct_percent_increase_passes(self):
+        tmpfile = self._write_tempfile(self._valid_yaml("percent_increase: 100%\n"))
+        try:
+            is_valid, warnings, errors = validate_vendor_file(tmpfile)
+            self.assertTrue(is_valid)
+            self.assertEqual(errors, [])
+        finally:
+            os.unlink(tmpfile)
+
+
+class TestExtractUnit(unittest.TestCase):
+
+    def test_per_user_month(self):
+        self.assertEqual(extract_unit("$10 per u/m"), "per u/m")
+
+    def test_bare_number(self):
+        self.assertEqual(extract_unit("$2,500"), "")
+
+    def test_currency_after_number(self):
+        # e.g. '4.99€ / device' — leading $ strip doesn't apply, number is stripped
+        self.assertEqual(extract_unit("4.99€ / device"), "€ / device")
+
+    def test_per_month(self):
+        self.assertEqual(extract_unit("$100 per month"), "per month")
+
+    def test_per_year(self):
+        self.assertEqual(extract_unit("$995 per year"), "per year")
+
+
+class TestUnitMismatch(unittest.TestCase):
+
+    def _write_tempfile(self, content):
+        f = tempfile.NamedTemporaryFile(mode='w', suffix='.yaml', delete=False)
+        f.write(content)
+        f.close()
+        return f.name
+
+    def _yaml(self, base, sso, pct=None):
+        content = (
+            "name: Test\n"
+            f"base_pricing: {base}\n"
+            f"sso_pricing: {sso}\n"
+            "vendor_url: https://example.com\n"
+            "pricing_source: https://example.com/pricing\n"
+            "updated_at: 2024-01-15\n"
+        )
+        if pct:
+            content += f"percent_increase: {pct}\n"
+        return content
+
+    def test_unit_mismatch_emits_warning(self):
+        tmpfile = self._write_tempfile(self._yaml("$10 per u/m", "$20 per month", "100%"))
+        try:
+            is_valid, warnings, errors = validate_vendor_file(tmpfile)
+            self.assertTrue(any("units appear to differ" in w for w in warnings))
+        finally:
+            os.unlink(tmpfile)
+
+    def test_unit_mismatch_downgrades_pct_error_to_warning(self):
+        # Wrong percentage but units differ — should warn, not error
+        tmpfile = self._write_tempfile(self._yaml("$10 per u/m", "$20 per month", "50%"))
+        try:
+            is_valid, warnings, errors = validate_vendor_file(tmpfile)
+            self.assertEqual(errors, [])
+            self.assertTrue(any("mismatch" in w.lower() for w in warnings))
+        finally:
+            os.unlink(tmpfile)
+
+    def test_unit_mismatch_downgrades_missing_pct_to_warning(self):
+        # Missing percent_increase but units differ — should warn, not error
+        tmpfile = self._write_tempfile(self._yaml("$10 per u/m", "$20 per month"))
+        try:
+            is_valid, warnings, errors = validate_vendor_file(tmpfile)
+            self.assertEqual(errors, [])
+            self.assertTrue(any("percent_increase" in w for w in warnings))
+        finally:
+            os.unlink(tmpfile)
+
+    def test_matching_units_keeps_pct_as_error(self):
+        # Same units, wrong percentage — must still be an error
+        tmpfile = self._write_tempfile(self._yaml("$10 per u/m", "$20 per u/m", "50%"))
+        try:
+            is_valid, warnings, errors = validate_vendor_file(tmpfile)
+            self.assertFalse(is_valid)
+            self.assertTrue(any("mismatch" in e.lower() for e in errors))
+        finally:
+            os.unlink(tmpfile)
 
 
 class TestDuplicateKeys(unittest.TestCase):

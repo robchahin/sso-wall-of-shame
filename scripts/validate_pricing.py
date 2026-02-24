@@ -55,6 +55,26 @@ def extract_price(price_str):
         return float(match.group(1))
     return None
 
+def extract_unit(price_str):
+    """
+    Extracts the unit suffix from a pricing string by stripping the leading
+    currency symbol(s) and numeric value. Returns a normalised lowercase string,
+    or empty string if nothing remains (e.g. bare '$10').
+
+    Examples:
+      '$10 per u/m'  -> 'per u/m'
+      '4.99€ / device' -> '€ / device'  (currency attached to number, kept)
+      '$2,500'       -> ''
+    """
+    if not isinstance(price_str, str):
+        price_str = str(price_str)
+    clean_str = price_str.replace(',', '')
+    # Strip leading currency symbols before the number
+    clean_str = re.sub(r'^[\$€£¥]+', '', clean_str).strip()
+    # Remove the first number (including decimals)
+    unit = re.sub(r'^\d+(?:\.\d+)?', '', clean_str).strip()
+    return unit.lower()
+
 def is_call_us(pricing_str):
     """
     Heuristic to determine if pricing implies "Call Us" / Custom.
@@ -176,6 +196,18 @@ def validate_vendor_file(filepath):
         warnings.append(f"Could not extract numeric price from base ('{base_pricing}') and/or sso ('{sso_pricing}'). Manual review recommended.")
         return len(errors) == 0, warnings, errors
 
+    # Warn if the unit suffixes differ — the percentage is still calculated and
+    # checked below (likely a typo), but if units mismatch the percentage check
+    # is also downgraded to a warning since the numbers may not be comparable.
+    base_unit = extract_unit(base_pricing)
+    sso_unit = extract_unit(sso_pricing)
+    units_match = base_unit == sso_unit
+    if not units_match:
+        warnings.append(
+            f"Pricing units appear to differ: base='{base_pricing}', sso='{sso_pricing}'. "
+            f"Please verify the percentage is calculated on a like-for-like basis."
+        )
+
     if base_val == 0:
         warnings.append("Base pricing is $0. Cannot calculate percentage increase.")
         return len(errors) == 0, warnings, errors
@@ -183,22 +215,35 @@ def validate_vendor_file(filepath):
     # Calculate percentage
     calculated_pct = ((sso_val - base_val) / base_val) * 100
 
-    # If the user didn't provide a parseable percentage but we calculated one
+    # If the user didn't provide a parseable percentage but we calculated one.
+    # Downgrade to a warning if units differ, since the calculated value may not be meaningful.
     if provided_pct is None:
-        formatted_pct = f"{calculated_pct:.0f}%"
-        try:
-            with open(filepath, 'a') as f:
-                f.write(f"percent_increase: {formatted_pct}\n")
-            warnings.append(f"Auto-injected `percent_increase: {formatted_pct}` because it was omitted.")
-        except Exception as e:
-            warnings.append(f"Calculated {formatted_pct} increase, but failed to auto-inject: {e}")
-        return len(errors) == 0, warnings, errors
+        formatted_pct = f"{calculated_pct:.0f}"
+        msg = (
+            f"Missing 'percent_increase'. "
+            f"Based on base=${base_val} and sso=${sso_val}, "
+            f"the value should be: percent_increase: {formatted_pct}%"
+        )
+        if units_match:
+            errors.append(msg)
+            return False, warnings, errors
+        else:
+            warnings.append(msg)
+            return len(errors) == 0, warnings, errors
 
     # Compare
     # Allow a small margin of error for rounding (e.g., 200% instead of 199.9%)
     margin = 1.5 # 1.5% margin allows for 33% instead of 33.3% rounding by users
     if abs(calculated_pct - provided_pct) > margin:
-        warnings.append(f"Percentage mismatch. Calculated: {calculated_pct:.1f}%, Provided: {provided_pct}%. Prices: base=${base_val}, sso=${sso_val}.")
+        msg = (
+            f"Percentage mismatch: expected {calculated_pct:.1f}%, "
+            f"got {provided_pct}%. "
+            f"Prices: base=${base_val}, sso=${sso_val}."
+        )
+        if units_match:
+            errors.append(msg)
+        else:
+            warnings.append(msg)
 
     return len(errors) == 0, warnings, errors
 
@@ -207,12 +252,6 @@ def main():
     parser.add_argument("paths", nargs='+', help="Vendor YAML files or directories containing them.")
     parser.add_argument("--fail-on-warnings", action="store_true", help="Exit with error code if there are warnings.")
     args = parser.parse_args()
-
-    total_files = 0
-    files_with_warnings = 0
-    files_with_errors = 0
-
-    all_warnings = {}
 
     filepaths_to_check = []
     for path in args.paths:
@@ -225,24 +264,40 @@ def main():
         else:
             print(f"Skipping invalid path: {path}")
 
+    # Collect all results first so we can emit category markers at the end
+    results = {}
     for filepath in filepaths_to_check:
-        filename = os.path.basename(filepath)
-        total_files += 1
-
         is_valid, warnings, errors = validate_vendor_file(filepath)
+        results[filepath] = (errors, warnings)
 
+    # Print per-file output
+    for filepath, (errors, warnings) in results.items():
+        filename = os.path.basename(filepath)
         if errors:
-            files_with_errors += 1
             print(f"❌ {filename}")
             for error in errors:
                 print(f"   Error: {error}")
-
         if warnings:
-            files_with_warnings += 1
-            all_warnings[filename] = warnings
             print(f"⚠️ {filename}")
             for warning in warnings:
                 print(f"   Warning: {warning}")
+
+    # Emit machine-readable category markers for the workflow to map to PR labels.
+    # These are derived from error messages using stable keyword matches — never
+    # from free-text that could be influenced by PR content.
+    categories = set()
+    for errors, _ in results.values():
+        for e in errors:
+            if any(k in e for k in ["Missing required field", "not a valid", "Unknown field", "Duplicate", "Empty YAML", "Failed to parse", "Failed to read"]):
+                categories.add("CATEGORY:schema-error")
+            if any(k in e for k in ["percent_increase", "Percentage mismatch"]):
+                categories.add("CATEGORY:pricing-error")
+    for cat in sorted(categories):
+        print(cat)
+
+    files_with_errors = sum(1 for e, _ in results.values() if e)
+    files_with_warnings = sum(1 for _, w in results.values() if w)
+    total_files = len(results)
 
     print("\n" + "="*40)
     print(f"Validation complete. Scanned {total_files} files.")
