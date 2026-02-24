@@ -3,3 +3,8 @@ _site
 .jekyll-metadata
 .bundle/
 vendor/
+venv/
+__pycache__/
+.claude/
+_notes/
+

@@ -1,0 +1,8 @@
+---
+base_pricing: $15 per month
+name: Mailgun
+percent_increase: 500%
+pricing_source: https://www.mailgun.com/pricing/
+sso_pricing: $90 per month
+updated_at: 2025-06-25
+vendor_url: https://www.mailgun.com

@@ -1,0 +1,9 @@
+---
+base_pricing: $48 per month
+vendor_note: Based on Team vs. Enterprise tier pricing.
+name: Short.io
+percent_increase: 208%
+pricing_source: https://short.io/pricing/
+sso_pricing: $148 per month
+updated_at: 2025-03-28
+vendor_url: https://short.io/

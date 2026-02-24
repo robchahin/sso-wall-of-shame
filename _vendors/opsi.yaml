@@ -1,0 +1,8 @@
+---
+base_pricing: 4.99€ / device
+name: opsi
+percent_increase: 80%
+pricing_source: https://opsi.org/en/pricing/
+sso_pricing: 8.99€ / device
+updated_at: 2025-03-05
+vendor_url: https://opsi.org/

@@ -1,12 +1,14 @@
 ---
 ---
-<script src="assets/js/sorttable.js"></script>
+<script src="assets/js/sort.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/popover.js"></script>
 
 <details open>
 <summary>
 Why does this exist?
 </summary>
-Single sign-on (SSO) is a mechanism for outsourcing the authentication for your website (or other product) to a third party identity provider, such as Google, Azure AD, Okta, PingFederate, etc.
+Single sign-on (SSO) is a mechanism for outsourcing the authentication for your website (or other product) to a third party identity provider, such as Google, Okta, Entra ID (Azure AD), PingFederate, etc.
 
 In this context, SSO refers to a SaaS or similar vendor allowing a business client to manage user accounts via the client's own identity provider, without having to rely on the vendor to provide strong authentication with audit logs, and with the ability to create and delete user accounts centrally, for all users, across all software in use by that client.
 
@@ -29,12 +31,15 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
 {% assign vendors = "" | split: ',' %}
 {% assign call_us = "" | split: ',' %}
 {% for vendor in all %}
-	{% if vendor.sso_pricing contains "Call" %}
+	{% assign sso_lower = vendor.sso_pricing | downcase %}
+	{% if sso_lower contains "call" or sso_lower contains "contact" or sso_lower contains "custom" or sso_lower contains "quote" %}
 		{% assign call_us = call_us | push: vendor %}
 	{% else %}
 		{% assign vendors = vendors | push: vendor %}
 	{% endif %}
 {% endfor %}
+
+<input id="vendor-search" type="search" placeholder="Filter by vendor name…" aria-label="Filter vendors by name">
 
 ## The List
 
@@ -45,7 +50,7 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
 <tbody>
 {% for vendor in vendors %}
 <tr>
-<td markdown="span"><a href="{{ vendor.vendor_url }}">{{ vendor.name }}</a></td>
+<td markdown="span"><a href="{{ vendor.vendor_url }}">{{ vendor.name }}</a>{% if vendor.vendor_note %} <button class="info-toggle" aria-label="Note about {{ vendor.name }}" data-note="{{ vendor.vendor_note | escape }}">&#9432;</button>{% endif %}</td>
 <td markdown="span">{{ vendor.base_pricing }}</td>
 <td markdown="span">{{ vendor.sso_pricing }}</td>
 <td markdown="span">{{ vendor.percent_increase }}</td>
@@ -54,14 +59,15 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
 {% if forloop.first == false %}
 &amp;
 {% endif %}
-<a href="{{ source }}">&#128279;</a>
+<a href="{{ source }}" aria-label="Pricing source for {{ vendor.name }}" title="Pricing source for {{ vendor.name }}">&#128279;</a>
 {% endfor %}
-{{ vendor.pricing_note }}</td>
+{% if vendor.pricing_source_info %}<button class="info-toggle" aria-label="Source info for {{ vendor.name }}" data-note="{{ vendor.pricing_source_info | escape }}">&#9432;</button>{% endif %}</td>
 <td>{{ vendor.updated_at }}</td>
 </tr>
 {% endfor %}
 </tbody>
 </table>
+<p class="search-empty" style="display:none">No vendors in this list match your search.</p>
 
 ## The Other List ##
 Some vendors simply do not list their pricing for SSO because the pricing is negotiated with an account manager. These vendors get their own table as we assume they apply a significant premium for SSO.
@@ -73,7 +79,7 @@ Some vendors simply do not list their pricing for SSO because the pricing is neg
 <tbody>
 {% for vendor in call_us %}
 <tr>
-<td markdown="span"><a href="{{ vendor.vendor_url }}">{{ vendor.name }}</a></td>
+<td markdown="span"><a href="{{ vendor.vendor_url }}">{{ vendor.name }}</a>{% if vendor.vendor_note %} <button class="info-toggle" aria-label="Note about {{ vendor.name }}" data-note="{{ vendor.vendor_note | escape }}">&#9432;</button>{% endif %}</td>
 <td markdown="span">{{ vendor.base_pricing }}</td>
 <td markdown="span">{{ vendor.sso_pricing }}</td>
 <td markdown="span">{{ vendor.percent_increase }}</td>
@@ -82,14 +88,15 @@ Some vendors simply do not list their pricing for SSO because the pricing is neg
 {% if forloop.first == false %}
 &amp;
 {% endif %}
-<a href="{{ source }}">&#128279;</a>
+<a href="{{ source }}" aria-label="Pricing source for {{ vendor.name }}" title="Pricing source for {{ vendor.name }}">&#128279;</a>
 {% endfor %}
-{{ vendor.pricing_note }}</td>
+{% if vendor.pricing_source_info %}<button class="info-toggle" aria-label="Source info for {{ vendor.name }}" data-note="{{ vendor.pricing_source_info | escape }}">&#9432;</button>{% endif %}</td>
 <td>{{ vendor.updated_at }}</td>
 </tr>
 {% endfor %}
 </tbody>
 </table>
+<p class="search-empty" style="display:none">No vendors in this list match your search.</p>
 
 ## FAQs
 
@@ -109,9 +116,9 @@ We disregard free tier pricing, as we can assume these aren't intended for long 
 
 <details>
 <summary>
-What does "Quote" mean in the Source column?
+What does the ⓘ icon next to a source mean?
 </summary>
-If a vendor doesn't list pricing but a user has submitted pricing based on a quote, it can be included here. If a vendor feels that their actual pricing is inaccurately reflected by this quote, feel free to let me know and I'll update the page.
+If a vendor doesn't publicly list their SSO pricing but a user has submitted pricing based on a quote or other non-public source, a note will be shown next to the source link. If a vendor feels that their actual pricing is inaccurately reflected, feel free to let me know and I'll update the page.
 </details>
 
 <details>
@@ -135,10 +142,3 @@ But it costs money to provide SAML support, so we can't offer it for free!
   While I'd like people to really consider it a <em>bare minimum</em> feature for business SaaS, I'm OK with it costing a little extra to cover maintenance costs. If your SSO support is a 10% price hike, you're not on this list. But these percentage increases are not maintenance costs, they're revenue generation because you know your customers have no good options.
 </details>
 
-## Footnotes
-{% for vendor in vendors %}
-{{ vendor.footnotes }}
-{% endfor %}
-{% for vendor in call_us %}
-{{ vendor.footnotes }}
-{% endfor %}

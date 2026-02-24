@@ -1,8 +1,0 @@
----
-base_pricing: $299 per u/m
-name: Zapier
-percent_increase: 100%
-pricing_source: https://zapier.com/app/billing/plans/
-sso_pricing: $600 per u/m
-updated_at: 2019-10-19
-vendor_url: https://zapier.com/
