@@ -1,34 +1,95 @@
 name: Validate Vendors Pricing
 
+# SECURITY NOTE: This workflow uses pull_request_target so it auto-runs for
+# first-time contributors without maintainer approval. This is safe because:
+#
+#   1. The default checkout is the BASE BRANCH — workflow files, scripts/, and
+#      tests/ always come from trusted main, never from the PR.
+#   2. Only _vendors/ is overlaid from the PR (a controlled git checkout by SHA).
+#   3. contents: write is NOT granted — the workflow cannot push commits.
+#   4. All user-controlled values are passed via env:, never interpolated into
+#      run: shell commands, preventing expression injection.
+#   5. Labels are applied from a hardcoded set — never derived from PR content.
+#
+# IMPORTANT FOR FUTURE MAINTAINERS: Do NOT add steps that execute code from the
+# PR (e.g. pip install from a PR-contributed requirements.txt, or running a
+# PR-contributed script). Doing so would allow arbitrary code execution with
+# the elevated permissions of pull_request_target.
+#
+# workflow_dispatch: To retroactively validate an existing PR, go to
+# Actions → Validate Vendors Pricing → Run workflow, and enter the PR number.
+# The workflow will fetch the PR's current head from the GitHub API, run
+# validation, post a comment, and update labels — identical to an auto-run.
+
 on:
-  pull_request:
+  pull_request_target:
     branches: [ main ]
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: 'PR number to validate'
+        required: true
+        type: number
 
 jobs:
   validate:
     runs-on: ubuntu-latest
     permissions:
+      contents: read
       pull-requests: write
-      contents: write
-    
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          ref: ${{ github.head_ref || github.ref_name }}
 
-      - name: Restore Trusted Scripts
-        if: github.event_name == 'pull_request'
+    steps:
+      - name: Checkout base branch
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # actions/checkout@v4
+        # Default checkout under pull_request_target is the base branch (main).
+        # Scripts, tests, and workflow files are always trusted.
+        # Under workflow_dispatch the default checkout is also main.
+
+      - name: Resolve PR context
+        id: pr-context
+        uses: actions/github-script@d7906e4ad0b1822421a7e6a35d5ca353c962f410 # actions/github-script@v6
+        with:
+          script: |
+            let prNumber, headSha, baseSha;
+
+            if (context.eventName === 'pull_request_target') {
+              prNumber = context.payload.pull_request.number;
+              headSha  = context.payload.pull_request.head.sha;
+              baseSha  = context.payload.pull_request.base.sha;
+            } else {
+              // workflow_dispatch: look up the PR by number via the API
+              prNumber = parseInt('${{ inputs.pr_number }}', 10);
+              const { data: pr } = await github.rest.pulls.get({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: prNumber,
+              });
+              headSha = pr.head.sha;
+              baseSha = pr.base.sha;
+            }
+
+            core.setOutput('pr_number', prNumber);
+            core.setOutput('head_sha',  headSha);
+            core.setOutput('base_sha',  baseSha);
+
+      - name: Overlay vendor files from PR
+        env:
+          HEAD_SHA: ${{ steps.pr-context.outputs.head_sha }}
         run: |
-          # Prevent PRs from running maliciously modified scripts by restoring
-          # the trusted version of scripts and tests from the base branch.
-          # We use "|| true" to prevent failing if this is the very first PR
-          # where these folders don't exist on main yet.
-          git checkout origin/${{ github.base_ref }} -- scripts/ tests/ || true
+          # Fetch the PR's exact commit by immutable SHA (not branch name, which
+          # could be force-pushed between the event firing and this step).
+          git fetch origin "$HEAD_SHA"
+          git checkout "$HEAD_SHA" -- _vendors/
+
+      - name: Check for symlinks in _vendors
+        run: |
+          if find _vendors/ -type l | grep -q .; then
+            echo "::error::Symlinks detected in _vendors/ directory. This is not permitted."
+            exit 1
+          fi
 
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@7f4fc3e22c37d6ff65e88745f38bd3157c663f7c # actions/setup-python@v4
         with:
           python-version: '3.x'
 
@@ -43,24 +104,35 @@ jobs:
 
       - name: Get Changed Vendor Files
         id: changed-vendors
-        uses: tj-actions/changed-files@v46
-        with:
-          files: |
-            _vendors/**.yaml
-            _vendors/**.yml
+        env:
+          BASE_SHA: ${{ steps.pr-context.outputs.base_sha }}
+          HEAD_SHA: ${{ steps.pr-context.outputs.head_sha }}
+        run: |
+          CHANGED=$(git diff --name-only --diff-filter=ACMR \
+            "$BASE_SHA" "$HEAD_SHA" \
+            -- '_vendors/*.yaml' '_vendors/*.yml')
+          if [ -z "$CHANGED" ]; then
+            echo "any_changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "any_changed=true" >> $GITHUB_OUTPUT
+            EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
+            echo "files<<$EOF" >> $GITHUB_OUTPUT
+            echo "$CHANGED" >> $GITHUB_OUTPUT
+            echo "$EOF" >> $GITHUB_OUTPUT
+          fi
 
       - name: Validate Changed Vendors
         id: validate
         if: steps.changed-vendors.outputs.any_changed == 'true'
         env:
-          CHANGED_FILES: ${{ steps.changed-vendors.outputs.all_changed_files }}
+          CHANGED_FILES: ${{ steps.changed-vendors.outputs.files }}
         run: |
           # Run the script on only the changed vendor files safely via xargs
           echo "$CHANGED_FILES" | xargs -r python scripts/validate_pricing.py > validation_output.txt || true
-          
+
           # Print for github actions log
           cat validation_output.txt
-          
+
           # Check for errors and warnings separately
           HAS_ERRORS=false
           HAS_WARNINGS=false
@@ -71,8 +143,21 @@ jobs:
             HAS_WARNINGS=true
           fi
 
+          # Extract machine-readable category markers emitted by the script.
+          # These map to predefined labels — never derived from free-text PR content.
+          HAS_SCHEMA_ERROR=false
+          HAS_PRICING_ERROR=false
+          if grep -q "CATEGORY:schema-error" validation_output.txt; then
+            HAS_SCHEMA_ERROR=true
+          fi
+          if grep -q "CATEGORY:pricing-error" validation_output.txt; then
+            HAS_PRICING_ERROR=true
+          fi
+
           echo "has_errors=$HAS_ERRORS" >> $GITHUB_OUTPUT
           echo "has_warnings=$HAS_WARNINGS" >> $GITHUB_OUTPUT
+          echo "has_schema_error=$HAS_SCHEMA_ERROR" >> $GITHUB_OUTPUT
+          echo "has_pricing_error=$HAS_PRICING_ERROR" >> $GITHUB_OUTPUT
 
           # Build a PR comment if there are errors or warnings
           if [ "$HAS_ERRORS" = "true" ] || [ "$HAS_WARNINGS" = "true" ]; then
@@ -96,24 +181,61 @@ jobs:
             echo "should_comment=false" >> $GITHUB_OUTPUT
           fi
 
-      - name: Commit Auto-Injected Changes
-        if: github.event_name == 'pull_request' && steps.changed-vendors.outputs.any_changed == 'true'
-        run: |
-          if [[ -n $(git status --porcelain _vendors/) ]]; then
-            git config --global user.name "github-actions[bot]"
-            git config --global user.email "github-actions[bot]@users.noreply.github.com"
-            git add _vendors/
-            git commit -m "Auto-inject calculated percent_increase"
-            git push origin HEAD:${{ github.head_ref }}
-          fi
+      - name: Manage PR Labels
+        uses: actions/github-script@d7906e4ad0b1822421a7e6a35d5ca353c962f410 # actions/github-script@v6
+        if: steps.changed-vendors.outputs.any_changed == 'true'
+        with:
+          script: |
+            const prNumber = ${{ steps.pr-context.outputs.pr_number }};
+            const hasErrors = '${{ steps.validate.outputs.has_errors }}' === 'true';
+            const hasSchemaError = '${{ steps.validate.outputs.has_schema_error }}' === 'true';
+            const hasPricingError = '${{ steps.validate.outputs.has_pricing_error }}' === 'true';
+
+            const validationLabels = [
+              'validation: schema error',
+              'validation: pricing error',
+              'validation: passed',
+            ];
+
+            // Remove all existing validation labels so re-pushed PRs get a clean slate
+            const currentLabels = await github.rest.issues.listLabelsOnIssue({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: prNumber,
+            });
+            for (const label of currentLabels.data) {
+              if (validationLabels.includes(label.name)) {
+                await github.rest.issues.removeLabel({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: prNumber,
+                  name: label.name,
+                }).catch(() => {});
+              }
+            }
+
+            // Apply the appropriate labels
+            const labelsToAdd = [];
+            if (hasSchemaError) labelsToAdd.push('validation: schema error');
+            if (hasPricingError) labelsToAdd.push('validation: pricing error');
+            if (!hasErrors) labelsToAdd.push('validation: passed');
+
+            if (labelsToAdd.length > 0) {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                labels: labelsToAdd,
+              });
+            }
 
       - name: Comment on PR
-        uses: actions/github-script@v6
-        if: github.event_name == 'pull_request' && steps.validate.outputs.should_comment == 'true'
+        uses: actions/github-script@d7906e4ad0b1822421a7e6a35d5ca353c962f410 # actions/github-script@v6
+        if: steps.validate.outputs.should_comment == 'true'
         with:
           script: |
             github.rest.issues.createComment({
-              issue_number: context.issue.number,
+              issue_number: ${{ steps.pr-context.outputs.pr_number }},
               owner: context.repo.owner,
               repo: context.repo.repo,
               body: process.env.COMMENT_BODY
