@@ -147,17 +147,27 @@ jobs:
           # These map to predefined labels — never derived from free-text PR content.
           HAS_SCHEMA_ERROR=false
           HAS_PRICING_ERROR=false
+          HAS_SCHEMA_WARNING=false
+          HAS_PRICING_WARNING=false
           if grep -q "CATEGORY:schema-error" validation_output.txt; then
             HAS_SCHEMA_ERROR=true
           fi
           if grep -q "CATEGORY:pricing-error" validation_output.txt; then
             HAS_PRICING_ERROR=true
           fi
+          if grep -q "CATEGORY:schema-warning" validation_output.txt; then
+            HAS_SCHEMA_WARNING=true
+          fi
+          if grep -q "CATEGORY:pricing-warning" validation_output.txt; then
+            HAS_PRICING_WARNING=true
+          fi
 
           echo "has_errors=$HAS_ERRORS" >> $GITHUB_OUTPUT
           echo "has_warnings=$HAS_WARNINGS" >> $GITHUB_OUTPUT
           echo "has_schema_error=$HAS_SCHEMA_ERROR" >> $GITHUB_OUTPUT
           echo "has_pricing_error=$HAS_PRICING_ERROR" >> $GITHUB_OUTPUT
+          echo "has_schema_warning=$HAS_SCHEMA_WARNING" >> $GITHUB_OUTPUT
+          echo "has_pricing_warning=$HAS_PRICING_WARNING" >> $GITHUB_OUTPUT
 
           # Build a PR comment if there are errors or warnings
           if [ "$HAS_ERRORS" = "true" ] || [ "$HAS_WARNINGS" = "true" ]; then
@@ -186,46 +196,59 @@ jobs:
         if: steps.changed-vendors.outputs.any_changed == 'true'
         with:
           script: |
-            const prNumber = ${{ steps.pr-context.outputs.pr_number }};
-            const hasErrors = '${{ steps.validate.outputs.has_errors }}' === 'true';
-            const hasSchemaError = '${{ steps.validate.outputs.has_schema_error }}' === 'true';
-            const hasPricingError = '${{ steps.validate.outputs.has_pricing_error }}' === 'true';
+            const prNumber        = ${{ steps.pr-context.outputs.pr_number }};
+            const hasErrors       = '${{ steps.validate.outputs.has_errors }}'         === 'true';
+            const hasWarnings     = '${{ steps.validate.outputs.has_warnings }}'       === 'true';
+            const hasSchemaError  = '${{ steps.validate.outputs.has_schema_error }}'   === 'true';
+            const hasPricingError = '${{ steps.validate.outputs.has_pricing_error }}'  === 'true';
+            const hasSchemaWarn   = '${{ steps.validate.outputs.has_schema_warning }}' === 'true';
+            const hasPricingWarn  = '${{ steps.validate.outputs.has_pricing_warning }}' === 'true';
 
-            const validationLabels = [
+            const allValidationLabels = [
               'validation: schema error',
               'validation: pricing error',
+              'validation: schema warning',
+              'validation: pricing warning',
               'validation: passed',
             ];
 
-            // Remove all existing validation labels so re-pushed PRs get a clean slate
-            const currentLabels = await github.rest.issues.listLabelsOnIssue({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: prNumber,
-            });
-            for (const label of currentLabels.data) {
-              if (validationLabels.includes(label.name)) {
+            // Build the desired label set
+            const desired = new Set();
+            if (hasSchemaError)  desired.add('validation: schema error');
+            if (hasPricingError) desired.add('validation: pricing error');
+            if (hasSchemaWarn)   desired.add('validation: schema warning');
+            if (hasPricingWarn)  desired.add('validation: pricing warning');
+            if (!hasErrors && !hasWarnings) desired.add('validation: passed');
+
+            // Fetch current labels on the PR
+            const current = new Set(
+              (await github.rest.issues.listLabelsOnIssue({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+              })).data.map(l => l.name)
+            );
+
+            // Only remove validation labels that are no longer wanted
+            for (const label of allValidationLabels) {
+              if (current.has(label) && !desired.has(label)) {
                 await github.rest.issues.removeLabel({
                   owner: context.repo.owner,
                   repo: context.repo.repo,
                   issue_number: prNumber,
-                  name: label.name,
+                  name: label,
                 }).catch(() => {});
               }
             }
 
-            // Apply the appropriate labels
-            const labelsToAdd = [];
-            if (hasSchemaError) labelsToAdd.push('validation: schema error');
-            if (hasPricingError) labelsToAdd.push('validation: pricing error');
-            if (!hasErrors) labelsToAdd.push('validation: passed');
-
-            if (labelsToAdd.length > 0) {
+            // Only add labels not already present
+            const toAdd = [...desired].filter(l => !current.has(l));
+            if (toAdd.length > 0) {
               await github.rest.issues.addLabels({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: prNumber,
-                labels: labelsToAdd,
+                labels: toAdd,
               });
             }
 

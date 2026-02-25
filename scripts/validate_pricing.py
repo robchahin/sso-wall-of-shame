@@ -289,15 +289,20 @@ def main():
                 print(f"   Warning: {warning}")
 
     # Emit machine-readable category markers for the workflow to map to PR labels.
-    # These are derived from error messages using stable keyword matches — never
+    # These are derived from message text using stable keyword matches — never
     # from free-text that could be influenced by PR content.
     categories = set()
-    for errors, _ in results.values():
+    for errors, warnings in results.values():
         for e in errors:
-            if any(k in e for k in ["Missing required field", "not a valid", "Unknown field", "Duplicate", "Empty YAML", "Failed to parse", "Failed to read"]):
+            if any(k in e for k in ["Missing required field", "not a valid", "Duplicate", "Empty YAML", "Failed to parse", "Failed to read"]):
                 categories.add("CATEGORY:schema-error")
             if any(k in e for k in ["percent_increase", "Percentage mismatch"]):
                 categories.add("CATEGORY:pricing-error")
+        for w in warnings:
+            if any(k in w for k in ["deprecated", "Unknown field", "pricing_source"]):
+                categories.add("CATEGORY:schema-warning")
+            if any(k in w for k in ["units appear to differ", "Could not extract", "Contact Us", "Base pricing is $0", "percent_increase"]):
+                categories.add("CATEGORY:pricing-warning")
     for cat in sorted(categories):
         print(cat)
 

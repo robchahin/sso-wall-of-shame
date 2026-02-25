@@ -293,5 +293,81 @@ class TestDuplicateKeys(unittest.TestCase):
             os.unlink(tmpfile)
 
 
+class TestCategoryMarkers(unittest.TestCase):
+    """Tests that validate_pricing.py emits correct CATEGORY markers."""
+
+    def _run_main_on(self, yaml_content):
+        """Write yaml to a temp file, run main(), capture stdout."""
+        import io
+        from unittest.mock import patch
+        from scripts.validate_pricing import main as vp_main
+
+        with tempfile.NamedTemporaryFile(mode='w', suffix='.yaml', delete=False) as f:
+            f.write(yaml_content)
+            tmpfile = f.name
+        try:
+            with patch('sys.argv', ['validate_pricing.py', tmpfile]):
+                captured = io.StringIO()
+                with patch('sys.stdout', captured):
+                    try:
+                        vp_main()
+                    except SystemExit:
+                        pass
+            return captured.getvalue()
+        finally:
+            os.unlink(tmpfile)
+
+    def _valid_yaml(self, extra=''):
+        return (
+            "name: Test\nbase_pricing: $10 per u/m\nsso_pricing: $20 per u/m\n"
+            "vendor_url: https://example.com\npricing_source: https://example.com/pricing\n"
+            "updated_at: 2024-01-15\npercent_increase: 100%\n" + extra
+        )
+
+    def test_schema_error_on_missing_field(self):
+        yaml = "name: Test\nbase_pricing: $10\nsso_pricing: $20\nvendor_url: https://x.com\nupdated_at: 2024-01-15\n"
+        out = self._run_main_on(yaml)
+        self.assertIn("CATEGORY:schema-error", out)
+        self.assertNotIn("CATEGORY:schema-warning", out)
+
+    def test_pricing_error_on_missing_percent(self):
+        yaml = (
+            "name: Test\nbase_pricing: $10 per u/m\nsso_pricing: $20 per u/m\n"
+            "vendor_url: https://example.com\npricing_source: https://example.com/pricing\n"
+            "updated_at: 2024-01-15\n"
+        )
+        out = self._run_main_on(yaml)
+        self.assertIn("CATEGORY:pricing-error", out)
+
+    def test_schema_warning_on_deprecated_field(self):
+        out = self._run_main_on(self._valid_yaml(extra="footnotes: '[^1]: note'\n"))
+        self.assertIn("CATEGORY:schema-warning", out)
+        self.assertNotIn("CATEGORY:schema-error", out)
+
+    def test_schema_warning_on_non_url_pricing_source(self):
+        yaml = (
+            "name: Test\nbase_pricing: $10 per u/m\nsso_pricing: $20 per u/m\n"
+            "vendor_url: https://example.com\npricing_source: Quote\n"
+            "updated_at: 2024-01-15\npercent_increase: 100%\n"
+        )
+        out = self._run_main_on(yaml)
+        self.assertIn("CATEGORY:schema-warning", out)
+        self.assertNotIn("CATEGORY:schema-error", out)
+
+    def test_pricing_warning_on_unit_mismatch(self):
+        yaml = (
+            "name: Test\nbase_pricing: $10 per u/m\nsso_pricing: $20 per year\n"
+            "vendor_url: https://example.com\npricing_source: https://example.com/pricing\n"
+            "updated_at: 2024-01-15\npercent_increase: 100%\n"
+        )
+        out = self._run_main_on(yaml)
+        self.assertIn("CATEGORY:pricing-warning", out)
+        self.assertNotIn("CATEGORY:pricing-error", out)
+
+    def test_passed_emits_no_category_markers(self):
+        out = self._run_main_on(self._valid_yaml())
+        self.assertNotIn("CATEGORY:", out)
+
+
 if __name__ == '__main__':
     unittest.main()
