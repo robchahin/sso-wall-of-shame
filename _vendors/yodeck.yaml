@@ -1,0 +1,8 @@
+---
+name: yodeck
+base_pricing: $11 per u/m
+sso_pricing: $15 per u/m
+percent_increase: 36%
+pricing_source: https://www.yodeck.com/pricing/
+updated_at: 2026-02-24
+vendor_url: https://www.yodeck.com
