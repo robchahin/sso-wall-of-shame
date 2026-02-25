@@ -1,9 +1,12 @@
 ---
-base_pricing: $10.75 per u/m
-vendor_note: Also requires paying for a minimum of 50 seats, compared to 12 with the Business plan
 name: Zeplin
-percent_increase: 100%
-pricing_source: Quote
+base_pricing: $10.75 per u/m
 sso_pricing: $21.50 per u/m
+vendor_note: Also requires paying for a minimum of 50 seats, compared to 12 with the Business plan
+percent_increase: 100%
 updated_at: 2021-01-06
 vendor_url: https://zeplin.io/
+pricing_source: https://zeplin.io/pricing/
+pricing_source_info: SSO pricing comes from a quote, not listed on the site.
+
+
