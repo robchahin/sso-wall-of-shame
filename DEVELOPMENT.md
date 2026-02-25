@@ -17,9 +17,9 @@ git push sso-integ origin/main:main --force
 
 ## Local Development
 
-- Ruby 3.4.8 (pinned in `.ruby-version`, managed via `mise`)
-- Python 3 with PyYAML if testing GitHub Actions scripts
-- `bundle exec jekyll serve` to preview locally
+- Ruby 3.4.8 (pinned in `.ruby-version`). Use [mise](https://mise.jdx.dev/) or [rbenv](https://github.com/rbenv/rbenv) to pick up the pinned version automatically — your system Ruby will almost certainly be wrong.
+- Python 3 with PyYAML for the validation script and tests
+- `bundle install && bundle exec jekyll serve` to preview locally
 - `vendor/` (used by Bundler) and `venv/` (used by tests) are in both `.gitignore` and `_config.yml` exclude list
 
 ## Testing GitHub Actions
@@ -50,13 +50,15 @@ git push sso-integ feat/my-workflow:feat/my-workflow
 gh workflow run check-links.yml --repo robchahin/sso-integ --ref feat/my-workflow
 ```
 
-### Limitations of workflow_dispatch
+### Using workflow_dispatch for PR validation
 
-`workflow_dispatch` **cannot** retroactively simulate a `pull_request` event. When validate-vendors.yml runs on a PR, it has access to PR context: changed files (via `tj-actions/changed-files`), the PR number for commenting, and the head branch for auto-commits. None of this context exists when triggered via `workflow_dispatch`.
+The validate-vendors workflow has a `workflow_dispatch` trigger that accepts a PR number. This lets you retroactively validate any open PR:
 
-This means you **cannot** use `workflow_dispatch` to run the vendor validation workflow against an old PR that predated the workflow. To validate old PRs, you'd need to either:
-- Re-push the branch (triggers the workflow as a new PR event)
-- Or build dedicated `workflow_dispatch` inputs that accept a PR number and reconstruct the context (not yet implemented)
+```bash
+gh workflow run validate-vendors.yml -f pr_number=123
+```
+
+The workflow fetches the PR's head SHA from the GitHub API, overlays `_vendors/` from that commit, runs validation, posts a comment, and updates labels — identical to an auto-triggered run. Very old PRs that predate the current YAML schema will produce deprecation warnings rather than useful validation output.
 
 For workflows that don't depend on PR context (scheduled jobs like the dead link checker), `workflow_dispatch` works identically to the real trigger.
 
