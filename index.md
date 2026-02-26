@@ -4,28 +4,19 @@
 <script src="assets/js/search.js"></script>
 <script src="assets/js/popover.js"></script>
 
-<details open>
-<summary>
-Why does this exist?
-</summary>
-Single sign-on (SSO) is a mechanism for outsourcing the authentication for your website (or other product) to a third party identity provider, such as Google, Okta, Entra ID (Azure AD), PingFederate, etc.
+Single sign-on (SSO) is how your team logs in once to securely access all their applications. You’ve used it if you’ve logged in with Okta, Google, or your social network accounts to other websites.
 
-In this context, SSO refers to a SaaS or similar vendor allowing a business client to manage user accounts via the client's own identity provider, without having to rely on the vendor to provide strong authentication with audit logs, and with the ability to create and delete user accounts centrally, for all users, across all software in use by that client.
+For <strong>users</strong>, SSO is convenient: one password, one time, maybe a security key if you’re lucky, gets you everywhere. It’s easy, quick, and you don’t have to think about it.
 
-For organizations with more than a handful of employees, this feature is critical for IT and Security teams to be able to effectively manage user accounts across dozens or hundreds of vendors, many of which don't support features like TOTP 2FA or U2F. In the event that an employee leaves the company, it allows the IT team to immediately disable their access to all applications, rather than logging into 100 different user management portals.
+For <strong>IT and Security teams</strong>, SSO is invaluable. A modern company uses dozens, if not hundreds, of software vendors. SSO provides a single place to onboard, manage, and offboard users. It centralizes security controls like strong authentication, logging, and account recovery.
 
-In short: SSO is a core security requirement for any company with more than five employees.
+For <strong>software vendors</strong>, it lets your customers be responsible for their own esoteric security demands. Some jazzy new hardware authenticator that’s only existed for three weeks? You don’t need to support it – that’s up to the SSO provider. 
 
-SaaS vendors appear not to have received this message, however. SSO is often only available as part of "Enterprise" pricing, which assumes either a huge number of users (minimum seat count) or is force-bundled with other "Enterprise" features which may have no value to the company using the software.
+<strong>SSO is a core security requirement for any company with more than five employees.</strong>
 
-If companies claim to "take your security seriously", then SSO should be available as a feature that is either:
+Some vendors exploit this. They offer competitive starter plans and  gate SSO behind an "Enterprise" paywall bundled with unnecessary features or large minimum seat counts. This can inflate the cost by 3x, 5x, 10x, or more, forcing smaller companies to choose between a secure environment and an affordable budget.
 
-1. part of the core product, or
-1. an optional paid extra for a reasonable delta, or
-1. attached to a price tier, but with a reasonably small gap between the non-SSO tier and SSO tiers.
-
-Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, which disincentivizes its use and encourages poor security practices.
-</details>
+This pricing strategy punishes growing businesses and encourages dangerous security shortcuts. If a company claims to "take your security seriously," SSO should be included in all plans or available for a reasonable charge.
 
 {% assign all = site.vendors | sort: "name" %}
 {% assign vendors = "" | split: ',' %}
