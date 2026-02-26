@@ -3,16 +3,70 @@
 
 @import "site-theme";
 
-// === Color palette ===
-$navy: #1a2332;
+// === Color schemes ===
+
+@mixin dark-theme {
+  --bg:             #0f1923;
+  --text:           #c9d1d9;
+  --text-secondary: #8b949e;
+  --link:           #58a6ff;
+  --heading:        #e2e8f0;
+  --border:         #30363d;
+  --table-stripe:   #161c24;
+  --table-hover:    #1a2840;
+  --sticky-border:  #30363d;
+  --code-bg:        #161b22;
+  --code-text:      #c9d1d9;
+  --popover-bg:     #1c2333;
+  --input-border:   #30363d;
+}
+
+:root {
+  --bg:             #ffffff;
+  --text:           #606c71;
+  --text-secondary: #819198;
+  --link:           #1e6bb8;
+  --heading:        #1a2332;
+  --border:         #dce6f0;
+  --table-stripe:   #f6f8fa;
+  --table-hover:    #fff8e7;
+  --sticky-border:  #e1e4e8;
+  --code-bg:        #f3f6fa;
+  --code-text:      #567482;
+  --popover-bg:     #ffffff;
+  --input-border:   #cccccc;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    @include dark-theme;
+  }
+}
+
+[data-theme="dark"] {
+  @include dark-theme;
+}
+
+// === Site-specific palette (SCSS vars for non-theme-switchable values) ===
+
+$navy:   #1a2332;
 $accent: #f59e0b;
 
 // === Accent bar at top of page ===
+
 html {
   border-top: 4px solid $accent;
 }
 
-// === Dark header ===
+// === Header ===
+
+.page-header {
+  position: relative;
+  background-color: $navy;
+  background-image: linear-gradient(135deg, #1e3a5f 0%, $navy 100%);
+  padding: 1rem 6rem 0.6rem !important;
+}
+
 .project-name {
   margin-bottom: 0.05rem;
 }
@@ -48,18 +102,43 @@ html {
   }
 }
 
-.page-header {
-  background-color: $navy;
-  background-image: linear-gradient(135deg, #1e3a5f 0%, $navy 100%);
-  padding: 1rem 6rem 0.6rem !important;
+// === Theme toggle ===
+
+.theme-toggle {
+  position: absolute;
+  top: 0.75rem;
+  right: 1.5rem;
+  display: flex;
+  gap: 0.25rem;
 }
 
-// Normalize main content font size
+.theme-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.3);
+  padding: 0.2rem 0.3rem;
+  line-height: 1;
+  transition: color 0.15s;
+
+  &--active {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+// === Main content ===
+
+// Normalize font size and override heading styles
 .main-content {
   font-size: 1rem;
 
   h2 {
-    color: $navy;
+    color: var(--heading);
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     display: inline-block;
@@ -70,12 +149,10 @@ html {
   }
 }
 
-
-
-summary { // "Temporary" hack for h2-inside-summary formatting
+summary {
   margin-bottom: 1rem;
   font-weight: normal;
-  color: $navy;
+  color: var(--heading);
   display: list-item;
   font-size: 1.2rem;
   cursor: pointer;
@@ -107,17 +184,17 @@ th {
 thead th {
   position: sticky;
   top: 0;
-  background: #fff;
+  background: var(--bg);
   z-index: 10;
-  border-bottom: 2px solid #e1e4e8;
+  border-bottom: 2px solid var(--sticky-border);
 }
 
 tbody tr:nth-child(even) {
-  background-color: #f6f8fa;
+  background-color: var(--table-stripe);
 }
 
 tbody tr:hover {
-  background-color: #fff8e7;
+  background-color: var(--table-hover);
 }
 
 // === Info toggle / Popover ===
@@ -127,7 +204,7 @@ tbody tr:hover {
   border: none;
   cursor: pointer;
   font-size: 0.9rem;
-  color: #666;
+  color: var(--text-secondary);
   padding: 0 0.2rem;
   vertical-align: middle;
   line-height: 1;
@@ -141,8 +218,8 @@ tbody tr:hover {
 .info-popover {
   position: absolute;
   z-index: 100;
-  background: #fff;
-  border: 1px solid #ccc;
+  background: var(--popover-bg);
+  border: 1px solid var(--input-border);
   border-radius: 4px;
   padding: 0.5rem 0.75rem;
   max-width: 300px;
@@ -161,11 +238,13 @@ tbody tr:hover {
   padding: 0.4rem 0.6rem;
   margin-bottom: 0.5rem;
   font-size: 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid var(--input-border);
   border-radius: 4px;
+  background-color: var(--bg);
+  color: var(--text);
 }
 
 .search-empty {
-  color: #999;
+  color: var(--text-secondary);
   font-style: italic;
 }

@@ -28,20 +28,11 @@ $medium-breakpoint: 42em;
   }
 }
 
-// === Colors ===
+// === Header colors (not theme-switchable — header is dark in both modes) ===
 
-$header-heading-color:    #fff;
-$header-bg-color:         #159957;
+$header-heading-color:      #fff;
+$header-bg-color:           #159957;
 $header-bg-color-secondary: #155799;
-$section-headings-color:  #159957;
-$body-text-color:         #606c71;
-$body-link-color:         #1e6bb8;
-$blockquote-text-color:   #819198;
-$code-bg-color:           #f3f6fa;
-$code-text-color:         #567482;
-$border-color:            #dce6f0;
-$table-border-color:      #e9ebec;
-$hr-border-color:         #eff0f1;
 
 // === Base ===
 
@@ -55,7 +46,8 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: $body-text-color;
+  color: var(--text);
+  background-color: var(--bg);
 }
 
 #skip-to-content {
@@ -71,13 +63,13 @@ body {
     left: 10px;
     height: auto;
     width: auto;
-    background: invert($body-link-color);
-    outline: thick solid invert($body-link-color);
+    background: #f59e0b;
+    outline: thick solid #f59e0b;
   }
 }
 
 a {
-  color: $body-link-color;
+  color: var(--link);
   text-decoration: none;
 
   &:hover {
@@ -151,7 +143,7 @@ a {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-weight: normal;
-    color: $section-headings-color;
+    color: var(--heading);
   }
 
   p {
@@ -162,8 +154,8 @@ a {
     padding: 2px 4px;
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
     font-size: 0.9rem;
-    color: $code-text-color;
-    background-color: $code-bg-color;
+    color: var(--code-text);
+    background-color: var(--code-bg);
     border-radius: 0.3rem;
   }
 
@@ -173,17 +165,17 @@ a {
     margin-top: 0;
     margin-bottom: 1rem;
     font: 0.9rem/1.45 Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    color: $code-text-color;
+    color: var(--code-text);
     word-wrap: normal;
-    background-color: $code-bg-color;
-    border: solid 1px $border-color;
+    background-color: var(--code-bg);
+    border: solid 1px var(--border);
     border-radius: 0.3rem;
     -webkit-overflow-scrolling: touch;
 
     > code {
       padding: 0;
       margin: 0;
-      color: $code-text-color;
+      color: var(--code-text);
       word-break: normal;
       white-space: pre;
       background: transparent;
@@ -217,8 +209,8 @@ a {
   blockquote {
     padding: 0 1rem;
     margin-left: 0;
-    color: $blockquote-text-color;
-    border-left: 0.3rem solid $border-color;
+    color: var(--text-secondary);
+    border-left: 0.3rem solid var(--border);
 
     > :first-child { margin-top: 0; }
     > :last-child  { margin-bottom: 0; }
@@ -237,7 +229,7 @@ a {
 
     th, td {
       padding: 0.5rem 1rem;
-      border: 1px solid $table-border-color;
+      border: 1px solid var(--border);
     }
   }
 
@@ -245,7 +237,7 @@ a {
     height: 2px;
     padding: 0;
     margin: 1rem 0;
-    background-color: $hr-border-color;
+    background-color: var(--border);
     border: 0;
   }
 }
@@ -255,7 +247,7 @@ a {
 .site-footer {
   padding-top: 2rem;
   margin-top: 2rem;
-  border-top: solid 1px $hr-border-color;
+  border-top: solid 1px var(--border);
 
   @include large  { font-size: 1rem; }
   @include medium { font-size: 1rem; }
@@ -268,5 +260,5 @@ a {
 }
 
 .site-footer-credits {
-  color: $blockquote-text-color;
+  color: var(--text-secondary);
 }
