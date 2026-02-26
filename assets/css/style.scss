@@ -52,22 +52,17 @@ html {
   background-color: $navy;
   background-image: linear-gradient(135deg, #1e3a5f 0%, $navy 100%);
   padding: 1rem 6rem 0.6rem !important;
-  a.btn { display: none; }
 }
 
-h2 {
-  display: inline-block;
-  margin-bottom: 0.5rem;
-  color: $navy;
-}
-
-// Cancel Cayman's 1.1rem amplification on main content
+// Normalize main content font size
 .main-content {
   font-size: 1rem;
 
   h2 {
     color: $navy;
     margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
   }
 
   h2 + p {
@@ -90,7 +85,7 @@ summary > p {
   display: inline;
 }
 
-// Don't wrap the Source or Date Added columns
+// Don't wrap the Source or Updated columns
 tr {
   td:nth-child(5), td:nth-child(6) {
     white-space: nowrap;
@@ -99,8 +94,7 @@ tr {
 
 // === Table ===
 
-// Cayman sets display:block + overflow:auto on tables, which breaks position:sticky.
-// Override to restore normal table layout and allow sticky headers.
+// Restore normal table layout to allow sticky headers.
 .main-content table {
   display: table;
   overflow: visible;
@@ -141,7 +135,6 @@ tbody tr:hover {
   &:hover,
   &:focus {
     color: $accent;
-    outline: none;
   }
 }
 
