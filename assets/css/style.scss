@@ -3,19 +3,84 @@
 
 @import "{{ site.theme }}";
 
-h2 {
-  display: inline-block;
-  margin-bottom: 1rem;
+// === Color palette ===
+$navy: #1a2332;
+$accent: #f59e0b;
+
+// === Accent bar at top of page ===
+html {
+  border-top: 4px solid $accent;
 }
 
-td {
-  font-size: 1.0rem;
+// === Dark header ===
+.project-name {
+  margin-bottom: 0.05rem;
 }
+
+.project-tagline {
+  opacity: 1;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.nav-label {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.85rem;
+  margin-right: 0.5rem;
+}
+
+.site-nav {
+  margin-top: 0.4rem;
+
+  a {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    font-size: 0.85rem;
+    margin-right: 1.25rem;
+
+    &::before { content: '['; }
+    &::after  { content: ']'; }
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+.page-header {
+  background-color: $navy;
+  background-image: linear-gradient(135deg, #1e3a5f 0%, $navy 100%);
+  padding: 1rem 6rem 0.6rem !important;
+  a.btn { display: none; }
+}
+
+h2 {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  color: $navy;
+}
+
+// Cancel Cayman's 1.1rem amplification on main content
+.main-content {
+  font-size: 1rem;
+
+  h2 {
+    color: $navy;
+    margin-top: 1rem;
+  }
+
+  h2 + p {
+    margin-top: 0;
+  }
+}
+
+
 
 summary { // "Temporary" hack for h2-inside-summary formatting
   margin-bottom: 1rem;
   font-weight: normal;
-  color: #159957;
+  color: $navy;
   display: list-item;
   font-size: 1.2rem;
   cursor: pointer;
@@ -25,17 +90,43 @@ summary > p {
   display: inline;
 }
 
-.page-header {
-  padding-bottom: 0em !important;
-  a.btn { display: none; }
-}
-
 // Don't wrap the Source or Date Added columns
 tr {
   td:nth-child(5), td:nth-child(6) {
     white-space: nowrap;
   }
 }
+
+// === Table ===
+
+// Cayman sets display:block + overflow:auto on tables, which breaks position:sticky.
+// Override to restore normal table layout and allow sticky headers.
+.main-content table {
+  display: table;
+  overflow: visible;
+}
+
+th {
+  text-align: left;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 10;
+  border-bottom: 2px solid #e1e4e8;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f6f8fa;
+}
+
+tbody tr:hover {
+  background-color: #fff8e7;
+}
+
+// === Info toggle / Popover ===
 
 .info-toggle {
   background: none;
@@ -49,7 +140,7 @@ tr {
 
   &:hover,
   &:focus {
-    color: #159957;
+    color: $accent;
     outline: none;
   }
 }
@@ -68,12 +159,14 @@ tr {
   white-space: normal;
 }
 
+// === Search ===
+
 #vendor-search {
   display: block;
   width: 100%;
   max-width: 24rem;
   padding: 0.4rem 0.6rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
