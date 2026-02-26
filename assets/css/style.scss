@@ -175,10 +175,70 @@ tr {
 
 // === Table ===
 
-// Restore normal table layout to allow sticky headers.
+// Large + medium screens: display:table so sticky headers work.
+// Medium screens may have some overflow on very narrow tablets; acceptable trade-off.
 .main-content table {
   display: table;
   overflow: visible;
+}
+
+// === Card layout (small screens) ===
+// Reflows each table row into a labelled card. No JS required — search and sort
+// continue to operate on <tr> nodes as before.
+
+@include small {
+  .main-content table {
+    display: block;
+    overflow: visible;
+  }
+
+  table.sortable {
+    thead { display: none; }
+    tbody { display: block; }
+
+    tr {
+      display: block;
+      margin-bottom: 1rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+      // Disable row striping and hover — cards have their own visual rhythm
+      &:nth-child(even) { background-color: var(--bg); }
+      &:hover { background-color: var(--bg); }
+    }
+
+    td {
+      display: flex;
+      align-items: baseline;
+      border: none;
+      border-bottom: 1px solid var(--border);
+      padding: 0.4rem 0.75rem;
+      white-space: normal;
+
+      &:last-child { border-bottom: none; }
+
+      &::before {
+        content: attr(data-label);
+        flex: 0 0 5rem;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: var(--text-secondary);
+        padding-right: 0.75rem;
+      }
+    }
+
+    // Vendor name: full-width card header, no label
+    td:first-child {
+      display: block;
+      background-color: var(--table-stripe);
+      font-weight: 600;
+      padding: 0.5rem 0.75rem;
+      border-bottom: 2px solid var(--border);
+      &::before { display: none; }
+    }
+  }
 }
 
 th {

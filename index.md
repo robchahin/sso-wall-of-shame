@@ -51,10 +51,10 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
 {% for vendor in vendors %}
 <tr>
 <td markdown="span"><a href="{{ vendor.vendor_url }}">{{ vendor.name }}</a>{% if vendor.vendor_note %} <button class="info-toggle" aria-label="Note about {{ vendor.name }}" data-note="{{ vendor.vendor_note | escape }}">&#9432;</button>{% endif %}</td>
-<td markdown="span">{{ vendor.base_pricing }}</td>
-<td markdown="span">{{ vendor.sso_pricing }}</td>
-<td markdown="span">{{ vendor.percent_increase }}</td>
-<td>
+<td markdown="span" data-label="Base">{{ vendor.base_pricing }}</td>
+<td markdown="span" data-label="SSO">{{ vendor.sso_pricing }}</td>
+<td markdown="span" data-label="Increase">{{ vendor.percent_increase }}</td>
+<td data-label="Source">
 {% for source in vendor.pricing_source %}
 {% if forloop.first == false %}
 &amp;
@@ -62,7 +62,7 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
 <a href="{{ source }}" aria-label="Pricing source for {{ vendor.name }}" title="Pricing source for {{ vendor.name }}">&#128279;</a>
 {% endfor %}
 {% if vendor.pricing_source_info %}<button class="info-toggle" aria-label="Source info for {{ vendor.name }}" data-note="{{ vendor.pricing_source_info | escape }}">&#9432;</button>{% endif %}</td>
-<td>{{ vendor.updated_at }}</td>
+<td data-label="Updated">{{ vendor.updated_at }}</td>
 </tr>
 {% endfor %}
 </tbody>
@@ -80,10 +80,10 @@ Some vendors simply do not list their pricing for SSO because the pricing is neg
 {% for vendor in call_us %}
 <tr>
 <td markdown="span"><a href="{{ vendor.vendor_url }}">{{ vendor.name }}</a>{% if vendor.vendor_note %} <button class="info-toggle" aria-label="Note about {{ vendor.name }}" data-note="{{ vendor.vendor_note | escape }}">&#9432;</button>{% endif %}</td>
-<td markdown="span">{{ vendor.base_pricing }}</td>
-<td markdown="span">{{ vendor.sso_pricing }}</td>
-<td markdown="span">{{ vendor.percent_increase }}</td>
-<td>
+<td markdown="span" data-label="Base">{{ vendor.base_pricing }}</td>
+<td markdown="span" data-label="SSO">{{ vendor.sso_pricing }}</td>
+<td markdown="span" data-label="Increase">{{ vendor.percent_increase }}</td>
+<td data-label="Source">
 {% for source in vendor.pricing_source %}
 {% if forloop.first == false %}
 &amp;
@@ -91,7 +91,7 @@ Some vendors simply do not list their pricing for SSO because the pricing is neg
 <a href="{{ source }}" aria-label="Pricing source for {{ vendor.name }}" title="Pricing source for {{ vendor.name }}">&#128279;</a>
 {% endfor %}
 {% if vendor.pricing_source_info %}<button class="info-toggle" aria-label="Source info for {{ vendor.name }}" data-note="{{ vendor.pricing_source_info | escape }}">&#9432;</button>{% endif %}</td>
-<td>{{ vendor.updated_at }}</td>
+<td data-label="Updated">{{ vendor.updated_at }}</td>
 </tr>
 {% endfor %}
 </tbody>
