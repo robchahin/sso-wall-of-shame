@@ -1,21 +1,162 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+@import "site-theme";
 
-h2 {
-  display: inline-block;
-  margin-bottom: 1rem;
+// === Color schemes ===
+
+@mixin dark-theme {
+  --bg:             #0f1923;
+  --text:           #c9d1d9;
+  --text-secondary: #8b949e;
+  --link:           #58a6ff;
+  --heading:        #e2e8f0;
+  --border:         #30363d;
+  --table-stripe:   #161c24;
+  --table-hover:    #1a2840;
+  --sticky-border:  #30363d;
+  --code-bg:        #161b22;
+  --code-text:      #c9d1d9;
+  --popover-bg:     #1c2333;
+  --input-border:   #30363d;
 }
 
-td {
-  font-size: 1.0rem;
+:root {
+  --bg:             #ffffff;
+  --text:           #606c71;
+  --text-secondary: #819198;
+  --link:           #1e6bb8;
+  --heading:        #1a2332;
+  --border:         #dce6f0;
+  --table-stripe:   #f6f8fa;
+  --table-hover:    #fff8e7;
+  --sticky-border:  #e1e4e8;
+  --code-bg:        #f3f6fa;
+  --code-text:      #567482;
+  --popover-bg:     #ffffff;
+  --input-border:   #cccccc;
 }
 
-summary { // "Temporary" hack for h2-inside-summary formatting
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    @include dark-theme;
+  }
+}
+
+[data-theme="dark"] {
+  @include dark-theme;
+}
+
+// === Site-specific palette (SCSS vars for non-theme-switchable values) ===
+
+$navy:   #1a2332;
+$accent: #f59e0b;
+
+// === Accent bar at top of page ===
+
+html {
+  border-top: 4px solid $accent;
+}
+
+// === Header ===
+
+.page-header {
+  position: relative;
+  background-color: $navy;
+  background-image: linear-gradient(135deg, #1e3a5f 0%, $navy 100%);
+  padding: 1rem 6rem 0.6rem !important;
+}
+
+.project-name {
+  margin-bottom: 0.05rem;
+}
+
+.project-tagline {
+  opacity: 1;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.nav-label {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.85rem;
+  margin-right: 0.5rem;
+}
+
+.site-nav {
+  margin-top: 0.4rem;
+
+  a {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    font-size: 0.85rem;
+    margin-right: 1.25rem;
+
+    &::before { content: '['; }
+    &::after  { content: ']'; }
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+// === Theme toggle ===
+
+.theme-toggle {
+  position: absolute;
+  top: 0.75rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  line-height: 0;
+  color: rgba(255, 255, 255, 0.55);
+  transition: color 0.15s;
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+.theme-icon--sun { display: none; }
+
+[data-theme="dark"] {
+  .theme-icon--moon { display: none; }
+  .theme-icon--sun  { display: block; }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    .theme-icon--moon { display: none; }
+    .theme-icon--sun  { display: block; }
+  }
+}
+
+// === Main content ===
+
+// Normalize font size and override heading styles
+.main-content {
+  font-size: 1rem;
+
+  h2 {
+    color: var(--heading);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+  }
+
+  h2 + p {
+    margin-top: 0;
+  }
+}
+
+summary {
   margin-bottom: 1rem;
   font-weight: normal;
-  color: #159957;
+  color: var(--heading);
   display: list-item;
   font-size: 1.2rem;
   cursor: pointer;
@@ -25,40 +166,64 @@ summary > p {
   display: inline;
 }
 
-.page-header {
-  padding-bottom: 0em !important;
-  a.btn { display: none; }
-}
-
-// Don't wrap the Source or Date Added columns
+// Don't wrap the Source or Updated columns
 tr {
   td:nth-child(5), td:nth-child(6) {
     white-space: nowrap;
   }
 }
 
+// === Table ===
+
+// Restore normal table layout to allow sticky headers.
+.main-content table {
+  display: table;
+  overflow: visible;
+}
+
+th {
+  text-align: left;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 10;
+  border-bottom: 2px solid var(--sticky-border);
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--table-stripe);
+}
+
+tbody tr:hover {
+  background-color: var(--table-hover);
+}
+
+// === Info toggle / Popover ===
+
 .info-toggle {
   background: none;
   border: none;
   cursor: pointer;
   font-size: 0.9rem;
-  color: #666;
+  color: var(--text-secondary);
   padding: 0 0.2rem;
   vertical-align: middle;
   line-height: 1;
 
   &:hover,
   &:focus {
-    color: #159957;
-    outline: none;
+    color: $accent;
   }
 }
 
 .info-popover {
   position: absolute;
   z-index: 100;
-  background: #fff;
-  border: 1px solid #ccc;
+  background: var(--popover-bg);
+  border: 1px solid var(--input-border);
   border-radius: 4px;
   padding: 0.5rem 0.75rem;
   max-width: 300px;
@@ -68,18 +233,22 @@ tr {
   white-space: normal;
 }
 
+// === Search ===
+
 #vendor-search {
   display: block;
   width: 100%;
   max-width: 24rem;
   padding: 0.4rem 0.6rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-size: 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid var(--input-border);
   border-radius: 4px;
+  background-color: var(--bg);
+  color: var(--text);
 }
 
 .search-empty {
-  color: #999;
+  color: var(--text-secondary);
   font-style: italic;
 }

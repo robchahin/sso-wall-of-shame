@@ -1,0 +1,264 @@
+// Originally based on the Cayman theme by GitHub
+// https://github.com/pages-themes/cayman
+// Licensed under CC0 1.0 Universal
+
+@import "normalize";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+// === Breakpoints ===
+
+$large-breakpoint:  64em;
+$medium-breakpoint: 42em;
+
+@mixin large {
+  @media screen and (min-width: #{$large-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media screen and (max-width: #{$medium-breakpoint}) {
+    @content;
+  }
+}
+
+// === Header colors (not theme-switchable — header is dark in both modes) ===
+
+$header-heading-color:      #fff;
+$header-bg-color:           #159957;
+$header-bg-color-secondary: #155799;
+
+// === Base ===
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+#skip-to-content {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  overflow: hidden;
+  top: -10px;
+
+  &:focus {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    height: auto;
+    width: auto;
+    background: #f59e0b;
+    outline: thick solid #f59e0b;
+  }
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// === Header ===
+
+.page-header {
+  color: $header-heading-color;
+  text-align: center;
+  background-color: $header-bg-color;
+  background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+
+  @include large  { padding: 5rem 6rem; }
+  @include medium { padding: 3rem 4rem; }
+  @include small  { padding: 2rem 1rem; }
+}
+
+.project-name {
+  margin-top: 0;
+  margin-bottom: 0.1rem;
+
+  @include large  { font-size: 3.25rem; }
+  @include medium { font-size: 2.25rem; }
+  @include small  { font-size: 1.75rem; }
+}
+
+.project-tagline {
+  margin-bottom: 2rem;
+  font-weight: normal;
+  opacity: 0.7;
+
+  @include large  { font-size: 1.25rem; }
+  @include medium { font-size: 1.15rem; }
+  @include small  { font-size: 1rem;    }
+}
+
+// === Main content ===
+
+.main-content {
+  word-wrap: break-word;
+
+  :first-child {
+    margin-top: 0;
+  }
+
+  @include large {
+    max-width: 64rem;
+    padding: 2rem 6rem;
+    margin: 0 auto;
+    font-size: 1.1rem;
+  }
+
+  @include medium {
+    padding: 2rem 4rem;
+    font-size: 1.1rem;
+  }
+
+  @include small {
+    padding: 2rem 1rem;
+    font-size: 1rem;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    color: var(--heading);
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  code {
+    padding: 2px 4px;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 0.9rem;
+    color: var(--code-text);
+    background-color: var(--code-bg);
+    border-radius: 0.3rem;
+  }
+
+  pre {
+    padding: 0.8rem;
+    overflow: auto;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font: 0.9rem/1.45 Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    color: var(--code-text);
+    word-wrap: normal;
+    background-color: var(--code-bg);
+    border: solid 1px var(--border);
+    border-radius: 0.3rem;
+    -webkit-overflow-scrolling: touch;
+
+    > code {
+      padding: 0;
+      margin: 0;
+      color: var(--code-text);
+      word-break: normal;
+      white-space: pre;
+      background: transparent;
+      border: 0;
+    }
+  }
+
+  pre code,
+  pre tt {
+    display: inline;
+    max-width: initial;
+    padding: 0;
+    margin: 0;
+    overflow: initial;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+
+    &:before,
+    &:after {
+      content: normal;
+    }
+  }
+
+  ul,
+  ol {
+    margin-top: 0;
+  }
+
+  blockquote {
+    padding: 0 1rem;
+    margin-left: 0;
+    color: var(--text-secondary);
+    border-left: 0.3rem solid var(--border);
+
+    > :first-child { margin-top: 0; }
+    > :last-child  { margin-bottom: 0; }
+  }
+
+  table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    word-break: keep-all;
+    -webkit-overflow-scrolling: touch;
+
+    th {
+      font-weight: bold;
+    }
+
+    th, td {
+      padding: 0.5rem 1rem;
+      border: 1px solid var(--border);
+    }
+  }
+
+  hr {
+    height: 2px;
+    padding: 0;
+    margin: 1rem 0;
+    background-color: var(--border);
+    border: 0;
+  }
+}
+
+// === Footer ===
+
+.site-footer {
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: solid 1px var(--border);
+
+  @include large  { font-size: 1rem; }
+  @include medium { font-size: 1rem; }
+  @include small  { font-size: 0.9rem; }
+}
+
+.site-footer-owner {
+  display: block;
+  font-weight: bold;
+}
+
+.site-footer-credits {
+  color: var(--text-secondary);
+}
