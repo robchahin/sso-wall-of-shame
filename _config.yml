@@ -9,7 +9,6 @@ url: https://sso.tax
 # error only thrown in GHA, not during local builds
 repository: robchahin/sso-wall-of-shame
 
-theme: jekyll-theme-cayman
 kramdown:
   parse_block_html: true
 
