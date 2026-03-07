@@ -1,0 +1,9 @@
+---
+name: Kiwi TCMS
+base_pricing: $75 per month
+sso_pricing: $600 per month
+percent_increase: 700%
+vendor_url: https://kiwitcms.org/
+pricing_source: https://kiwitcms.org/#subscriptions
+updated_at: 2026-03-03
+vendor_note: SSO requires the Enterprise plan, which bundles other features.
