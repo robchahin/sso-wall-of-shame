@@ -1,0 +1,11 @@
+---
+name: Hatz.ai
+base_pricing: $90 per month
+sso_pricing: $450 per month
+percent_increase: 400%
+vendor_url: https://hatz.ai/
+pricing_source: https://admin.hatz.ai/billing/licenses
+updated_at: 2026-03-06
+# Optional fields — include only if relevant:
+vendor_note: SSO requires SMB or greater, which is 3rd plan from lowest
+pricing_source_info: Pricing behind portal login
