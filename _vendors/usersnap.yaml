@@ -1,0 +1,11 @@
+---
+name: Usersnap
+base_pricing: $59 per month
+sso_pricing: Call Us!
+percent_increase: ???
+vendor_url: https://usersnap.com
+pricing_source: https://usersnap.com/pricing
+updated_at: 2026-03-11
+# Optional fields — include only if relevant:
+vendor_note: SSO requires the Enterprise plan, which bundles other features.
+# pricing_source_info: Pricing comes from a quote
