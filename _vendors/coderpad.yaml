@@ -1,0 +1,8 @@
+---
+base_pricing: $250 per 20u/m
+name: CoderPad
+percent_increase: 200%
+pricing_source: https://coderpad.io/pricing/
+sso_pricing: $750 per 50u/m
+updated_at: 2022-05-05
+vendor_url: https://coderpad.io
