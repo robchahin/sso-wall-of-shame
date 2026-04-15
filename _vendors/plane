@@ -1,0 +1,11 @@
+---
+name: Plane
+base_pricing: $6per user/month
+sso_pricing: $13 per user/month
+percent_increase: 117%
+vendor_url: https://plane.so
+pricing_source: https://plane.so/pricing
+updated_at: 2026-04-14
+# Optional fields — include only if relevant:
+vendor_note: SSO requires the Business plan, which bundles other features. They do offer a lower tier, but without SSO.
+# pricing_source_info: Pricing comes from a quote
