@@ -1,0 +1,9 @@
+---
+base_pricing: €55/month
+name: NetLock RMM
+percent_increase: 0%
+pricing_source: https://netlockrmm.com/pricing/
+sso_pricing: €55/month
+updated_at: 2026-04-30
+vendor_note: SSO is included in both the €0/month Open Source tier and the €55/month Pro tier.
+vendor_url: https://netlockrmm.com/
