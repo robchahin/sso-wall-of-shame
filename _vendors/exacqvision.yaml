@@ -1,0 +1,10 @@
+name: Exacq Vision
+base_pricing: $230 per camera initial year, $36 per camera/year
+sso_pricing: $340 per camera initial year, $53 per camera/year
+percent_increase: 47%
+vendor_url: https://www.exacq.com/
+pricing_source: https://jctnj.com/doc/Exacq-MSRP-Catalog.pdf
+updated_at: 2024-04-01
+# Optional fields — include only if relevant:
+vendor_note: Only sold through dealers via quote, SSO requires the Enterprise software, which bundles other features.
+pricing_source_info: Pricing is MSRP from a leaked product catalog.
