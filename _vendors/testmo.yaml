@@ -1,0 +1,9 @@
+---
+name: Testmo
+base_pricing: $329/month per 25 users
+sso_pricing: $549/month per 25 users
+percent_increase: 67%
+vendor_url: https://www.testmo.com
+pricing_source: https://www.testmo.com/pricing/
+updated_at: 2026-04-13
+vendor_note: SSO and two-factor authentication require the Enterprise plan.
