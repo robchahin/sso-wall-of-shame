@@ -1,0 +1,9 @@
+---
+name: Filigran (OpenCTI)
+base_pricing: Free (open source)
+sso_pricing: $250,000 per year
+vendor_url: https://filigran.io
+pricing_source: https://filigran.io/offerings/
+pricing_source_info: Pricing comes from a quote
+vendor_note: OpenCTI Community Edition is free and open source. SSO/SAML requires the Enterprise Edition, quoted at $250,000/year for 12 months.
+updated_at: 2026-03-28
