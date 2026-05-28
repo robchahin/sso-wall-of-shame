@@ -1,9 +1,9 @@
 ---
 name: Vercel
-base_pricing: $20 per user/month
-sso_pricing: $300/month add-on
-percent_increase: 1400%
+base_pricing: $20/month
+sso_pricing: $320/month
+percent_increase: 1500%
 vendor_url: https://vercel.com
 pricing_source: https://vercel.com/pricing
 updated_at: 2026-05-28
-vendor_note: SAML SSO is a flat $300/month add-on on the Pro plan. Scales inversely with team size — a 1-person team pays 1,500% more; larger teams pay less of a markup per seat. Enterprise includes SSO but requires a custom contract.
+vendor_note: Base price reflects a single-seat Pro plan. SSO is a $300/month flat add-on, so the markup shrinks as you add seats. Enterprise includes SSO but requires a custom contract.
