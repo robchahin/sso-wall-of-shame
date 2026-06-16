@@ -1,6 +1,6 @@
 ---
 name: Kubecost
-url: https://www.kubecost.com
+vendor_url: https://www.kubecost.com
 base_pricing: $449/mo
 sso_pricing: Call Us!
 percent_increase: ???
