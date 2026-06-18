@@ -1,0 +1,9 @@
+---
+name: Twenty CRM
+base_pricing: $12 per user/month
+sso_pricing: $25 per user/month
+percent_increase: 108%
+vendor_url: https://twenty.com
+pricing_source: https://twenty.com/pricing
+updated_at: 2026-06-18
+vendor_note: SSO requires the Enterprise plan.
