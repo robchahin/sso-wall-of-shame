@@ -1,0 +1,9 @@
+---
+name: Depot Technologies Inc.
+base_pricing: $25 per month
+sso_pricing: $750 per month
+percent_increase: 2900%
+vendor_url: https://depot.dev/
+pricing_source: https://depot.dev/pricing
+updated_at: 2026-03-24
+vendor_note: SSO is an optional $500 add-on to the Startup plan, which itself is $250, 10x the cost and resource limits of the base Developer plan
