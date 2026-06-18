@@ -1,0 +1,13 @@
+---
+name: Graylog
+base_pricing: $1 per year
+sso_pricing: $15000 per year
+percent_increase: 1499900.0%
+vendor_url: https://graylog.org
+pricing_source: https://graylog.org/pricing/
+updated_at: 2026-05-18
+vendor_note: |
+  SSO requires the Enterprise edition and license which you can get for free until you
+  ingest more than 2GB traffic/day. Then the license goes straight to $15000 per year an
+  this is self hosted. The free license used to be 10GB/day, then went down to 5GB/day
+  and is now at 2GB/day. For a small company 10GB/day would be more than enough.
