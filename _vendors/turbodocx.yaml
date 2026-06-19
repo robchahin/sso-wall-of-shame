@@ -1,0 +1,8 @@
+---
+name: TurboDocx
+base_pricing: $20 per user/month
+sso_pricing: Call Us!
+vendor_url: https://www.turbodocx.com
+pricing_source: https://www.turbodocx.com/pricing
+updated_at: 2026-06-19
+vendor_note: SSO (SAML/OIDC) is only available on the Enterprise plan, which is custom "Contact us" pricing.
