@@ -1,0 +1,9 @@
+---
+base_pricing: $15/mo for HA
+vendor_note: SSO is an addon
+name: PlanetScale
+percent_increase: 1426%
+pricing_source: https://planetscale.com/docs/planetscale-plans#single-sign-on-sso
+sso_pricing: $199/mo Addon
+updated_at: 2026-06-21
+vendor_url: https://planetscale.com
