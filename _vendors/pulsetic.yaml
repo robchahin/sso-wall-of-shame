@@ -1,0 +1,9 @@
+---
+name: Pulsetic
+base_pricing: $19 per user/month
+sso_pricing: $49 per user/month
+percent_increase: 157.9%
+vendor_url: hhttps://pulsetic.com
+pricing_source: https://pulsetic.com/pricing/
+updated_at: 2026-06-23
+vendor_note: SSO requires the Organization plan, which bundles other features.
