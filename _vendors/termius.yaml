@@ -1,0 +1,12 @@
+---
+name: Termius
+base_pricing: $20 per u/m
+sso_pricing: $50 per u/m
+percent_increase: 150%
+vendor_url: https://termius.com
+pricing_source:
+  - https://termius.com/pricing
+  - https://docs.termius.com/administration/saml-sso
+updated_at: 2026-07-30
+vendor_note: SAML SSO is a paid add-on to the Business plan and is not included in any published tier. The price appears only in the in-app upgrade checkout, not on the pricing page. The add-on is a flat $2,400 per year regardless of seat count, on top of Business at $30 per user/month. Figures shown are for 10 seats billed yearly ($3,600 Business plus $2,400 SSO). Because the add-on is flat, the markup falls as the team grows, from $70 per user/month at 5 seats (250%) down to $32 at 100 seats (60%). Base pricing is the Team plan; the $10 Pro plan is single-user only.
+pricing_source_info: SSO add-on price is not published; taken from the in-app Business upgrade checkout, billed yearly
