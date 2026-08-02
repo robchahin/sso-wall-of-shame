@@ -1,0 +1,9 @@
+---
+vendor_note: SAML support is only available for certain identity providers and as a annual commerical license
+name: FreePBX
+base_pricing: $0 per u/y
+percent_increase: 100%
+pricing_source: https://www.freepbx.org/add-on/saml-sign-on/
+sso_pricing: $1 per u/y
+updated_at: 2026-08-01
+vendor_url: https://www.freepbx.org
