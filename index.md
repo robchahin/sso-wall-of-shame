@@ -18,7 +18,7 @@ Some vendors exploit this. They offer competitive starter plans and  gate SSO be
 
 This pricing strategy punishes growing businesses and encourages dangerous security shortcuts. If a company claims to "take your security seriously," SSO should be included in all plans or available for a reasonable charge.
 
-{% assign all = site.vendors | sort: "name" %}
+{% assign all = site.vendors | sort_natural: "name" %}
 {% assign vendors = "" | split: ',' %}
 {% assign call_us = "" | split: ',' %}
 {% for vendor in all %}
