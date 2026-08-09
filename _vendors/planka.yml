@@ -2,7 +2,7 @@
 name: Planka
 base_pricing: $10.86 per user/month
 sso_pricing: $10.86 per user/month
-percent_increase: 100%
+percent_increase: 0%
 vendor_url: https://planka.app
 pricing_source: https://planka.app/pricing
 updated_at: 2026-08-09
