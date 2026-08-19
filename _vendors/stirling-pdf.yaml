@@ -2,7 +2,7 @@
 name: Stirling PDF
 base_pricing: $99.0 per user/month
 sso_pricing: $99.0 per user/month
-percent_increase: 100%
+percent_increase: 0%
 vendor_url: https://www.stirling.com/
 pricing_source: https://www.stirling.com/pricing
 updated_at: 2026-04-26
