@@ -1,6 +1,6 @@
 ---
 name: Plane
-base_pricing: $6per user/month
+base_pricing: $13 per user/month
 sso_pricing: $13 per user/month
 percent_increase: 117%
 vendor_url: https://plane.so
