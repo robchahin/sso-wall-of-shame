@@ -1,0 +1,8 @@
+---
+name: Polar
+base_pricing: $20 per month
+sso_pricing: $400 per month
+percent_increase: 1900%
+vendor_url: https://polar.sh
+pricing_source: https://polar.sh/resources/pricing
+updated_at: 2026-08-20
