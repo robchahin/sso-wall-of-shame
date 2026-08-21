@@ -1,0 +1,9 @@
+---
+base_pricing: Pay-as-you-go
+name: Requesty
+percent_increase: "???"
+pricing_source: https://www.requesty.ai/pricing
+sso_pricing: Call Us!
+updated_at: 2026-08-21
+vendor_url: https://www.requesty.ai
+vendor_note: SSO is only available on the Enterprise plan; the pay-as-you-go tier does not include it.
