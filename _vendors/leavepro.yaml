@@ -1,0 +1,10 @@
+---
+name: LeavePro
+base_pricing: 25 ZAR per u/m
+sso_pricing: 40 ZAR per u/m
+percent_increase: 60%
+vendor_url: https://www.leavepro.co.za
+pricing_source:
+  - https://www.leavepro.co.za/pricing/
+updated_at: 2026-08-25
+vendor_note: Single sign-on requires the Plus plan, which also bundles SMS notifications, custom branding, bulk leave applications, block dates and several other features. Prices are per employee per month in South African rand excluding VAT, roughly $1.55 and $2.50 at R16 to the dollar. LeavePro supports Microsoft 365 and Google Workspace login as well as SAML.
