@@ -1,0 +1,8 @@
+base_pricing: $99 per month
+name: Obelinf
+percent_increase: 202%
+pricing_source: https://obelinf.com/pricing
+sso_pricing: $299 per month
+updated_at: 2026-09-07
+vendor_note: SSO (via OIDC) is not available on the $99/month Teams plan; it requires the $299/month Scale plan. Enterprise (custom pricing) also includes it.
+vendor_url: https://obelinf.com
