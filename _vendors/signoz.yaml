@@ -1,0 +1,9 @@
+---
+name: SigNoz
+base_pricing: $49 per month
+sso_pricing: $49 per month
+percent_increase: 0%
+vendor_url: https://signoz.io/pricing/
+pricing_source: https://signoz.io/pricing/
+updated_at: 2026-11-01
+vendor_note: Self-hosted Community Edition lacks SAML; SAML requires SigNoz Cloud (Teams) or Enterprise.
