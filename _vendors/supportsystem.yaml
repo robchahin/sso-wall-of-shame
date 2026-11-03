@@ -1,0 +1,9 @@
+---
+name: SupportSystem
+base_pricing: $16 per user/month
+sso_pricing: $24 per user/month
+percent_increase: 50%
+vendor_url: https://supportsystem.com
+pricing_source: https://supportsystem.com/pricing
+updated_at: 2026-11-03
+vendor_note: SSO is only available with the Premium plan, which includes minor additional features.
